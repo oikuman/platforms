@@ -1,24 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import ThemeProvider from 'react-bootstrap/ThemeProvider';
+
+import Start from "./components/Start";
+import Features from "./components/Features";
+import Demand from "./components/Demand";
+import Advantages from "./components/Advantages";
+import Tariffs from "./components/Tariffs";
+import ApplyForm from "./components/ApplyForm";
+import Faq from "./components/Faq";
+import Contacts from "./components/Contacts";
+
+import './App.scss';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider
+      breakpoints={['lg', 'md', 'sm', 'xs']}
+      minBreakpoint="xs"
+    >
+      <div>
+        <Start />
+      </div>
+      <div>
+        <Features />
+      </div>
+      <div>
+        <Demand />
+      </div>
+      <div>
+        <Advantages />
+      </div>
+      <div>
+        <Tariffs />
+      </div>
+      <div>
+        <ApplyForm />
+      </div>
+      <div>
+        <Faq />
+      </div>
+      <div>
+        <Contacts />
+      </div>
+    </ThemeProvider >
   );
 }
 
