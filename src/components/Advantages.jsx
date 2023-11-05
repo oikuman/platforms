@@ -21,7 +21,17 @@ const Advantages = () => {
     <>
       <Container>
         <Row>
-          <Col xs={12} sm={6}>
+          <Col xs={12} sm={12} className="d-flex justify-content-center">
+            <h2>
+              <span>Переваги платформи</span>{" "}
+              <span>для державних реєстрів</span>
+            </h2>
+          </Col>
+          <Col
+            xs={12}
+            sm={12}
+            className="d-flex justify-content-center align-items-center"
+          >
             <ListGroup variant="flush">
               <ListGroup.Item style={{ border: "none" }}>
                 <CompIcon /> Cras justo odio
@@ -55,7 +65,11 @@ const Advantages = () => {
               </ListGroup.Item>
             </ListGroup>
           </Col>
-          <Col xs={12} sm={6}>
+          <Col
+            xs={12}
+            sm={12}
+            className="d-flex justify-content-center align-items-center"
+          >
             <Image src={diag} rounded />
           </Col>
         </Row>

@@ -7,7 +7,7 @@ import "./Tariff.css";
 const TariffCard = () => {
   return (
     <>
-      <Card id="tariff" className="tariff" style={{ width: "18rem" }}>
+      <Card id="tariffs" className="tariff" style={{ width: "18rem" }}>
         {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
         <Card.Body>
           <Card.Title>Card Title</Card.Title>

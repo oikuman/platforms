@@ -40,19 +40,21 @@ RoundIcon.propTypes = {
 const Faq = () => {
   return (
     <>
-      <Container>
+      <Container id="faq">
         <Row>
-          <Col xs={12} sm={6} md={4} className="mt-3">
+          <Col xs={12} sm={12} className="mt-3 d-flex justify-content-center">
             <h2 className="text-center">Найчастіші питання</h2>
-
+            </Col>
+            <Col xs={12} sm={12} className="mt-3 d-flex justify-content-center">
             <div>
               
               <RoundIcon icon={<LogisticIcon/>} />
             </div>
-
+            </Col>
+            <Col xs={12} sm={12} className="mt-3 d-flex justify-content-center">
             <Accordion
-              flush
-              // defaultActiveKey="0"
+              // flush
+              defaultActiveKey="0"
             >
               <Accordion.Item eventKey="0">
                 <Accordion.Header>Accordion Item #1</Accordion.Header>

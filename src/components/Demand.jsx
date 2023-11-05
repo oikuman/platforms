@@ -20,14 +20,14 @@ const LightSpan = styled.span`
 const Demand = () => {
   return (
     <>
-      <Container>
+      <Container id="demand">
         <Row>
-          <Col xs={12} className="mt-3">
+          <Col xs={12} className="mt-3 d-flex justify-content-center">
             <h2>
-              <DarkSpan></DarkSpan>Платформи реєстрів<LightSpan>найкраще рішення для</LightSpan>
+              <DarkSpan>Платформи реєстрів</DarkSpan>{" "}<LightSpan>найкраще рішення для</LightSpan>
             </h2>
           </Col>
-          <Col xs={12} sm={6} md={4} className="mt-3">
+          <Col xs={12} sm={12} className="mt-3 d-flex justify-content-center">
             <Figure>
               <Figure.Image
                 // width={171}
@@ -41,7 +41,7 @@ const Demand = () => {
               </Figure.Caption>
             </Figure>
           </Col>
-          <Col xs={12} sm={6} md={4} className="mt-3">
+          <Col xs={12} sm={12} className="mt-3 d-flex justify-content-center">
           <Figure>
               <Figure.Image
                 // width={171}

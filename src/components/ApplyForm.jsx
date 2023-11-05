@@ -12,8 +12,8 @@ const ApplyForm = () => {
   return (
     <>
       <Container>
-        <Row className="d-flex justify-content-center align-items-center">
-          <Col xs={12} sm={8} md={4}>
+        <Row >
+          <Col xs={12} sm={12} className="d-flex justify-content-center align-items-center">
             <Card className="shadow card">
               <Card.Body>
                 <div className="mb-3 mt-4">

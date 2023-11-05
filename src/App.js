@@ -9,6 +9,8 @@ import Tariffs from "./components/Tariffs";
 import ApplyForm from "./components/ApplyForm";
 import Faq from "./components/Faq";
 import Contacts from "./components/Contacts";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 
 import './App.scss';
 
@@ -18,6 +20,9 @@ function App() {
       breakpoints={['lg', 'md', 'sm', 'xs']}
       minBreakpoint="xs"
     >
+      <div>
+        <Header />
+      </div>
       <div>
         <Start />
       </div>
@@ -41,6 +46,9 @@ function App() {
       </div>
       <div>
         <Contacts />
+      </div>
+      <div>
+        <Footer />
       </div>
     </ThemeProvider >
   );
