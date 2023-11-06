@@ -4,38 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Accordion from "react-bootstrap/Accordion";
 // import { Button } from "react-bootstrap";
-import styled from "styled-components";
 // import Round from "../elements/Round";
-import { LogisticIcon } from "./WhiteIcons";
-import PropTypes from 'prop-types';
-
-const RoundTip = styled.span`
-  background-color: #116dd8;
-  padding: 12px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  width: fit-content;
-`;
-
-const InsideTip = styled.span`
-  padding: 0px;
-  margin: 0px;
-  line-height: 1rem;
-`;
-
-const RoundIcon = ({icon}) => {
-return (<RoundTip 
-// onClick={() => alert("hello")}
->
-<InsideTip>{icon}</InsideTip>
-</RoundTip>)
-};
-
-RoundIcon.propTypes = {
-  icon: PropTypes.element,
-}
 
 const Faq = () => {
   return (
@@ -45,15 +14,10 @@ const Faq = () => {
           <Col xs={12} sm={12} className="mt-3 d-flex justify-content-center">
             <h2 className="text-center">Найчастіші питання</h2>
             </Col>
-            <Col xs={12} sm={12} className="mt-3 d-flex justify-content-center">
-            <div>
-              
-              <RoundIcon icon={<LogisticIcon/>} />
-            </div>
-            </Col>
+            
             <Col xs={12} sm={12} className="mt-3 d-flex justify-content-center">
             <Accordion
-              // flush
+              flush
               defaultActiveKey="0"
             >
               <Accordion.Item eventKey="0">

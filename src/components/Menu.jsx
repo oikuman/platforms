@@ -8,7 +8,7 @@ import Button from "react-bootstrap/Button";
 const Menu = () => {
   return (
     <>
-      <ListGroup variant="flush" horizontal>
+      <ListGroup horizontal>
         <ListGroup.Item
           className="border-0 text-center"
           style={{ backgroundColor: "aquamarine" }}

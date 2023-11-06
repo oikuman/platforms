@@ -6,7 +6,7 @@ import Features from "./components/Features";
 import Demand from "./components/Demand";
 import Advantages from "./components/Advantages";
 import Tariffs from "./components/Tariffs";
-import ApplyForm from "./components/ApplyForm";
+import Applications from "./components/Applications";
 import Faq from "./components/Faq";
 import Contacts from "./components/Contacts";
 import Footer from "./components/Footer";
@@ -39,7 +39,7 @@ function App() {
         <Tariffs />
       </div>
       <div>
-        <ApplyForm />
+        <Applications />
       </div>
       <div>
         <Faq />
