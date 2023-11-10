@@ -1,5 +1,7 @@
 /* The following block can be included in a custom.scss */
 @import "variables";
+@import "typography";
+@import "fonts";
 
 /* make the customizations */
 $theme-colors: (
@@ -10,10 +12,3 @@ $theme-colors: (
 
 /* import bootstrap to set changes */
 @import "~bootstrap/scss/bootstrap";
-
-@font-face {
-  font-family: "eUkraine";
-  src: local("eUkraineRegular"),
-    url("../assets/fonts/e-Ukraine/e-Ukraine-Regular.otf") format("opentype");
-  font-weight: normal;
-}

@@ -1,9 +1,25 @@
+$heroSize: 60px;
+$h1Size: 50px;
+$h2Size: 46px;
+$h3Size: 40px;
+$h4Size: 32px;
+$h5Size: 24px;
+$h6Size: 20px;
+
+
+
 $grid-breakpoints: (
     xs: 0,
     sm: 360px,
     md: 768px,
     lg: 1440px,
 );
+
+// Colors
+$colorPrimary: teal;
+
+//buttons
+$btnColorPrimary: $colorPrimary;
 
 // colors
 $black: #000000 !default;

@@ -1,53 +1,98 @@
-// /* TYPOGRAPHY STYLES
-//    ----------------------------- */
+/* TYPOGRAPHY STYLES
+   ----------------------------- */
+h1,
+h2,
+h3,
+h4 {
+  font-family: "eUkraineHeadMedium", "Helvetica", "Arial", sans-serif !important;
+  margin-bottom: 0 !important;
+}
 
-//    h1,
-//    h2,
-//    h3,
-//    h4,
-//    h5,
-//    h6,
-//    .h1,
-//    .h2,
-//    .h3,
-//    .h4,
-//    .h5,
-//    .h6 {
-//      margin-top: 0;
-//      font-family: 'diaHead' 'dia_bold', 'Roboto', 'Helvetica', 'Arial', sans-serif !important;
-//    }
-//    h1,
-//    .h1 {
-//      font-size: $h1Size;
-//    }
-//    h2,
-//    .h2 {
-//      font-size: $h2Size;
-//    }
-//    h3,
-//    .h3 {
-//      font-size: $h3Size;
-//    }
-//    h4,
-//    .h4 {
-//      font-size: $h4Size;
-//    }
-//    h5,
-//    .h5 {
-//      font-size: $h5Size;
-//    }
-//    h6,
-//    .h6 {
-//      font-size: $h6Size;
-//    }
-   
+h5 {
+  font-family: "eUkraineHead", "Helvetica", "Arial", sans-serif !important;
+  margin: 0 !important;
+}
+
+.headBold {
+  font-family: "eUkraineHeadBold", "Helvetica", "Arial", sans-serif !important;
+}
+
+.headMedium {
+  font-family: "eUkraineHeadMedium", "Helvetica", "Arial", sans-serif !important;
+}
+
+.headRegular {
+  font-family: "eUkraineHead", "Helvetica", "Arial", sans-serif !important;
+}
+
+.light {
+  font-family: "eUkraineLight", "Helvetica", "Arial", sans-serif !important;
+}
+
+.medium {
+  font-family: "eUkraineMedium", "Helvetica", "Arial", sans-serif !important;
+}
+
+.regular {
+  font-family: "eUkraine", "Helvetica", "Arial", sans-serif !important;
+}
+
+h6 {
+  font-family: "eUkraineHead", "Helvetica", "Arial", sans-serif !important;
+  margin: 0 !important;
+}
+
+p {
+  margin: 0 !important;
+}
+
+.h1 {
+  font-size: $h1Size !important;
+}
+
+.herro {
+  font-size: $heroSize !important;
+}
+
+h2 {
+  font-size: $h2Size !important;
+}
+
+h3 {
+  font-size: $h3Size !important;
+}
+
+h4 {
+  font-size: $h4Size !important;
+}
+
+h5 {
+  font-size: $h5Size !important;
+}
+
+h6 {
+  font-size: $h6Size !important;
+}
+
+.normal {
+  font-size: 16px !important;
+}
+
+.small {
+  font-size: 14px !important;
+}
+
+.label {
+  font-size: 12px !important;
+}
+
 //    .error-number {
 //      color: #22262e;
 //      font-size: 120px;
 //      font-weight: 600;
 //      line-height: 130px;
 //    }
-   
+
 //    .back-to-link {
 //      position: absolute;
 //      top: 20px;
@@ -56,4 +101,3 @@
 //    .error {
 //      border: 1px solid #ff0000 !important;
 //    }
-   

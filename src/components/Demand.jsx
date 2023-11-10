@@ -9,12 +9,10 @@ import imageTwo from "../assets/images/jpg/02.jpg";
 
 const DarkSpan = styled.span`
   color: tomato;
-  font-family: "eUkraineHead";
 `;
 
 const LightSpan = styled.span`
   color: green;
-  font-family: "eUkraineHead";
 `;
 
 const Demand = () => {
