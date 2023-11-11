@@ -26,10 +26,10 @@ const Header = () => {
           
           </Col>
           <Col xs={8} className="d-flex justify-content-center align-items-center">
-          <Menu />  
+            <div className="d-none d-sm-block"><Menu /></div>  
           </Col>
           <Col xs={2} className="d-flex justify-content-center align-items-center">
-            <span onClick={handleShow} style={{cursor: 'pointer'}}>
+            <span onClick={handleShow} className="d-sm-none" style={{cursor: 'pointer'}}>
                 <BurgerIcon />
             </span>
           </Col>

@@ -18,6 +18,7 @@ const Alab = () => {
         <h6 className="headBold">H6 Bold 20</h6>
         <h6 className="headMedium">H6 Medium 20</h6>
         <h6 className="headRegular">H6 Regular 20</h6>
+        {/* body */}
         <p className="normal medium">Body Medium 16</p>
         <p className="normal regular">Body Regular 16</p>
         <p className="normal light">Body Light 16</p>

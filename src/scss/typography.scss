@@ -43,11 +43,14 @@ h6 {
 }
 
 p {
-  margin: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 .h1 {
-  font-size: $h1Size !important;
+  font-size: $h3Size !important;
+  line-height: 48px !important;
+  margin: 0;
+  padding: 0;
 }
 
 .herro {
@@ -85,6 +88,28 @@ h6 {
 .label {
   font-size: 12px !important;
 }
+
+// @media (max-width: 767px) {
+
+// }
+
+@media (min-width: 360px) {
+  .h1 {
+    font-size: $h1Size !important;
+    line-height: 60px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .h1 {
+    font-size: $heroSize !important;
+    line-height: 72px !important;
+  }
+}
+
+// @media (min-width: 1440px) {
+
+// }
 
 //    .error-number {
 //      color: #22262e;

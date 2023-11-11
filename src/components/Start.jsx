@@ -41,18 +41,17 @@ const Start = () => {
           </Col>
           <Col
             xs={12}
-            sm={12}
-            className="mt-3 d-flex justify-content-center"
+            className="d-flex justify-content-center"
           >
             <p className="text-center">
               <span>Відтепер розробляти такі реєстри стане зручніше.</span>
               <span>Держоргани зекономлять мільйони, а українці швидше отримуватимуть якісні сервіси онлайн.</span>
             </p>
           </Col>
-          <Col xs={12} sm={12} className="mt-3 d-flex justify-content-center">
+          <Col xs={12} sm={12} className="d-flex justify-content-center">
             <Button variant="primary" onClick={handleShow}>Заповнити бриф</Button>
           </Col>
-          <Col xs={12} sm={12} className="mt-3 d-flex justify-content-center">
+          <Col xs={12} sm={12} className="d-flex justify-content-center">
             <Button variant="outline-primary">Залишити заявку</Button>
           </Col>
         </Row>

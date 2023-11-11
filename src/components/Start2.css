@@ -1,0 +1,95 @@
+.img {
+  width: 100%;
+  height: auto;
+}
+
+.banner {
+  min-width: 320px;
+  background: url("../assets/images/png/image 3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  padding-bottom: 70px;
+}
+
+.marginTitle {
+  margin-top: 40px !important;
+}
+
+.marginComment {
+  margin-top: 24px;
+}
+
+.newLine {
+  display: unset;
+}
+
+.btnsMargin {
+  margin-top: 48px;
+}
+
+.btn1Margin {
+  margin-right: 0;
+}
+
+.btn2Margin {
+  margin-top: 16px;
+}
+
+@media (min-width: 361px) {
+  .banner {
+    padding-bottom: 100px;
+    background: url("../assets/images/png/image 1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .marginTitle {
+    margin-top: 70px !important;
+  }
+
+  .marginComment {
+    margin-top: 36px;
+  }
+
+  .newLine {
+    display: block;
+  }
+
+  .btn1Margin {
+    margin-right: 16px;
+  }
+
+  .btn2Margin {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 769px) {
+  .marginTitle {
+    margin-top: 100px !important;
+  }
+
+  .marginComment {
+    margin-top: 20px;
+  }
+
+  .btnsMargin {
+    margin-top: 70px;
+  }
+
+  .btn1Margin {
+    margin-right: 20px;
+  }
+}
+
+/* @media (max-width: 767px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1440px) {
+} */
