@@ -49,9 +49,9 @@ const Start2 = () => {
             </Col>
             <Col xs={12} className="d-flex justify-content-center align-items-center">
               <div className="d-flex flex-column flex-sm-row btnsMargin">
-                <Button variant="primary" className="btn1Margin">Заповнити бриф</Button>
+                <Button variant="primary btn-large" className="btn1Margin">Заповнити бриф</Button>
                 {/* finish */}
-                <Button variant="outline-primary" className="btn2Margin">Залишити заявку</Button>
+                <Button variant="outline-primary btn-large" className="btn2Margin">Залишити заявку</Button>
               </div>
             </Col>
             {/* <Col xs={12} sm={6} className="d-flex justify-content-center"></Col> */}
