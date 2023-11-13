@@ -1,6 +1,6 @@
 import React from "react";
 import ThemeProvider from "react-bootstrap/ThemeProvider";
-// import Start2 from "./components/Start2";
+import Start2 from "./components/Start2";
 // import Start from "./components/Start";
 
 // import Alab from "./components/Alab";
@@ -12,6 +12,7 @@ import ThemeProvider from "react-bootstrap/ThemeProvider";
 // import Tariffs from "./components/Tariffs";
 // import Applications from "./components/Applications";
 import Feedback from "./components/Feedback";
+// import FeedbackCard from "./components/FeedbackCard";
 // import Faq from "./components/Faq";
 // import Contacts from "./components/Contacts";
 // import Footer from "./components/Footer";
@@ -30,9 +31,9 @@ function App() {
         {/* <div>
           <Header />
         </div> */}
-        {/* <div>
+        <div>
           <Start2 />
-        </div> */}
+        </div>
 
         {/* <div>
           <Start />
@@ -59,6 +60,9 @@ function App() {
         <div>
           <Feedback />
         </div>
+        {/* <div>
+          <FeedbackCard />
+        </div> */}
         {/* <div>
           <Faq />
         </div> */}

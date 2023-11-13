@@ -1,5 +1,18 @@
 import React from "react";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import Carousel from "react-simply-carousel";
+import FeedbackCard from "./FeedbackCard";
+
+import user1 from "../assets/images/photos/user1.png";
+import user2 from "../assets/images/photos/user2.png";
+import user3 from "../assets/images/photos/user3.png";
+
+const array = [];
+array.push(<FeedbackCard photoSrc={user1} />);
+array.push(<FeedbackCard photoSrc={user2} />);
+array.push(<FeedbackCard photoSrc={user3} />);
 
 const Feedback = () => {
   const [activeSlide, setActiveSlide] = React.useState(0);
@@ -7,6 +20,21 @@ const Feedback = () => {
   return (
     <>
       <div>
+      <Container>
+        <Row>
+          <Col
+            xs={12}
+            className="d-flex align-items-center justify-content-center"
+          >
+        <h2 className="headMedium">
+            <span className="headBlue">Відгуки</span>{" "}
+            <span className="headDark">про роботу платформи</span>
+        </h2>
+        </Col>
+        </Row>
+        </Container>
+      </div>
+      <div style={{marginTop: 40}}>
         <Carousel
           containerProps={{
             style: {
@@ -20,7 +48,7 @@ const Feedback = () => {
           activeSlideIndex={activeSlide}
           activeSlideProps={{
             style: {
-              background: "blue",
+            //   background: "blue",
             },
           }}
           onRequestChange={setActiveSlide}
@@ -46,7 +74,7 @@ const Feedback = () => {
                 borderRadius: "50%",
                 background: "#fff",
                 padding: 0,
-                margin: 10
+                margin: '40px 10px 0'
               },
             },
             activeItemBtnProps: {
@@ -56,30 +84,21 @@ const Feedback = () => {
                 borderRadius: "50%",
                 border: 0,
                 background: "#116DD8",
-                margin: 10
+                margin: '40px 10px 0'
               },
             },
           }}
-          itemsToShow={1}
+          itemsToShow={3}
         //   itemsToScroll={2}
           speed={400}
         //   centerMode
         >
-          {Array.from({ length: 5 }).map((item, index) => (
+          {array.map((item, index) => (
             <div
-              style={{
-                background: "yellow",
-                width: 300,
-                height: 300,
-                // border: "30px solid white",
-                // border: "0px !important",
-                textAlign: "center",
-                lineHeight: "240px",
-                boxSizing: "border-box",
-              }}
+              style={{margin: '10 !important'}}
               key={index}
             >
-              {index}
+              {item}
             </div>
           ))}
         </Carousel>
