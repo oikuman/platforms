@@ -51,17 +51,37 @@ const Buttons = () => {
               </div>
 
               <div>
-                <label htmlFor="start" className="form-label" disabled>Start date:</label>
+                <label htmlFor="start" className="form-label">
+                  Start date:
+                </label>
                 <input
                   className="form-control"
                   type="date"
                   id="start"
                   name="trip-start"
-                //   value="2018-07-22"
+                  //   value="2018-07-22"
                   defaultValue="2018-07-22"
                   min="2018-01-01"
                   max="2018-12-31"
                 />
+              </div>
+
+              <div style={{ margin: 20 }}>
+                <label htmlFor="select" className="form-label">
+                Вид реєстру
+                </label>
+                <select
+                  id="select"
+                  className="form-select"
+                  aria-label="Default select example"
+                  defaultValue="0"
+                >
+                  <option value="0" disabled hidden>Обрати з запропонованих</option>
+                  <option value="1" className="select-dropdown">Вид реєстру 1</option>
+                  <option value="2">Вид реєстру 2</option>
+                  <option value="3">Вид реєстру 3</option>
+                  <option value="3">Вид реєстру 4</option>
+                </select>
               </div>
 
               <button type="submit" className="btn btn-primary">
@@ -69,20 +89,20 @@ const Buttons = () => {
               </button>
             </form>
           </Col>
-          <Col xs={12} sm={12} className="d-flex justify-content-center">
-          <div style={{margin: 20}}>
-          <button type="button" className="btn btn-primary">
-            <span className="normal medium">Зв&apos;язатися</span>
-            </button>
-          </div >
+          {/* <Col xs={12} sm={12} className="d-flex justify-content-center">
+            <div style={{ margin: 20 }}>
+              <button type="button" className="btn btn-primary">
+                <span className="normal medium">Зв&apos;язатися</span>
+              </button>
+            </div>
           </Col>
           <Col xs={12} sm={12} className="d-flex justify-content-center">
-          <div style={{margin: 20}}>
-          <button type="button" className="btn btn-outline-primary">
-            <span className="normal medium">Заповнити бриф</span>
-            </button>
-          </div>
-          </Col>
+            <div style={{ margin: 20 }}>
+              <button type="button" className="btn btn-outline-primary">
+                <span className="normal medium">Заповнити бриф</span>
+              </button>
+            </div>
+          </Col> */}
         </Row>
       </Container>
     </>

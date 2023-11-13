@@ -41,6 +41,23 @@ $theme-colors: (
   margin-bottom: 10px;
 }
 
+.form-select {
+  padding: 13px 36px 13px 10px;
+  border: 1px solid #D7D9DB;
+  border-radius: 4px;
+  color: #D7D9DB;
+  cursor: pointer;
+}
+
+.form-select:focus {
+  box-shadow: none !important;
+}
+
+.select-dropdown {
+  // background-color: red;
+  padding: 10px;
+}
+
 // email
 .email {
   padding: 10px;
