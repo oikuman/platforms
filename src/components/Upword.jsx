@@ -9,21 +9,18 @@ import Menu from "./Menu";
 import HeaderCanvas from "./HeaderCanvas";
 import { BurgerIcon } from "./BlackIcons";
 
-import "./Header.css";
-
-const Header = () => {
+const Upword = () => {
   const [show, setShow] = React.useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
   return (
-    <header className="header text-white">
+    <div className="header">
       <Container>
         <Row>
           <Col xs={2} className="d-flex justify-content-center align-items-center">
           <a href="#"><Image src={logo} /></a>
-          
           </Col>
           <Col xs={8} className="d-flex justify-content-center align-items-center">
             <div className="d-none d-sm-block"><Menu /></div>  
@@ -37,8 +34,8 @@ const Header = () => {
       </Container>
       <HeaderCanvas show={show} handleClose={handleClose}  />
       
-    </header>
+    </div>
   );
 };
 
-export default Header;
+export default Upword;

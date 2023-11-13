@@ -1,22 +1,21 @@
 import React from "react";
 import ThemeProvider from "react-bootstrap/ThemeProvider";
 import Start2 from "./components/Start2";
-// import Start from "./components/Start";
 
 // import Alab from "./components/Alab";
 // import Buttonsx from "./components/Buttons";
 
-// import Features from "./components/Features";
-// import Demand from "./components/Demand";
-// import Advantages from "./components/Advantages";
-// import Tariffs from "./components/Tariffs";
-// import Applications from "./components/Applications";
+import Features from "./components/Features";
+import Demand from "./components/Demand";
+import Advantages from "./components/Advantages";
+import Tariffs from "./components/Tariffs";
+import Applications from "./components/Applications";
 import Feedback from "./components/Feedback";
 // import FeedbackCard from "./components/FeedbackCard";
-// import Faq from "./components/Faq";
-// import Contacts from "./components/Contacts";
-// import Footer from "./components/Footer";
-// import Header from "./components/Header";
+import Faq from "./components/Faq";
+import Contacts from "./components/Contacts";
+import Footer from "./components/Footer";
+// import Upword from "./components/Upword";
 
 
 import "./App.scss";
@@ -28,50 +27,43 @@ function App() {
       {/* <div>
         <Buttonsx />
       </div> */}
-        {/* <div>
-          <Header />
-        </div> */}
         <div>
           <Start2 />
         </div>
-
-        {/* <div>
-          <Start />
-        </div> */}
         {/* <div>
           <Alab />
         </div> */}
-        {/* <div>
+        <div>
           <Features />
-        </div> */}
+        </div>
         
-        {/* <div>
+        <div>
           <Demand />
-        </div> */}
-        {/* <div>
+        </div>
+        <div>
           <Advantages />
-        </div> */}
-        {/* <div>
+        </div>
+        <div>
           <Tariffs />
-        </div> */}
-        {/* <div> 
+        </div>
+        <div> 
           <Applications />
-        </div> */}
+        </div>
         <div>
           <Feedback />
         </div>
         {/* <div>
           <FeedbackCard />
         </div> */}
-        {/* <div>
+        <div>
           <Faq />
-        </div> */}
-        {/* <div>
+        </div>
+        <div>
           <Contacts />
-        </div> */}
-        {/* <div>
+        </div>
+        <div>
           <Footer />
-        </div> */}
+        </div>
       </ThemeProvider>
     </>
   );

@@ -4,8 +4,10 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
-
+import Upword from "./Upword";
 import "./Start2.css";
+
+
 
 const SpanOne = styled.span`
   color: #116dd8;
@@ -29,6 +31,9 @@ const Start2 = () => {
       <header className="banner">
         <Container>
           <Row>
+           <Col xs={12} className="">
+            <Upword />
+          </Col>
             <Col xs={12} className="d-flex justify-content-center">
               <h1 className="h1 text-center marginTitle">
                 <SpanOne>Платформи реєстрів</SpanOne> <SpanTwo>—</SpanTwo>

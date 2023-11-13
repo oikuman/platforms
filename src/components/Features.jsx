@@ -19,14 +19,14 @@ const Features = () => {
       <Container>
         <Row>
           <Col
-            xs={12}
+            xs={12} style={{padding: 0}}
             // className="d-flex align-items-center justify-content-center"
           >
-            <ul className="list d-flex align-items-start justify-content-start flex-column flex-sm-row">
+            <ul className="list d-flex align-items-start justify-content-between flex-column justify-content-sm-start flex-sm-row features-box">
 
               <li className="list-item d-flex align-items-center justify-content-center flex-row flex-sm-column flex-md-row">
                 <RoundIcon icon={<ClockwiseIcon />} />
-                <span className="text-white text-start text-sm-center text-md-start">
+                <span className="text-white text-start text-sm-center text-md-start features-margin small">
                   <span className="small light">Розробка займає до</span>{" "}
                   <span className="small light">2 місяців</span>
                 </span>
@@ -34,7 +34,7 @@ const Features = () => {
 
               <li className="list-item d-flex align-items-center justify-content-center flex-row flex-sm-column flex-md-row">
               <RoundIcon icon={<UsersThreeIcon />} />
-                <span className="text-white text-start text-sm-center text-md-start">
+                <span className="text-white text-start text-sm-center text-md-start features-margin small">
                 <span className="small light">Кваліфікована</span>{" "}
                   <span className="small light">команда спеціалістів</span>
                 </span>
@@ -42,7 +42,7 @@ const Features = () => {
 
               <li className="list-item d-flex align-items-center justify-content-center flex-row flex-sm-column flex-md-row">
               <RoundIcon icon={<LogisticIcon />} />
-                <span className="text-white text-start text-sm-center text-md-start">
+                <span className="text-white text-start text-sm-center text-md-start features-margin small">
                 <span className="small light">Логічна</span>{" "}
                   <span className="small light">структура платформи</span>
                 </span>
@@ -50,71 +50,12 @@ const Features = () => {
 
               <li className="list-item d-flex align-items-center justify-content-center flex-row flex-sm-column flex-md-row">
               <RoundIcon icon={<ShieldIcon />} />
-                <span className="text-white text-start text-sm-center text-md-start">
+                <span className="text-white text-start text-sm-center text-md-start features-margin small">
                 <span className="small light">Висока</span>{" "}
                   <span className="small light">безпека даних</span>
                 </span>
               </li>
             </ul>
-
-
-
-
-
-            
-            {/* <ListGroup
-              // variant="flush"
-              horizontal
-              className="d-flex flex-column flex-sm-row"
-            >
-              <ListGroup.Item
-                as="li"
-                className="border-0 p-0 m-2 text-center text-white d-flex flex-column flex-sm-row"
-                style={{ backgroundColor: "#131415" }}
-              >
-                <RoundIcon icon={<ClockwiseIcon />} />
-                <span>
-                  <span className="small light">Розробка займає до</span>{" "}
-                  <span className="small light">2 місяців</span>
-                </span>
-              </ListGroup.Item>
-
-              <ListGroup.Item
-                as="li"
-                className="border-0 p-0 m-2 text-center text-white d-flex justify-content-between align-items-center"
-                style={{ backgroundColor: "#131415" }}
-              >
-                <RoundIcon icon={<UsersThreeIcon />} />
-                <span>
-                  <span className="small light">Кваліфікована</span>{" "}
-                  <span className="small light">команда спеціалістів</span>
-                </span>
-              </ListGroup.Item>
-
-              <ListGroup.Item
-                as="li"
-                className="border-0 p-0 m-2 text-center text-white d-flex justify-content-between align-items-center"
-                style={{ backgroundColor: "#131415" }}
-              >
-                <RoundIcon icon={<LogisticIcon />} />
-                <span>
-                  <span className="small light">Логічна</span>{" "}
-                  <span className="small light">структура платформи</span>
-                </span>
-              </ListGroup.Item>
-
-              <ListGroup.Item
-                as="li"
-                className="border-0 p-0 m-2 text-center text-white d-flex justify-content-between align-items-center"
-                style={{ backgroundColor: "#131415" }}
-              >
-                <RoundIcon icon={<ShieldIcon />} />
-                <span>
-                  <span className="small light">Висока</span>{" "}
-                  <span className="small light">безпека даних</span>
-                </span>
-              </ListGroup.Item>
-            </ListGroup> */}
           </Col>
         </Row>
       </Container>

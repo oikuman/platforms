@@ -37,7 +37,7 @@
   margin-top: 16px;
 }
 
-@media (min-width: 361px) {
+@media (min-width: 360px) {
   .banner {
     padding-bottom: 100px;
     background: url("../assets/images/png/image 1.png");
@@ -67,7 +67,7 @@
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .marginTitle {
     margin-top: 100px !important;
   }

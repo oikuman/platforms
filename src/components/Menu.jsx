@@ -2,40 +2,21 @@ import React from "react";
 // import Container from "react-bootstrap/Container";
 // import Row from "react-bootstrap/Row";
 // import Col from "react-bootstrap/Col";
-import ListGroup from "react-bootstrap/ListGroup";
-import Button from "react-bootstrap/Button";
+
+import "./Menu.css";
 
 const Menu = () => {
   return (
     <>
-      <ListGroup horizontal>
-        <ListGroup.Item
-          className="border-0 text-center"
-          style={{ backgroundColor: "aquamarine" }}
-        >
-          <Button variant="link" href="#demand">Для кого</Button>
-          
-        </ListGroup.Item>
-        <ListGroup.Item
-          className="border-0 text-center"
-          style={{ backgroundColor: "aquamarine" }}
-        >
-          <Button variant="link" href="#tariffs">Тарифи</Button>
-        </ListGroup.Item>
-        <ListGroup.Item
-          className="border-0 text-center"
-          style={{ backgroundColor: "aquamarine" }}
-        >
-          <Button variant="link" href="#faq">Найчастіші питання</Button>
-        </ListGroup.Item>
-        <ListGroup.Item
-          className="border-0 text-center"
-          style={{ backgroundColor: "aquamarine" }}
-        >
-          <Button variant="link" href="#contacts">Контакти</Button>
-          {/* <a href="#contacts" className="btn btn-info" role="button">Link Button</a> */}
-        </ListGroup.Item>
-      </ListGroup>
+      <div>
+      <ul className="site-menu d-flex">
+                    <li className="menu-list-item small light textPrimary"><a href="#demand">Для кого</a></li>
+                    <li className="menu-list-item small light textPrimary"><a href="#tariffs">Тарифи</a></li>
+                    <li className="menu-list-item small light textPrimary"><a href="#faq">Найчастіші питання</a></li>
+                    <li className="menu-list-item small light textPrimary"><a href="#contacts">Контакти</a></li>
+                </ul>
+      </div>
+      
 
       
     </>
