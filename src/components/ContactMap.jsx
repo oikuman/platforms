@@ -17,7 +17,7 @@ const ContactMap = () => {
     zoom: 15,
   };
   return (
-    <div style={{ height: "400px", width: "400px" }}>
+    <div style={{ height: "400px", width: "715px" }}>
       <GoogleMapReact
         bootstrapURLKeys={{ key: "AIzaSyAjngK5fH3OfNBmCdY98Vr3njRnzg_aCKQ", language: 'uk',
         region: 'uk' }}

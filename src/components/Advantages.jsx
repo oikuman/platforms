@@ -16,14 +16,16 @@ import {
   DateIcon,
 } from "./DarkIcons";
 
+import "./Advantages.css";
+
 const Advantages = () => {
   return (
     <>
       <Container>
         <Row>
           <Col xs={12} sm={12} className="d-flex justify-content-center">
-            <h2>
-              <span className="headBlue">Переваги платформи</span>{" "}
+            <h2 className="text-center">
+              <span className="headBlue">Переваги платформи</span><br/>
               <span className="headDark">для державних реєстрів</span>
             </h2>
           </Col>
@@ -70,7 +72,7 @@ const Advantages = () => {
             sm={12}
             className="d-flex justify-content-center align-items-center"
           >
-            <Image src={diag} rounded />
+            <Image src={diag} className="adv-image" />
           </Col>
         </Row>
       </Container>

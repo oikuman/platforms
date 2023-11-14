@@ -7,8 +7,8 @@ import Start2 from "./components/Start2";
 
 // import Features from "./components/Features";
 // import Demand from "./components/Demand";
-// import Advantages from "./components/Advantages";
-// import Tariffs from "./components/Tariffs";
+import Advantages from "./components/Advantages";
+import Tariffs from "./components/Tariffs";
 // import Applications from "./components/Applications";
 // import Feedback from "./components/Feedback";
 // import FeedbackCard from "./components/FeedbackCard";
@@ -37,15 +37,15 @@ function App() {
           <Features />
         </div> */}
         
-        {/*<div>
+        {/* <div>
           <Demand />
-        </div>*/}
-        {/* <div>
+        </div> */}
+        <div>
           <Advantages />
-        </div> */}
-        {/* <div>
+        </div>
+        <div>
           <Tariffs />
-        </div> */}
+        </div>
         {/* <div> 
           <Applications />
         </div>

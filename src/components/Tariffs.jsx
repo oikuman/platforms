@@ -22,6 +22,7 @@ const Tariffs = () => {
           <Col
             xs={12}
             sm={12}
+            md={4}
             className="mt-3 d-flex justify-content-center align-items-center"
           >
             <TariffCard title="Персональний" />
@@ -29,6 +30,7 @@ const Tariffs = () => {
           <Col
             xs={12}
             sm={12}
+            md={4}
             className="mt-3 d-flex justify-content-center align-items-center"
           >
             <TariffCard title="Стандартний" />
@@ -36,6 +38,7 @@ const Tariffs = () => {
           <Col
             xs={12}
             sm={12}
+            md={4}
             className="mt-3 d-flex justify-content-center align-items-center"
           >
             <TariffCard title="Професійний" />

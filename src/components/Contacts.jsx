@@ -65,11 +65,6 @@ const Contacts = () => {
                 </div> 
               </div>*/}
             </Col>
-
-            
-
-            
-
             <Col xs={12} sm={12}></Col>
           </Row>
         </Container>

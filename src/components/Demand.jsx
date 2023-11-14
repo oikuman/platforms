@@ -21,35 +21,36 @@ const Demand = () => {
       <Container id="demand">
         <Row>
           <Col xs={12} className="mt-3 d-flex justify-content-center">
-            <h2>
-              <DarkSpan>Платформи реєстрів</DarkSpan>{" "}<LightSpan>найкраще рішення для</LightSpan>
+            <h2 className="text-center">
+              <DarkSpan>Платформи реєстрів</DarkSpan><br/>
+              <LightSpan>найкраще рішення для</LightSpan>
             </h2>
           </Col>
-          <Col xs={12} sm={12} className="mt-3 d-flex justify-content-center">
+          <Col xs={12} sm={12} md={6} className="d-flex justify-content-center">
             <Figure>
               <Figure.Image
-                // width={171}
-                // height={180}
-                alt="171x180"
+                width={428}
+                height={722}
+                alt="first image"
                 src={imageOne}
               />
               <Figure.Caption>
-              <h2>Центральні органи виконавчої влади</h2>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                <h6>Центральні органи виконавчої влади</h6>
+                <p>які потребують оновлення бази реєстрів на більш сучасну та зручну</p>
               </Figure.Caption>
             </Figure>
           </Col>
-          <Col xs={12} sm={12} className="mt-3 d-flex justify-content-center">
+          <Col xs={12} sm={12} md={6} className="d-flex justify-content-center">
           <Figure>
               <Figure.Image
-                // width={171}
-                // height={180}
-                alt="171x180"
+                width={428}
+                height={722}
+                alt="second image"
                 src={imageTwo}
               />
               <Figure.Caption>
-                <h2>Державні установи</h2>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                <h6>Державні установи</h6>
+                <p>які поки не мають цифровізованої бази реєстрів</p>
               </Figure.Caption>
             </Figure>
           </Col>
