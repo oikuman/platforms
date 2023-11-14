@@ -9,10 +9,10 @@ import Accordion from "react-bootstrap/Accordion";
 const Faq = () => {
   return (
     <>
-      <Container id="faq">
+      <Container id="faq" style={{marginBottom: 70}}>
         <Row>
           <Col xs={12} sm={12} className="mt-3 d-flex justify-content-center">
-            <h2 className="text-center">Найчастіші питання</h2>
+            <h2 ><span className="text-center headDark">Найчастіші питання</span></h2>
             </Col>
             
             <Col xs={12} sm={12} className="mt-3 d-flex justify-content-center">
@@ -21,7 +21,7 @@ const Faq = () => {
               defaultActiveKey="0"
             >
               <Accordion.Item eventKey="0">
-                <Accordion.Header>Accordion Item #1</Accordion.Header>
+                <Accordion.Header>Що таке платформа реєстрів?</Accordion.Header>
                 <Accordion.Body>
                   Відповідно до частини 1 статті 5 Закону України «Про
                   електронні документи та електронний документообіг» від 22
@@ -36,7 +36,7 @@ const Faq = () => {
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item eventKey="1">
-                <Accordion.Header>Accordion Item #2</Accordion.Header>
+                <Accordion.Header>Як довго розробляється реєстр для установи?</Accordion.Header>
                 <Accordion.Body>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -49,7 +49,7 @@ const Faq = () => {
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item eventKey="2">
-                <Accordion.Header>Accordion Item #2</Accordion.Header>
+                <Accordion.Header>Як проходить реєстрація у державному реєстрі?</Accordion.Header>
                 <Accordion.Body>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -62,7 +62,7 @@ const Faq = () => {
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item eventKey="3">
-                <Accordion.Header>Accordion Item #2</Accordion.Header>
+                <Accordion.Header>Як забезпечується безпека даних?</Accordion.Header>
                 <Accordion.Body>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -75,7 +75,7 @@ const Faq = () => {
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item eventKey="4">
-                <Accordion.Header>Accordion Item #2</Accordion.Header>
+                <Accordion.Header>Наскільки вигідно користуватися державним реєстром?</Accordion.Header>
                 <Accordion.Body>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.

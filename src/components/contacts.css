@@ -1,0 +1,27 @@
+.contacts {
+    padding: 0 16px;
+}
+
+.contact-list {
+    margin-top: 24px;
+}
+
+.contact-item {
+    margin-top: 0; 
+    margin-left: 10px;
+}
+
+.contact-map {
+    margin-top: 40px;
+}
+
+
+
+@media (min-width: 361px) {
+}
+
+@media (min-width: 769px) {
+    .contact-map {
+        margin-top: 0;
+    }
+}

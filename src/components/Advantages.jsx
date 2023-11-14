@@ -23,8 +23,8 @@ const Advantages = () => {
         <Row>
           <Col xs={12} sm={12} className="d-flex justify-content-center">
             <h2>
-              <span>Переваги платформи</span>{" "}
-              <span>для державних реєстрів</span>
+              <span className="headBlue">Переваги платформи</span>{" "}
+              <span className="headDark">для державних реєстрів</span>
             </h2>
           </Col>
           <Col
@@ -34,34 +34,34 @@ const Advantages = () => {
           >
             <ListGroup variant="flush">
               <ListGroup.Item style={{ border: "none" }}>
-                <CompIcon /> Cras justo odio
+                <CompIcon /> Сучаcний стек технологій
               </ListGroup.Item>
               <ListGroup.Item>
-                <CodeIcon /> Dapibus ac facilisis in
+                <CodeIcon /> Low Code підхід
               </ListGroup.Item>
               <ListGroup.Item>
                 <PuzzleIcon />
-                Morbi leo risus
+                Конструктори моделей даних, API, форм, бізнес процесів
               </ListGroup.Item>
               <ListGroup.Item>
                 <UserIcon />
-                Porta ac consectetur ac
+                Кабінет громадянина та Кабінет посадової особи
               </ListGroup.Item>
               <ListGroup.Item>
                 <CardIcon />
-                Porta ac consectetur ac
+                Шифрування даних
               </ListGroup.Item>
               <ListGroup.Item>
                 <GitForkIcon />
-                Porta ac consectetur ac
+                Ізоляція даних від адміністратора
               </ListGroup.Item>
               <ListGroup.Item>
                 <ChartIcon />
-                НЕ Чекали
+                Open Source компоненти
               </ListGroup.Item>
               <ListGroup.Item>
                 <DateIcon />
-                Porta ac consectetur ac
+                Хмарна або «залізна» інфраструктура
               </ListGroup.Item>
             </ListGroup>
           </Col>

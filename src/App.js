@@ -5,16 +5,16 @@ import Start2 from "./components/Start2";
 // import Alab from "./components/Alab";
 // import Buttonsx from "./components/Buttons";
 
-import Features from "./components/Features";
-import Demand from "./components/Demand";
-import Advantages from "./components/Advantages";
-import Tariffs from "./components/Tariffs";
-import Applications from "./components/Applications";
-import Feedback from "./components/Feedback";
+// import Features from "./components/Features";
+// import Demand from "./components/Demand";
+// import Advantages from "./components/Advantages";
+// import Tariffs from "./components/Tariffs";
+// import Applications from "./components/Applications";
+// import Feedback from "./components/Feedback";
 // import FeedbackCard from "./components/FeedbackCard";
 import Faq from "./components/Faq";
 import Contacts from "./components/Contacts";
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 // import Upword from "./components/Upword";
 
 
@@ -33,25 +33,25 @@ function App() {
         {/* <div>
           <Alab />
         </div> */}
-        <div>
+        {/* <div>
           <Features />
-        </div>
+        </div> */}
         
-        <div>
+        {/*<div>
           <Demand />
-        </div>
-        <div>
+        </div>*/}
+        {/* <div>
           <Advantages />
-        </div>
-        <div>
+        </div> */}
+        {/* <div>
           <Tariffs />
-        </div>
-        <div> 
+        </div> */}
+        {/* <div> 
           <Applications />
         </div>
         <div>
           <Feedback />
-        </div>
+        </div> */}
         {/* <div>
           <FeedbackCard />
         </div> */}
@@ -61,9 +61,9 @@ function App() {
         <div>
           <Contacts />
         </div>
-        <div>
+        {/* <div>
           <Footer />
-        </div>
+        </div> */}
       </ThemeProvider>
     </>
   );

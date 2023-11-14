@@ -11,7 +11,7 @@ const Tariffs = () => {
         <Row>
           <Col xs={12} sm={12} className="mt-3 d-flex justify-content-center">
             <h2 className="text-center">
-              <span>Тарифні плани</span>
+              <span className="headDark">Тарифні плани</span>
             </h2>
           </Col>
           <Col xs={12} sm={12} className="mt-3 d-flex justify-content-center">

@@ -22,20 +22,20 @@ const Features = () => {
             xs={12} style={{padding: 0}}
             // className="d-flex align-items-center justify-content-center"
           >
-            <ul className="list d-flex align-items-start justify-content-between flex-column justify-content-sm-start flex-sm-row features-box">
+            <ul className="list d-flex align-items-start justify-content-between flex-column justify-content-sm-start flex-sm-row justify-content-md-between features-box">
 
               <li className="list-item d-flex align-items-center justify-content-center flex-row flex-sm-column flex-md-row">
                 <RoundIcon icon={<ClockwiseIcon />} />
                 <span className="text-white text-start text-sm-center text-md-start features-margin small">
-                  <span className="small light">Розробка займає до</span>{" "}
-                  <span className="small light">2 місяців</span>
+                  <span className="small light">Розробка займає</span><br/>
+                  <span className="small light">до 2 місяців</span>
                 </span>
               </li>
 
               <li className="list-item d-flex align-items-center justify-content-center flex-row flex-sm-column flex-md-row">
               <RoundIcon icon={<UsersThreeIcon />} />
                 <span className="text-white text-start text-sm-center text-md-start features-margin small">
-                <span className="small light">Кваліфікована</span>{" "}
+                <span className="small light">Кваліфікована</span><br/>
                   <span className="small light">команда спеціалістів</span>
                 </span>
               </li>
@@ -44,7 +44,7 @@ const Features = () => {
               <RoundIcon icon={<LogisticIcon />} />
                 <span className="text-white text-start text-sm-center text-md-start features-margin small">
                 <span className="small light">Логічна</span>{" "}
-                  <span className="small light">структура платформи</span>
+                  <span className="small light">структура</span><br/><span className="small light">платформи</span>
                 </span>
               </li>
 
@@ -52,7 +52,7 @@ const Features = () => {
               <RoundIcon icon={<ShieldIcon />} />
                 <span className="text-white text-start text-sm-center text-md-start features-margin small">
                 <span className="small light">Висока</span>{" "}
-                  <span className="small light">безпека даних</span>
+                  <span className="small light">безпека</span><br/><span className="small light">даних</span>
                 </span>
               </li>
             </ul>

@@ -4,10 +4,8 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
-import Upword from "./Upword";
+// import Upword from "./Upword";
 import "./Start2.css";
-
-
 
 const SpanOne = styled.span`
   color: #116dd8;
@@ -31,9 +29,9 @@ const Start2 = () => {
       <header className="banner">
         <Container>
           <Row>
-           <Col xs={12} className="">
-            <Upword />
-          </Col>
+            {/* <Col xs={12} className="">
+              <Upword />
+            </Col> */}
             <Col xs={12} className="d-flex justify-content-center">
               <h1 className="h1 text-center marginTitle">
                 <SpanOne>Платформи реєстрів</SpanOne> <SpanTwo>—</SpanTwo>
@@ -52,11 +50,22 @@ const Start2 = () => {
                 </CommTwo>
               </p>
             </Col>
-            <Col xs={12} className="d-flex justify-content-center align-items-center">
+            <Col
+              xs={12}
+              className="d-flex justify-content-center align-items-center"
+            >
               <div className="d-flex flex-column flex-sm-row btnsMargin">
-                <Button variant="primary btn-large" className="btn1Margin">Заповнити бриф</Button>
+                <Button variant="primary btn-large" className="btn1Margin">
+                  Заповнити бриф
+                </Button>
                 {/* finish */}
-                <Button variant="outline-primary btn-large" className="btn2Margin">Залишити заявку</Button>
+                <Button
+                  href="#apply"
+                  variant="outline-primary btn-large"
+                  className="btn2Margin"
+                >
+                  Залишити заявку
+                </Button>
               </div>
             </Col>
             {/* <Col xs={12} sm={6} className="d-flex justify-content-center"></Col> */}

@@ -8,11 +8,11 @@ import imageOne from "../assets/images/jpg/01.jpg";
 import imageTwo from "../assets/images/jpg/02.jpg";
 
 const DarkSpan = styled.span`
-  color: tomato;
+  color: #116DD8;
 `;
 
 const LightSpan = styled.span`
-  color: green;
+  color: #131415;
 `;
 
 const Demand = () => {
