@@ -3,6 +3,26 @@
 @import "typography";
 @import "fonts";
 
+// basic
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
 /* make the customizations */
 $theme-colors: (
   "primary": #116DD8,

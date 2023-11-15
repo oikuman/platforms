@@ -14,7 +14,7 @@ import Start2 from "./components/Start2";
 // import Feedback from "./components/Feedback";
 // import Faq from "./components/Faq";
 // import Contacts from "./components/Contacts";
-// import Footer from "./components/Footer";
+import Footer from "./components/Footer";
 
 // import FeedbackCard from "./components/FeedbackCard";
 // import Upword from "./components/Upword";
@@ -65,9 +65,9 @@ function App() {
         {/* <div>
           <Contacts />
         </div> */}
-        {/* <div>
+        <div>
           <Footer />
-        </div> */}
+        </div>
       </ThemeProvider>
     </>
   );
