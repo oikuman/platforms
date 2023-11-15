@@ -1,0 +1,22 @@
+.site-list {
+    /* float: right; */
+    list-style: none;
+    margin: 0 0 0;
+    padding: 0;
+}
+
+.site-list-item {
+    /* float: left; */
+    list-style: none;
+    /* text-transform: uppercase; */
+}
+
+/* .site-list-item:not(:last-child) {
+    margin-right: 25px;
+} */
+
+.site-list-item a {
+    display: block;
+    /* color: rgb(98, 98, 98); */
+    text-decoration: none;
+}

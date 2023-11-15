@@ -4,7 +4,8 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
-// import Upword from "./Upword";
+import Upword from "./Upword";
+import BriefModal from "./BriefModal";
 import "./Start2.css";
 
 const SpanOne = styled.span`
@@ -24,14 +25,19 @@ const CommTwo = styled.span`
 `;
 
 const Start2 = () => {
+  const [show, setShow] = React.useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
     <>
       <header className="banner">
         <Container>
           <Row>
-            {/* <Col xs={12} className="">
+            <Col xs={12} className="">
               <Upword />
-            </Col> */}
+            </Col>
             <Col xs={12} className="d-flex justify-content-center">
               <h1 className="h1 text-center marginTitle">
                 <SpanOne>Платформи реєстрів</SpanOne> <SpanTwo>—</SpanTwo>
@@ -55,7 +61,7 @@ const Start2 = () => {
               className="d-flex justify-content-center align-items-center"
             >
               <div className="d-flex flex-column flex-sm-row btnsMargin">
-                <Button variant="primary btn-large" className="btn1Margin">
+                <Button variant="primary btn-large" className="btn1Margin" onClick={handleShow}>
                   Заповнити бриф
                 </Button>
                 {/* finish */}
@@ -72,6 +78,7 @@ const Start2 = () => {
           </Row>
         </Container>
       </header>
+      <BriefModal show={show} handleClose={handleClose}/>
     </>
   );
 };

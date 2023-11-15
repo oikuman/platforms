@@ -1,62 +1,66 @@
-import React from 'react';
-import Col from "react-bootstrap/Col";
-import { Container } from "react-bootstrap";
-import Row from "react-bootstrap/Row";
+import React from "react";
 import Form from "react-bootstrap/Form";
-import { Card } from "react-bootstrap";
-import { Button } from "react-bootstrap";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 const BriefForm = () => {
-    return (
-        <>
-        <Container>
-        <Row >
-          <Col xs={12} sm={12} className="d-flex justify-content-center align-items-center">
-            <Card className="shadow card">
-              <Card.Body>
-                <div className="mb-3 mt-4">
-                  <h2 className="fw-bold mb-2 text-uppercase text-center">
-                    Бриф
-                  </h2>
-                  <Form className="mb-3">
-                    <Form.Group className="mb-3" controlId="formBasicEmail">
-                      <Form.Label className="text-center">
-                        ПІБ
-                      </Form.Label>
-                      <Form.Control type="text" placeholder="Організація" />
-                    </Form.Group>
+  return (
+    <>
+      <Form className="">
+        <Row>
+          <Col xl={12} sm={6}>
+            <Form.Group className="" controlId="formName">
+              <Form.Label className="">ПІБ</Form.Label>
+              <Form.Control type="text" placeholder="Ваше ім'я" />
+            </Form.Group>
 
-                    <Form.Group className="mb-3" controlId="formBasicEma">
-                      <Form.Label className="text-center">Контактний телефон</Form.Label>
-                      <Form.Control type="text" placeholder="+380" />
-                    </Form.Group>
+            <Form.Group className="" controlId="formPhone">
+              <Form.Label className="">Контактний телефон</Form.Label>
+              <Form.Control type="text" placeholder="+380" />
+            </Form.Group>
 
-                    <Form.Group className="mb-3" controlId="formBasicEmai">
-                      <Form.Label className="text-center">
-                        Електронна пошта
-                      </Form.Label>
-                      <Form.Control type="email" placeholder="email@mail.com" />
-                    </Form.Group>
+            <Form.Group className="" controlId="formEmail">
+              <Form.Label className="">Електронна пошта</Form.Label>
+              <Form.Control type="email" placeholder="email@mail.com" />
+            </Form.Group>
 
-                    <div className="d-grid">
-                      <Button variant="primary" type="submit">
-                        Відправити заявку
-                      </Button>
+            <Form.Group className="" controlId="formOrg">
+              <Form.Label className="">Назва оргагізації</Form.Label>
+              <Form.Control type="text" placeholder="Організація" />
+            </Form.Group>
 
-                      <Button variant="outline-primary" type="submit">
-                        Відправити заявку
-                      </Button>
-                    </div>
-                    
-                  </Form>
-                </div>
-              </Card.Body>
-            </Card>
+            <Form.Group className="" controlId="formLink">
+              <Form.Label className="">Посилання на сайт</Form.Label>
+              <Form.Control type="text" placeholder="https://" />
+            </Form.Group>
+          </Col>
+          <Col xl={12} sm={6}>
+            <Form.Group className="" controlId="formField">
+              <Form.Label className="">
+                Напрям діяльності організації
+              </Form.Label>
+              <Form.Control type="text" placeholder="Ваш напрям" />
+            </Form.Group>
+
+            <Form.Group className="" controlId="formRegister">
+              <Form.Label className="">Вид реєстру</Form.Label>
+              <Form.Control type="text" placeholder="Обрати з запропонованих" />
+            </Form.Group>
+
+            <Form.Group className="" controlId="formTerm">
+              <Form.Label className="">Строки виконання</Form.Label>
+              <Form.Control type="text" placeholder="Обрати дату" />
+            </Form.Group>
+
+            <Form.Group className="" controlId="formComment">
+              <Form.Label>Додаткова інформація</Form.Label>
+              <Form.Control as="textarea" rows={5} placeholder="Ваш коментар" />
+            </Form.Group>
           </Col>
         </Row>
-      </Container>
-        </>
-    );
-}
+      </Form>
+    </>
+  );
+};
 
 export default BriefForm;
