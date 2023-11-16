@@ -23,7 +23,11 @@
     margin-left: 20px;
 }
 
-@media (min-width: 360px) {
+/* @media (min-width: 360px) {
+    
+} */
+
+@media (min-width: 768px) {
     .features-box {
         padding: 24px 16px; 
         min-height: 0;
@@ -35,7 +39,7 @@
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1440px) {
     .features-box {
         padding: 60px 100px; 
         min-height: 0;
