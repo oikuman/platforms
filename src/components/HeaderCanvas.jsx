@@ -6,7 +6,7 @@ import Menu from "./Menu";
 const HeaderCanvas = ({show, handleClose}) => {
   return (
     <>
-      <Offcanvas show={show} onHide={handleClose} placement="top">
+      <Offcanvas show={show} onHide={handleClose} placement="top" style={{height: "100vh"}}>
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>Menu</Offcanvas.Title>
         </Offcanvas.Header>

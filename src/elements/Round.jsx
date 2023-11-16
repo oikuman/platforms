@@ -4,7 +4,6 @@ import PropTypes from "prop-types";
 
 const RoundTip = styled.span`
   background-color: #116dd8;
-  padding: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,9 +17,9 @@ const InsideTip = styled.span`
   line-height: 1rem;
 `;
 
-const RoundIcon = ({ icon }) => {
+const RoundIcon = ({ icon, radius }) => {
   return (
-    <RoundTip
+    <RoundTip style={{padding: radius}}
     // onClick={() => alert("hello")}
     >
       <InsideTip>{icon}</InsideTip>
@@ -30,6 +29,7 @@ const RoundIcon = ({ icon }) => {
 
 RoundIcon.propTypes = {
   icon: PropTypes.element,
+  radius: PropTypes.number
 };
 
 export default RoundIcon;

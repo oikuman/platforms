@@ -5,6 +5,10 @@ import Col from "react-bootstrap/Col";
 import Accordion from "react-bootstrap/Accordion";
 // import { Button } from "react-bootstrap";
 // import Round from "../elements/Round";
+import { ReactComponent as Plus } from "../assets/images/icons/Plus.svg";
+import { ReactComponent as Minus } from "../assets/images/icons/Minus.svg";
+
+import RoundIcon from "../elements/Round";
 
 const Faq = () => {
   return (
@@ -16,6 +20,11 @@ const Faq = () => {
               <span className="text-center headDark" >Найчастіші питання</span>
             </h2>
           </Col>
+
+          <div>
+          <RoundIcon icon={<Plus width={16} height={16} />} radius={8} onClick={()=>alert("hello")}/>
+              <RoundIcon icon={<Minus width={16} height={16} />} radius={8} />
+          </div>
 
           <Col xs={12} sm={12} md={12}>
               <Accordion flush defaultActiveKey="0">

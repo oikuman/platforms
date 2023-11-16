@@ -60,7 +60,7 @@ const Start2 = () => {
               xs={12}
               className="d-flex justify-content-center align-items-center"
             >
-              <div className="d-flex flex-column flex-sm-row btnsMargin">
+              <div className="d-flex flex-column flex-md-row btnsMargin">
                 <Button variant="primary btn-large" className="btn1Margin" onClick={handleShow}>
                   Заповнити бриф
                 </Button>

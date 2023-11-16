@@ -13,6 +13,13 @@ $grid-breakpoints: (
     lg: 1440px,
 );
 
+$container-max-widths: (
+  xs: 359px,
+  sm: 767px,
+  md: 1439px,
+  lg: 1999px,
+);
+
 // Colors
 $colorPrimary: teal;
 $primary: red;

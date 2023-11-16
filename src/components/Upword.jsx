@@ -23,10 +23,10 @@ const Upword = () => {
           <a href="#"><Image src={logo} /></a>
           </Col>
           <Col xs={8} className="d-flex justify-content-center align-items-center">
-            <div className="d-none d-sm-block"><Menu /></div>  
+            <div className="d-none d-md-block"><Menu /></div>  
           </Col>
           <Col xs={2} className="d-flex justify-content-center align-items-center">
-            <span onClick={handleShow} className="d-sm-none" style={{cursor: 'pointer'}}>
+            <span onClick={handleShow} className="d-md-none" style={{cursor: 'pointer'}}>
                 <BurgerIcon />
             </span>
           </Col>

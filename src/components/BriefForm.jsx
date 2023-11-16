@@ -8,7 +8,7 @@ const BriefForm = () => {
     <>
       <Form className="">
         <Row>
-          <Col xl={12} sm={6}>
+          <Col xl={12} sm={12} md={6}>
             <Form.Group className="" controlId="formName">
               <Form.Label className="">ПІБ</Form.Label>
               <Form.Control type="text" placeholder="Ваше ім'я" />
@@ -34,7 +34,7 @@ const BriefForm = () => {
               <Form.Control type="text" placeholder="https://" />
             </Form.Group>
           </Col>
-          <Col xl={12} sm={6}>
+          <Col xl={12} sm={12} md={6}>
             <Form.Group className="" controlId="formField">
               <Form.Label className="">
                 Напрям діяльності організації

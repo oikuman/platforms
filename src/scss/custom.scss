@@ -4,23 +4,23 @@
 @import "fonts";
 
 // basic
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
+// *,
+// *::before,
+// *::after {
+//     box-sizing: inherit;
+// }
 
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
+// img {
+//     display: block;
+//     max-width: 100%;
+//     height: auto;
+// }
 
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
+// .clearfix::after {
+//     content: "";
+//     clear: both;
+//     display: table;
+// }
 
 
 /* make the customizations */
