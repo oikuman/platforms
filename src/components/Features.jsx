@@ -22,7 +22,7 @@ const Features = () => {
             xs={12} style={{padding: 0}}
             // className="d-flex align-items-center justify-content-center"
           >
-            <ul className="list d-flex align-items-start justify-content-between flex-column justify-content-md-start flex-md-row justify-content-lg-between features-box">
+            <ul className="list d-flex align-items-start justify-content-between flex-column justify-content-md-between flex-md-row justify-content-lg-between features-box">
 
               <li className="list-item d-flex align-items-center justify-content-center flex-row flex-md-column flex-lg-row">
                 <RoundIcon icon={<ClockwiseIcon />} radius={12} />

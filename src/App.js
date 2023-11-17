@@ -15,6 +15,7 @@ import Features from "./components/Features";
 import Faq from "./components/Faq";
 // import Contacts from "./components/Contacts";
 import Footer from "./components/Footer";
+import Box from "./components/Box";
 
 // import FeedbackCard from "./components/FeedbackCard";
 // import Upword from "./components/Upword";
@@ -67,6 +68,9 @@ function App() {
         </div> */}
         <div>
           <Footer />
+        </div>
+        <div>
+          <Box />
         </div>
       </ThemeProvider>
     </>

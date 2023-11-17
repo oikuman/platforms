@@ -8,7 +8,6 @@ import logo from "../assets/images/logo_sm.png";
 import { ReactComponent as Face } from "../assets/images/icons/facebook.svg";
 import { ReactComponent as In } from "../assets/images/icons/linkedin.svg";
 
-
 import RoundIcon from "../elements/Round";
 
 import "./Footer.css";
@@ -19,14 +18,37 @@ const Footer = () => {
       <footer className="footer">
         <Container>
           <Row>
-            <Col xs={12} className="d-flex justify-content-center">
-              <a href="#">
+            <Col
+              xs={12}
+              sm={12}
+              md={2}
+              className="d-flex justify-content-center flex-md-column"
+            >
+              <a href="#" className="">
                 <Image src={logo} className="footer-logo" alt="logo" />
               </a>
+              
+              <div className="d-none d-md-flex">
+                <a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <RoundIcon icon={<Face />} radius={11} />
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <RoundIcon icon={<In />} radius={11} />
+                </a>
+              </div>
             </Col>
 
-            <Col xs={12}>
-              <ul className="footer-list" style={{ minHeight: 128 }}>
+            <Col xs={12} sm={12} md={10}>
+              <ul className="footer-list first-list" style={{ minHeight: 128 }}>
                 <li className="footer-list-item small normal">
                   <a href="#">
                     <span className="text-white">Для кого сервіс</span>
@@ -51,16 +73,27 @@ const Footer = () => {
               </ul>
             </Col>
 
-            <Col xs={12} className="d-flex justify-content-center">
-              <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
-              <RoundIcon icon={<Face />} radius={11} />
+            <Col
+              xs={12}
+              sm={12}
+              md={2}
+              className="d-flex justify-content-center d-md-none"
+            >
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <RoundIcon icon={<Face />} radius={11} />
               </a>
 
-              <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
-              <RoundIcon icon={<In />} radius={11} />
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <RoundIcon icon={<In />} radius={11} />
               </a>
-
-              
             </Col>
 
             <Col xs={12} style={{ padding: 0 }}>
@@ -71,7 +104,10 @@ const Footer = () => {
             </Col>
 
             <Col xs={12}>
-              <ul className="footer-list" style={{ minHeight: 128 }}>
+              <ul
+                className="footer-list second-list"
+                style={{ minHeight: 128 }}
+              >
                 <li className="footer-list-item small light">
                   <a href="#">Публічна оферта</a>
                 </li>

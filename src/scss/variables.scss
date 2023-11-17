@@ -20,6 +20,18 @@ $container-max-widths: (
   lg: 1999px,
 );
 
+$spacer: 16px;
+
+$spacers: (
+  0: 0,
+  1: ($spacer * .25),
+  2: ($spacer * .5),
+  3: $spacer,
+  4: ($spacer * 1.25),
+  5: ($spacer * 1.5),
+  6: ($spacer * 3)
+);
+
 // Colors
 $colorPrimary: teal;
 $primary: red;
