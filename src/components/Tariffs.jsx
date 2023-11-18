@@ -9,7 +9,8 @@ import TariffCard from "./TariffCard";
 const Tariffs = () => {
   return (
     <>
-      <Container id="tariffs" >
+      <section id="tariffs" className="section">
+      <Container  >
         <Row>
           <Col xs={12} sm={12} className="d-flex flex-column justify-content-center">
             <h2 className="text-center">
@@ -50,6 +51,7 @@ const Tariffs = () => {
           </Col>
         </Row>
       </Container>
+      </section>
     </>
   );
 };

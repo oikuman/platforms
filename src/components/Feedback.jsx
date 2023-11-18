@@ -23,6 +23,7 @@ const Feedback = () => {
   const toShow = width<768 ? 1 : width<1440 ? 2 : 3;
   return (
     <>
+      <section className="section">
       <div>
       <Container>
         <Row>
@@ -107,6 +108,7 @@ const Feedback = () => {
           ))}
         </Carousel>
       </div>
+      </section>
     </>
   );
 };

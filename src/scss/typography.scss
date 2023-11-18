@@ -119,21 +119,29 @@ h6 {
 
 // }
 
-@media (min-width: 361px) {
+// @media (min-width: 360px) {
+  
+// }
+
+@media (min-width: 768px) {
   .h1 {
     font-size: $h1Size !important;
     line-height: 60px !important;
   }
-}
 
-@media (min-width: 769px) {
-  .h1 {
-    font-size: $heroSize !important;
-    line-height: 72px !important;
+  h2 {
+    font-size: 46px !important;
   }
 
   .iconLg {
     height: 36px;
     width: 36px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .h1 {
+    font-size: $heroSize !important;
+    line-height: 72px !important;
   }
 }

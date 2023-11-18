@@ -83,6 +83,7 @@ const array = [
 const Faq = () => {
   return (
     <>
+      <section className="section">
       <Container id="faq" style={{ marginBottom: 70 }}>
         <Row>
           <Col xs={12} sm={12} className="d-flex justify-content-center">
@@ -111,6 +112,7 @@ const Faq = () => {
           </Col>
         </Row>
       </Container>
+      </section>
     </>
   );
 };

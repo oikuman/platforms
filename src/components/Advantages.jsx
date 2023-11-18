@@ -21,6 +21,7 @@ import "./Advantages.css";
 const Advantages = () => {
   return (
     <>
+    <section className="section">
       <Container>
         <Row>
           <Col xs={12} sm={12} className="d-flex justify-content-center">
@@ -76,6 +77,7 @@ const Advantages = () => {
           </Col>
         </Row>
       </Container>
+      </section>
     </>
   );
 };

@@ -16,7 +16,7 @@ import ContactMap from "./ContactMap";
 const Contacts = () => {
   return (
     <>
-      <section id="contacts" className="contacts">
+      <section id="contacts" className="section contacts">
         <Container>
           <Row>
             <Col xs={12} sm={12} md={6} className="d-flex justify-content-center">

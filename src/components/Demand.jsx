@@ -20,7 +20,7 @@ const LightSpan = styled.span`
 const Demand = () => {
   return (
     <>
-      <section id="demand" className="demand-section">
+      <section id="demand" className="section">
       <Container  className="m-0 p-0">
         <Row className="m-0 ps-3 pe-3 ps-lg-7 pe-lg-7">
           <Col xs={12} className="d-flex justify-content-center ps-0 pe-0 margin-head">

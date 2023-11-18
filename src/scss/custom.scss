@@ -132,3 +132,19 @@ $theme-colors: (
   padding: 20px 48px;
 }
 
+.section {
+  padding: 70px 0 0;
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding: 100px 0 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  .section {
+    padding: 120px 0 0;
+  }
+}
+
