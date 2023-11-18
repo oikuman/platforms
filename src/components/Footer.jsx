@@ -96,12 +96,7 @@ const Footer = () => {
               </a>
             </Col>
 
-            <Col xs={12} style={{ padding: 0 }}>
-              <hr
-                style={{ borderTop: "1px solid #7B7F85" }}
-                className="padding-0"
-              />
-            </Col>
+            <hr style={{ borderTop: "1px solid #7B7F85" }} className="w-100" />
 
             <Col xs={12}>
               <ul

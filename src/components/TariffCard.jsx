@@ -2,22 +2,26 @@ import React from "react";
 import PropTypes from "prop-types";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-import "./Tariff.css";
+import "./TariffCard.css";
 
 import { ReactComponent as Tick } from "../assets/images/icons/Tick.svg";
 
 const TariffCard = ({ title }) => {
   return (
     <>
-      <Card className="tariff" >
+      <Card className="tariff">
         {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
         <Card.Body>
           <Card.Title>{title}</Card.Title>
-          <div className="d-flex flex-column justify-content-between" style={{ minHeight: 400 }}>
+          <div
+            className="d-flex flex-column justify-content-between"
+            style={{ minHeight: 400 }}
+          >
             <div>
-              <Tick />
+              <div>
+              <span><Tick /></span>
               <span>Create messages</span>
-              <br />
+              </div>
               <Tick />
               <span>Manage conversations from email and chat</span>
               <br />
@@ -36,13 +40,15 @@ const TariffCard = ({ title }) => {
               <Tick />
               <span>View customer profiles</span>
             </div>
-            <div>
-              <span>$390</span>
+            <div className="text-center">
+              <span className="h1">$390</span>
               <span>/ міс</span>
             </div>
           </div>
 
-          <Button variant="primary">Замовити</Button>
+          <div className="d-grid">
+            <Button variant="primary">Замовити</Button>
+          </div>
         </Card.Body>
       </Card>
     </>
