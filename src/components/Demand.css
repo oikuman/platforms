@@ -3,10 +3,6 @@
     margin-bottom: 40px;
 }
 
-.demand-section {
-    /* padding: 70px 0 0; */
-}
-
 .demand-image {
     width: 358px;
     height: 228px;
@@ -17,18 +13,12 @@
         margin-bottom: 50px;
     }
 
-    .demand-section {
-        /* padding: 100px 0 0; */
-    }
 }
 
 /* @media (min-width: 360px) {
 } */
 
 @media (min-width: 1440px) {
-    .demand-section {
-        /* padding: 120px 0 0; */
-    }
 
     .demand-image {
         width: 428px;

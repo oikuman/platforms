@@ -1,5 +1,6 @@
 .contacts {
     padding: 70px 16px 0;
+    margin-bottom: 0;
 }
 
 .contact-list {
@@ -28,5 +29,6 @@
 @media (min-width: 1440px) {
     .contacts {
         padding: 120px 100px 0;
+        margin-bottom: 120px;
     } 
 }

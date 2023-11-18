@@ -6,6 +6,7 @@ import Col from "react-bootstrap/Col";
 const BriefForm = () => {
   return (
     <>
+      <h4 className="text-center">Бриф</h4>
       <Form className="">
         <Row>
           <Col xl={12} sm={12} md={6}>

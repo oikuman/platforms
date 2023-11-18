@@ -58,13 +58,7 @@
     display: block;
   }
 
-  .btn1Margin {
-    margin-right: 16px;
-  }
-
-  .btn2Margin {
-    margin-top: 0;
-  }
+  
 }
 
 @media (min-width: 768px) {
@@ -76,6 +70,18 @@
     margin-top: 20px;
   }
 
+  .btn1Margin {
+    margin-right: 16px;
+  }
+
+  .btn2Margin {
+    margin-top: 0;
+  }
+
+  
+}
+
+@media (min-width: 1440px) {
   .btnsMargin {
     margin-top: 70px;
   }
@@ -83,9 +89,6 @@
   .btn1Margin {
     margin-right: 20px;
   }
-}
-
-@media (min-width: 1440px) {
 }
 
 /* @media (max-width: 767px) {

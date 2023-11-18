@@ -3,7 +3,8 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import ListGroup from "react-bootstrap/ListGroup";
-import Image from "react-bootstrap/Image";
+import Figure from "react-bootstrap/Figure";
+// import Image from "react-bootstrap/Image";
 import diag from "../assets/images/jpg/img.jpg";
 import {
   CompIcon,
@@ -24,17 +25,15 @@ const Advantages = () => {
     <section className="section">
       <Container>
         <Row>
-          <Col xs={12} sm={12} className="d-flex justify-content-center">
-            <h2 className="text-center">
+          <Col xs={12} sm={12} md={12} lg={6} className="d-flex justify-content-center">
+            <Row>
+              <Col xs={12} sm={12}>
+              <h2 className="text-center">
               <span className="headBlue">Переваги платформи</span><br/>
               <span className="headDark">для державних реєстрів</span>
             </h2>
-          </Col>
-          <Col
-            xs={12}
-            sm={12}
-            className="d-flex justify-content-center align-items-center"
-          >
+              </Col>
+              <Col xs={12} sm={12} className="d-flex justify-content-center align-items-center">
             <ListGroup variant="flush">
               <ListGroup.Item style={{ border: "none" }}>
                 <CompIcon /> Сучаcний стек технологій
@@ -68,12 +67,25 @@ const Advantages = () => {
               </ListGroup.Item>
             </ListGroup>
           </Col>
+            </Row>
+            
+          </Col>
+          
           <Col
             xs={12}
             sm={12}
+            md={12}
+            lg={6}
             className="d-flex justify-content-center align-items-center"
           >
-            <Image src={diag} className="adv-image" />
+            <Figure className="d-flex flex-column align-items-center">
+              <Figure.Image
+                className="adv-image"
+                alt="advantage image"
+                src={diag}
+              />
+            </Figure>
+            {/* <Image src={diag} className="adv-image" /> */}
           </Col>
         </Row>
       </Container>

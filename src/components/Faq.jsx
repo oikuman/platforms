@@ -10,6 +10,7 @@ import Card from "react-bootstrap/Card";
 import { ReactComponent as Plus } from "../assets/images/icons/Plus.svg";
 import { ReactComponent as Minus } from "../assets/images/icons/Minus.svg";
 
+import "./Faq.css";
 import RoundIcon from "../elements/Round";
 
 function ContextAwareToggle({ eventKey, callback }) {
@@ -83,35 +84,35 @@ const array = [
 const Faq = () => {
   return (
     <>
-      <section className="section">
-      <Container id="faq" style={{ marginBottom: 70 }}>
-        <Row>
-          <Col xs={12} sm={12} className="d-flex justify-content-center">
-            <h2 style={{ marginBottom: "50px !important" }} className="text-center">
-              <span className="headDark">Найчастіші питання</span>
-            </h2>
-          </Col>
+      <section id="faq" className="faq-section">
+        <Container>
+          <Row>
+            <Col xs={12} sm={12} className="d-flex justify-content-center">
+              <h2 className="faq-head text-center">
+                <span className="headDark">Найчастіші питання</span>
+              </h2>
+            </Col>
 
-          <Col xs={12} sm={12} md={12} className="ps-3 pe-3 ps-lg-7 pe-lg-7">
-            <Accordion defaultActiveKey="0">
-              {array.length > 0 &&
-                array.map(({ id, head, text }) => (
-                  <Card key={id} className="border-0">
-                    <Card.Header className="d-flex justify-content-between align-items-center border-0">
-                      <span className="">{head}</span>
-                      <ContextAwareToggle eventKey={id} />
-                    </Card.Header>
-                    <Accordion.Collapse eventKey={id}>
-                      <Card.Body>
-                        <span className="">{text}</span>
-                      </Card.Body>
-                    </Accordion.Collapse>
-                  </Card>
-                ))}
-            </Accordion>
-          </Col>
-        </Row>
-      </Container>
+            <Col xs={12} sm={12} md={12} className="">
+              <Accordion defaultActiveKey="0">
+                {array.length > 0 &&
+                  array.map(({ id, head, text }) => (
+                    <Card key={id} className="faq-card border-0">
+                      <Card.Header className="faq-card-head d-flex justify-content-between align-items-center border-0">
+                        <span className="">{head}</span>
+                        <ContextAwareToggle eventKey={id} />
+                      </Card.Header>
+                      <Accordion.Collapse eventKey={id}>
+                        <Card.Body>
+                          <span className="">{text}</span>
+                        </Card.Body>
+                      </Accordion.Collapse>
+                    </Card>
+                  ))}
+              </Accordion>
+            </Col>
+          </Row>
+        </Container>
       </section>
     </>
   );
