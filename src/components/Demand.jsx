@@ -7,8 +7,10 @@ import Figure from "react-bootstrap/Figure";
 import imageOne from "../assets/images/jpg/01.jpg";
 import imageTwo from "../assets/images/jpg/02.jpg";
 
+import "./Demand.css";
+
 const DarkSpan = styled.span`
-  color: #116DD8;
+  color: #116dd8;
 `;
 
 const LightSpan = styled.span`
@@ -18,45 +20,70 @@ const LightSpan = styled.span`
 const Demand = () => {
   return (
     <>
-      <Container id="demand">
-        <Row>
-          <Col xs={12} className="mt-3 d-flex justify-content-center">
+      <section id="demand" className="demand-section">
+      <Container  className="m-0 p-0">
+        <Row className="m-0 ps-3 pe-3 ps-lg-7 pe-lg-7">
+          <Col xs={12} className="d-flex justify-content-center ps-0 pe-0 margin-head">
             <h2 className="text-center">
-              <DarkSpan>Платформи реєстрів</DarkSpan><br/>
+              <DarkSpan>Платформи реєстрів</DarkSpan>
+              <br />
               <LightSpan>найкраще рішення для</LightSpan>
             </h2>
           </Col>
-          <Col xs={12} sm={12} md={6} className="d-flex justify-content-center">
-            <Figure>
+          <Col
+            xs={12}
+            sm={12}
+            md={6}
+            className="d-flex justify-content-center ps-0 pe-0"
+          >
+            <Figure className="d-flex flex-column align-items-center">
               <Figure.Image
-                width={428}
-                height={722}
+                className="demand-image"
                 alt="first image"
                 src={imageOne}
               />
               <Figure.Caption>
-                <h6>Центральні органи виконавчої влади</h6>
-                <p>які потребують оновлення бази реєстрів на більш сучасну та зручну</p>
+                <h6 className="text-center">
+                  <span className="">Центральні органи виконавчої влади</span>
+                </h6>
+                <p className="text-center">
+                  <span className="">
+                    які потребують оновлення бази реєстрів на більш сучасну та
+                    зручну
+                  </span>
+                </p>
               </Figure.Caption>
             </Figure>
           </Col>
-          <Col xs={12} sm={12} md={6} className="d-flex justify-content-center">
-          <Figure>
+          <Col
+            xs={12}
+            sm={12}
+            md={6}
+            className="d-flex justify-content-center ps-0 pe-0"
+          >
+            <Figure className="d-flex flex-column align-items-center">
               <Figure.Image
-                width={428}
-                height={722}
+                className="demand-image"
                 alt="second image"
                 src={imageTwo}
               />
               <Figure.Caption>
-                <h6>Державні установи</h6>
-                <p>які поки не мають цифровізованої бази реєстрів</p>
+                <h6 className="text-center">
+                  <span className="">Державні установи</span>
+                </h6>
+                <p className="text-center">
+                  <span className="">
+                    які поки не мають цифровізованої бази реєстрів
+                  </span>
+                </p>
               </Figure.Caption>
             </Figure>
           </Col>
         </Row>
       </Container>
+      </section>
     </>
+    
   );
 };
 

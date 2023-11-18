@@ -1,0 +1,28 @@
+.margin-head {
+    margin-bottom: 40px;
+}
+
+.demand-section {
+    padding: 70px 0 0;
+}
+
+.demand-image {
+    width: 358px;
+    height: 228px;
+}
+
+@media (min-width: 768px) {
+    .margin-head {
+        margin-bottom: 50px;
+    }
+}
+
+/* @media (min-width: 360px) {
+} */
+
+@media (min-width: 1440px) {
+    .demand-image {
+        width: 428px;
+        height: 272px;
+    }
+}

@@ -13,14 +13,14 @@ const ApplyForm = () => {
     <>
       <Container>
         <Row >
-          <Col xs={12} sm={12} className="d-flex justify-content-center align-items-center">
+          <Col xs={12} sm={12} className="p-0">
             <Card className="shadow card">
               <Card.Body>
-                <div className="mb-3 mt-4">
+                <div className="mb-3 mt-4 ms-0 me-0 p-0">
                   <h2 className="fw-bold mb-2 text-uppercase text-center">
                     Форма заявки
                   </h2>
-                  <Form className="mb-3">
+                  <Form className="mb-3 ms-0 me-0">
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                       <Form.Label className="text-center">
                         Назва організації

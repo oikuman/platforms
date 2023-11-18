@@ -9,6 +9,8 @@ import user1 from "../assets/images/photos/user1.png";
 import user2 from "../assets/images/photos/user2.png";
 import user3 from "../assets/images/photos/user3.png";
 
+import useWindowDimensions from "../elements/useWindowDimensions";
+
 const array = [];
 array.push(<FeedbackCard photoSrc={user1} />);
 array.push(<FeedbackCard photoSrc={user2} />);
@@ -16,7 +18,9 @@ array.push(<FeedbackCard photoSrc={user3} />);
 
 const Feedback = () => {
   const [activeSlide, setActiveSlide] = React.useState(0);
+  const { width } = useWindowDimensions();
 
+  const toShow = width<768 ? 1 : width<1440 ? 2 : 3;
   return (
     <>
       <div>
@@ -26,7 +30,7 @@ const Feedback = () => {
             xs={12}
             className="d-flex align-items-center justify-content-center"
           >
-        <h2 className="headMedium">
+        <h2 className="text-center headMedium">
             <span className="headBlue">Відгуки</span>{" "}
             <span className="headDark">про роботу платформи</span>
         </h2>
@@ -88,7 +92,7 @@ const Feedback = () => {
               },
             },
           }}
-          itemsToShow={3}
+          itemsToShow={toShow}
         //   itemsToScroll={2}
           speed={400}
         //   centerMode

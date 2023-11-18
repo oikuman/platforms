@@ -5,17 +5,17 @@ import ThemeProvider from "react-bootstrap/ThemeProvider";
 // import Buttonsx from "./components/Buttons";
 // import Alist from "./components/Alist";
 
-import Start2 from "./components/Start2";
-import Features from "./components/Features";
+// import Start2 from "./components/Start2";
+// import Features from "./components/Features";
 // import Demand from "./components/Demand";
 // import Advantages from "./components/Advantages";
 // import Tariffs from "./components/Tariffs";
 // import Applications from "./components/Applications";
-// import Feedback from "./components/Feedback";
-import Faq from "./components/Faq";
+import Feedback from "./components/Feedback";
+// import Faq from "./components/Faq";
 // import Contacts from "./components/Contacts";
-import Footer from "./components/Footer";
-import Box from "./components/Box";
+// import Footer from "./components/Footer";
+// import Box from "./components/Box";
 
 // import FeedbackCard from "./components/FeedbackCard";
 // import Upword from "./components/Upword";
@@ -32,15 +32,15 @@ function App() {
         {/* <div>
         <Buttonsx />
       </div> */}
-        <div>
+        {/* <div>
           <Start2 />
-        </div>
+        </div> */}
         {/* <div>
           <Alab />
         </div> */}
-        <div>
+        {/* <div>
           <Features />
-        </div>
+        </div> */}
 
         {/* <div>
           <Demand />
@@ -54,24 +54,24 @@ function App() {
         {/* <div> 
           <Applications />
         </div> */}
-        {/* <div>
+        <div>
           <Feedback />
-        </div> */}
+        </div>
         {/* <div>
           <FeedbackCard />
         </div> */}
-        <div>
+        {/* <div>
           <Faq />
-        </div>
+        </div> */}
         {/* <div>
           <Contacts />
         </div> */}
-        <div>
+        {/* <div>
           <Footer />
-        </div>
-        <div>
+        </div> */}
+        {/* <div>
           <Box />
-        </div>
+        </div> */}
       </ThemeProvider>
     </>
   );
