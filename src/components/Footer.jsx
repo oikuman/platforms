@@ -105,7 +105,7 @@ const Footer = () => {
                   <Form.Control type="email" placeholder="Ваш e-mail" className="footer-input" />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formFooterPhone">
-                  <Form.Control type="tel" pattern="[\+\-0-9]*" placeholder="Ваш номер телефону" className="footer-input" />
+                  <Form.Control type="number" placeholder="Ваш номер телефону" className="footer-input" />
                 </Form.Group>
                 <div className="d-grid">
                   <Button variant="primary" type="submit">

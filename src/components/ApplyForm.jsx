@@ -12,28 +12,27 @@ const ApplyForm = () => {
   return (
     <>
       <Container>
-        <Row >
-          <Col xs={12} sm={12} className="p-0">
-            <Card className="shadow card">
-              <Card.Body>
-                <div className="mb-3 mt-4 ms-0 me-0 p-0">
-                  <h2 className="fw-bold mb-2 text-uppercase text-center">
+        <Row className="d-flex justify-content-center">
+          <Col xs={12} sm={12} md={8} lg={12} className="p-0">
+            <Card className="apply-card">
+              <Card.Body className="apply-body">
+                  <p className="text-center apply-title">
                     Форма заявки
-                  </h2>
-                  <Form className="mb-3 ms-0 me-0">
-                    <Form.Group className="mb-3" controlId="formBasicEmail">
+                  </p>
+                  <Form className="ms-0 me-0">
+                    <Form.Group className="mb-3" controlId="applyName">
                       <Form.Label className="text-center">
                         Назва організації
                       </Form.Label>
                       <Form.Control type="text" placeholder="Організація" />
                     </Form.Group>
 
-                    <Form.Group className="mb-3" controlId="formBasicEma">
+                    <Form.Group className="mb-3" controlId="applyPhone">
                       <Form.Label className="text-center">Телефон</Form.Label>
                       <Form.Control type="number" placeholder="+380" />
                     </Form.Group>
 
-                    <Form.Group className="mb-3" controlId="formBasicEmai">
+                    <Form.Group className="mb-4" controlId="applyEmail">
                       <Form.Label className="text-center">
                         Електронна пошта
                       </Form.Label>
@@ -42,12 +41,11 @@ const ApplyForm = () => {
 
                     <div className="d-grid">
                       <Button variant="primary" type="submit">
-                        Відправити
+                        Відправити заявку
                       </Button>
                     </div>
                     
                   </Form>
-                </div>
               </Card.Body>
             </Card>
           </Col>

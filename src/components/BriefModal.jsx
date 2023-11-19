@@ -23,9 +23,12 @@ const BriefModal = ({show, handleClose}) => {
           <BriefForm />
         </Modal.Body>
         <Modal.Footer className="d-flex justify-content-center border-0" >
+        <div className="d-grid">
           <Button variant="primary" onClick={sendBrief}>
             Відправити
           </Button>
+        </div>
+          
           <Button variant="outline-primary" onClick={saveDraft}>
             Зберегти чернетку
           </Button>

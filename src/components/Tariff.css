@@ -1,4 +1,56 @@
-.tariff:hover {
-    /* background-color: aqua;
-    border-color: blueviolet; */
+.section-tafiff {
+    margin-bottom: 70px;
+}
+
+.btn-tariff {
+    height: 12px;
+    width: 12px;
+    border: 2px solid #116DD8;
+    border-radius: 50%;
+    background: #fff;
+    padding: 0;
+}
+
+.btn-tariff-one {
+    margin-right: 10px;
+}
+
+.btn-tariff:active {
+    height: 12px;
+    width: 12px;
+    border: 2px solid #116DD8;
+    border-radius: 50%;
+    background: #116DD8;
+    padding: 0;
+}
+
+.btn-tariff:focus {
+    height: 12px;
+    width: 12px;
+    border: 2px solid #116DD8;
+    border-radius: 50%;
+    background: #116DD8;
+    padding: 0;
+}
+
+.btn-tariff-active {
+    height: 12px;
+    width: 12px;
+    border: 2px solid #116DD8;
+    border-radius: 50%;
+    background: #116DD8;
+    padding: 0;
+}
+
+@media (min-width: 768px) {
+    .section-tafiff {
+        margin-bottom: 100px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .section-tafiff {
+        margin-bottom: 120px;
+    }
+
 }

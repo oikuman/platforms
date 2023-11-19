@@ -1,3 +1,30 @@
+.tariff-title {
+    margin-bottom: 50px !important;
+    color: #116DD8;
+    font-family: "eUkraineBold", "Helvetica", "Arial", sans-serif !important;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33.6px;
+}
+
+.tick-line {
+    margin-bottom: 15px;
+}
+
+.tick {
+    margin-right: 10px;
+}
+
+.tick-text {
+    
+}
+
 .tariff-price {
     
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1440px) {
 }

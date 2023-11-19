@@ -75,6 +75,13 @@ p {
 }
 
 // text styles
+.comment {
+  font-family: "eUkraineLight", "Helvetica", "Arial", sans-serif !important;
+  font-weight: 300 !important;
+  font-size: 16px;
+  line-height: 22.4px;
+}
+
 .light {
   font-family: "eUkraineLight", "Helvetica", "Arial", sans-serif !important;
   font-weight: 300 !important;
@@ -153,6 +160,11 @@ p {
   .figure-caption {
     line-height: 28px;
     font-size: 20px !important;
+  }
+
+  .comment {
+    font-size: 20px;
+    line-height: 28px;
   }
   
   .iconLg {

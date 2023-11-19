@@ -6,43 +6,34 @@ import "./TariffCard.css";
 
 import { ReactComponent as Tick } from "../assets/images/icons/Tick.svg";
 
-const TariffCard = ({ title }) => {
+const TariffCard = ({ title, item, price  }) => {
+  const { text } = item;
   return (
     <>
       <Card className="tariff">
         {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
         <Card.Body>
-          <Card.Title>{title}</Card.Title>
+          <p className="text-center tariff-title">{title}</p>
           <div
             className="d-flex flex-column justify-content-between"
             style={{ minHeight: 400 }}
           >
             <div>
-              <div>
-              <span><Tick /></span>
-              <span>Create messages</span>
-              </div>
-              <Tick />
-              <span>Manage conversations from email and chat</span>
-              <br />
-              <Tick />
-              <span>View customer profiles</span>
-              <br />
-              <Tick />
-              <span>View customer profiles</span>
-              <br />
-              <Tick />
-              <span>View customer profiles</span>
-              <br />
-              <Tick />
-              <span>View customer profiles</span>
-              <br />
-              <Tick />
-              <span>View customer profiles</span>
+              {text.length > 0 &&
+                text.map(({ id, text }) => {
+                  return (
+                    <div key={id} className="tick-line d-flex align-items-center">
+                      <span className="tick">
+                        <Tick />
+                      </span>
+                      <span className="small light textPrimary">{text}</span>
+                    </div>
+                  );
+                })}
             </div>
             <div className="text-center">
-              <span className="h1">$390</span>
-              <span>/ міс</span>
+              <span className="h1">${price}</span>
+              <span className="">/ міс</span>
             </div>
           </div>
 
@@ -56,7 +47,9 @@ const TariffCard = ({ title }) => {
 };
 
 TariffCard.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
+  item: PropTypes.object,
+  price: PropTypes.string
 };
 
 export default TariffCard;
