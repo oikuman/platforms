@@ -6,10 +6,17 @@
 }
 
 @font-face {
+  font-family: "eUkraineBold";
+  src: local("eUkraineBold"),
+    url("../assets/fonts/e-Ukraine/e-Ukraine-Bold.otf") format("opentype");
+    font-weight: normal;
+}
+
+@font-face {
   font-family: "eUkraineMedium";
   src: local("eUkraineMedium"),
     url("../assets/fonts/e-Ukraine/e-Ukraine-Medium.otf") format("opentype");
-  font-weight: normal;
+    font-weight: normal;
 }
 
 @font-face {

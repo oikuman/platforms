@@ -1,5 +1,6 @@
 .footer {
   background-color: #131415 !important;
+  padding: 50px 100px 0;
 }
 
 .footer-logo {
@@ -30,6 +31,37 @@
 
 .footer-ioc {
   text-decoration: none;
+}
+
+/* footer input */
+.footer-input {
+  color: #fff !important;
+  border: 1px solid #fff;
+  background-color: transparent !important;
+}
+
+.footer-input:hover {
+  background-color: #0552AD;
+  color: #FFFFFF;
+}
+
+.footer-input:focus {
+  background-color: #003E87;
+  color: #FFFFFF;
+  outline: 2px solid #fff !important;
+}
+
+.footer-input:active {
+  background-color: #003E87;
+  color: #FFFFFF;
+}
+
+.footer-input::placeholder {
+  color: #fff !important;
+}
+
+.footer-input::-ms-input-placeholder { /* Edge 12 -18 */
+  color: #fff !important;
 }
 
 @media (min-width: 360px) {

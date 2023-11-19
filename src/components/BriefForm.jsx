@@ -17,7 +17,7 @@ const BriefForm = () => {
 
             <Form.Group className="" controlId="formPhone">
               <Form.Label className="">Контактний телефон</Form.Label>
-              <Form.Control type="text" placeholder="+380" />
+              <Form.Control type="number" placeholder="+380" />
             </Form.Group>
 
             <Form.Group className="" controlId="formEmail">

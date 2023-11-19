@@ -36,18 +36,18 @@ const Demand = () => {
             md={6}
             className="d-flex justify-content-center ps-0 pe-0"
           >
-            <Figure className="d-flex flex-column align-items-center">
+            <Figure className="d-flex flex-column align-items-center demand-figure demand-figure-one">
               <Figure.Image
                 className="demand-image"
                 alt="first image"
                 src={imageOne}
               />
               <Figure.Caption>
-                <h6 className="text-center">
-                  <span className="">Центральні органи виконавчої влади</span>
-                </h6>
+                <p className="text-center demand-text">
+                  <span className="figure-caption textPrimary">Центральні органи виконавчої влади</span>
+                </p>
                 <p className="text-center">
-                  <span className="">
+                  <span className="figure-desc textPrimary">
                     які потребують оновлення бази реєстрів на більш сучасну та
                     зручну
                   </span>
@@ -61,18 +61,18 @@ const Demand = () => {
             md={6}
             className="d-flex justify-content-center ps-0 pe-0"
           >
-            <Figure className="d-flex flex-column align-items-center">
+            <Figure className="d-flex flex-column align-items-center demand-figure">
               <Figure.Image
                 className="demand-image"
                 alt="second image"
                 src={imageTwo}
               />
               <Figure.Caption>
-                <h6 className="text-center">
-                  <span className="">Державні установи</span>
-                </h6>
+                <p className="text-center demand-text">
+                  <span className="figure-caption textPrimary">Державні установи</span>
+                </p>
                 <p className="text-center">
-                  <span className="">
+                  <span className="figure-desc textPrimary">
                     які поки не мають цифровізованої бази реєстрів
                   </span>
                 </p>

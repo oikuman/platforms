@@ -30,7 +30,7 @@ const ApplyForm = () => {
 
                     <Form.Group className="mb-3" controlId="formBasicEma">
                       <Form.Label className="text-center">Телефон</Form.Label>
-                      <Form.Control type="text" placeholder="+380" />
+                      <Form.Control type="number" placeholder="+380" />
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="formBasicEmai">

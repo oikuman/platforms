@@ -2,6 +2,8 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Form from "react-bootstrap/Form";
+import { Button } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
 import logo from "../assets/images/logo_sm.png";
 
@@ -27,7 +29,7 @@ const Footer = () => {
               <a href="#" className="">
                 <Image src={logo} className="footer-logo" alt="logo" />
               </a>
-              
+
               <div className="d-none d-md-flex">
                 <a
                   href="https://www.facebook.com/"
@@ -47,7 +49,7 @@ const Footer = () => {
               </div>
             </Col>
 
-            <Col xs={12} sm={12} md={10}>
+            <Col xs={12} sm={12} md={6}>
               <ul className="footer-list first-list" style={{ minHeight: 128 }}>
                 <li className="footer-list-item small normal">
                   <a href="#">
@@ -76,7 +78,7 @@ const Footer = () => {
             <Col
               xs={12}
               sm={12}
-              md={2}
+              md={4}
               className="d-flex justify-content-center d-md-none"
             >
               <a
@@ -94,6 +96,23 @@ const Footer = () => {
               >
                 <RoundIcon icon={<In />} radius={11} />
               </a>
+            </Col>
+
+            <Col xs={12} sm={12} md={4} className="d-none d-md-block">
+              <p className="text-white">Залишилися питання?</p>
+              <Form className="mb-3 ms-0 me-0">
+                <Form.Group className="mb-3" controlId="formFooterEmail" >
+                  <Form.Control type="email" placeholder="Ваш e-mail" className="footer-input" />
+                </Form.Group>
+                <Form.Group className="mb-3" controlId="formFooterPhone">
+                  <Form.Control type="tel" pattern="[\+\-0-9]*" placeholder="Ваш номер телефону" className="footer-input" />
+                </Form.Group>
+                <div className="d-grid">
+                  <Button variant="primary" type="submit">
+                    Зв&apos;язатися
+                  </Button>
+                </div>
+              </Form>
             </Col>
 
             <hr style={{ borderTop: "1px solid #7B7F85" }} className="w-100" />

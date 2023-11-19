@@ -3,9 +3,22 @@
     margin-bottom: 40px;
 }
 
+.demand-figure {
+    margin: 0 !important;
+}
+
+.demand-figure-one {
+    margin-bottom: 40px !important;
+}
+
 .demand-image {
     width: 358px;
     height: 228px;
+    margin-bottom: 16px !important;
+}
+
+.demand-text {
+    margin-bottom: 8px !important;
 }
 
 @media (min-width: 768px) {
@@ -13,10 +26,15 @@
         margin-bottom: 50px;
     }
 
-}
+    .demand-figure-one {
+        margin-bottom: 0 !important;
+    }
 
-/* @media (min-width: 360px) {
-} */
+    .demand-text {
+        margin-bottom: 10px !important;
+    }
+
+}
 
 @media (min-width: 1440px) {
 

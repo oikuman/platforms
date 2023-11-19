@@ -32,11 +32,11 @@ function App() {
         {/* <div>
         <Buttonsx />
       </div> */}
-      {/* <div>
+        {/* <div>
           <Alab />
         </div> */}
-          <Start2 />
-          <main>
+        <Start2 />
+        <main>
           <Features />
           <Demand />
           <Advantages />
@@ -45,8 +45,8 @@ function App() {
           <Feedback />
           <Faq />
           <Contacts />
-          </main>
-          <Footer />
+        </main>
+        <Footer />
         {/* <div>
           <Box />
         </div> */}
