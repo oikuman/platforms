@@ -1,0 +1,25 @@
+.logo {
+    width: 128px;
+    height: 36px;  
+}
+
+.logo-container {
+    display: block;
+    width: 128px;
+    height: 36px;
+}
+
+.logo-container img {
+    width: 100%;
+    height: fit-content;
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1440px) {
+    .logo {
+        width: 164px;
+        height: 46px;
+    }
+}

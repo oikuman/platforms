@@ -12,7 +12,7 @@ const TariffCard = ({ title, item, price  }) => {
     <>
       <Card className="tariff">
         {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
-        <Card.Body>
+        <Card.Body className="tariff-card-body">
           <p className="text-center tariff-title">{title}</p>
           <div
             className="d-flex flex-column justify-content-between"
@@ -31,9 +31,9 @@ const TariffCard = ({ title, item, price  }) => {
                   );
                 })}
             </div>
-            <div className="text-center">
+            <div className="text-center" style={{marginBottom: 30}}>
               <span className="h1">${price}</span>
-              <span className="">/ міс</span>
+              <span className="tariff-price-tip textPrimary">/ міс</span>
             </div>
           </div>
 

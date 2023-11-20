@@ -1,3 +1,11 @@
+.tariff {
+    box-shadow: 0px 8px 16px 0px #0000000D !important;
+}
+
+.tariff-card-body {
+    padding: 40px !important;
+}
+
 .tariff-title {
     margin-bottom: 50px !important;
     color: #116DD8;
@@ -15,11 +23,11 @@
     margin-right: 10px;
 }
 
-.tick-text {
+.tariff-price {
     
 }
 
-.tariff-price {
+.tariff-price-tip {
     
 }
 

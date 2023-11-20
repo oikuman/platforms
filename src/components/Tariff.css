@@ -1,5 +1,17 @@
-.section-tafiff {
+.section-tariff {
     margin-bottom: 70px;
+}
+
+.tariff-head {
+    font-family: "eUkraineHeadMedium", "Helvetica", "Arial", sans-serif !important;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38.4px;
+    margin-bottom: 8px;
+}
+
+.tariff-head-gap {
+    margin-bottom: 40px !important;
 }
 
 .btn-tariff {
@@ -45,6 +57,16 @@
 @media (min-width: 768px) {
     .section-tafiff {
         margin-bottom: 100px;
+    }
+
+    .tariff-head {
+        font-size: 46px;
+        line-height: 55.2px;
+        margin-bottom: 16px;
+    }
+
+    .tariff-head-gap {
+        margin-bottom: 50px !important;
     }
 }
 

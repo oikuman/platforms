@@ -35,7 +35,7 @@ const Start2 = () => {
       <header className="banner">
         <Container>
           <Row>
-            <Col xs={12} className="">
+            <Col xs={12} className="ps-0 pe-0">
               <Upword />
             </Col>
             <Col xs={12} className="d-flex justify-content-center">

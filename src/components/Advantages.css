@@ -3,14 +3,41 @@
     height: 264px
 }
 
-@media (min-width: 360px) {
+.adv-head {
+    margin-bottom: 40px !important;
+}
+
+.adv-list {
+    margin-bottom: 40px !important;
+}
+
+.adv-icon {
+    margin-right: 10px;
+}
+
+@media (min-width: 768px) {
+    .adv-icon {
+        margin-right: 20px;
+    }
+
     .adv-image {
         width: 532px;
         height: 430px
     }
+
+    .adv-head {
+        margin-bottom: 50px !important;
+    }
+
+    .adv-list {
+        margin-bottom: 50px !important;
+    }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1440px) {
+    .adv-list {
+        margin-bottom: 0 !important;
+    }
 }
 
 

@@ -95,7 +95,7 @@ const Tariffs = () => {
 
   return (
     <>
-      <section  className="section section-tafiff">
+      <section  className="section section-tariff">
         <div>
           <Container className="p-0">
             <Row className="m-0 ps-3 pe-3 ps-lg-7 pe-lg-7">
@@ -103,15 +103,13 @@ const Tariffs = () => {
                 id="tariffs"
                 xs={12}
                 sm={12}
-                className="d-flex flex-column justify-content-center ps-0 pe-0"
+                className="d-flex flex-column justify-content-center ps-0"
               >
                 <h2 className="text-center">
-                  <span className="headDark">Тарифні плани</span>
+                  <span className="tariff-head headDark">Тарифні плани</span>
                 </h2>
-                <br />
-
-                <p className="text-center">
-                  <span className="">які підійдуть для кожної команди</span>
+                <p className="text-center tariff-head-gap">
+                  <span className="comment textPrimary">які підійдуть для кожної команди</span>
                 </p>
               </Col>
 
@@ -121,7 +119,7 @@ const Tariffs = () => {
                   sm={12}
                   md={6}
                   lg={4}
-                  className="mt-3 d-flex justify-content-center align-items-center ps-0 pe-0"
+                  className="mt-3 d-flex justify-content-center align-items-center"
                 >
                   {
                     <TariffCard
@@ -155,7 +153,7 @@ const Tariffs = () => {
                   sm={12}
                   md={6}
                   lg={4}
-                  className="mt-3 d-flex justify-content-center align-items-center ps-0 pe-0"
+                  className="mt-3 d-flex justify-content-center align-items-center pe-0"
                 >
                   {
                     <TariffCard

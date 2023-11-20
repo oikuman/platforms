@@ -6,20 +6,20 @@
 }
 
 .menu-list-item {
-    /* float: left; */
     list-style: none;
-    /* text-transform: uppercase; */
-    /* font-family: "Open Sans";
-    font-size: 14px;
-    font-weight: 700; */
+    
 }
 
 .menu-list-item:not(:last-child) {
-    margin-right: 25px;
+    margin-right: 24px;
 }
 
 .menu-list-item a {
-    display: block;
-    /* color: rgb(98, 98, 98); */
     text-decoration: none;
+}
+
+@media (min-width: 1440px) {
+    .menu-list-item:not(:last-child) {
+        margin-right: 36px;
+    } 
 }
