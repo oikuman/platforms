@@ -9,7 +9,7 @@ import "./Tariff.css";
 
 const array = [
   {
-    title: "Персональний",
+    title: "Starter",
     price: "390",
     text: [
       {
@@ -27,7 +27,7 @@ const array = [
     ],
   },
   {
-    title: "Стандартний",
+    title: "Standard",
     price: "490",
     text: [
       {
@@ -53,7 +53,7 @@ const array = [
     ],
   },
   {
-    title: "Професійний",
+    title: "Pro",
     price: "590",
     text: [
       {
@@ -123,7 +123,7 @@ const Tariffs = () => {
                 >
                   {
                     <TariffCard
-                      title="Персональний"
+                      title="Starter"
                       item={array[0]}
                       price="390"
                     />
@@ -140,7 +140,7 @@ const Tariffs = () => {
                 >
                   {
                     <TariffCard
-                      title="Стандартний"
+                      title="Standard"
                       item={array[1]}
                       price="490"
                     />
@@ -157,7 +157,7 @@ const Tariffs = () => {
                 >
                   {
                     <TariffCard
-                      title="Професійний"
+                      title="Pro"
                       item={array[2]}
                       price="590"
                     />

@@ -1,6 +1,7 @@
 import React from "react";
 import ThemeProvider from "react-bootstrap/ThemeProvider";
 
+import MyNavBar from "./components/MyNavBar";
 import Start2 from "./components/Start2";
 import Features from "./components/Features";
 import Demand from "./components/Demand";
@@ -9,7 +10,7 @@ import Tariffs from "./components/Tariffs";
 import Applications from "./components/Applications";
 import Feedback from "./components/Feedback";
 import Faq from "./components/Faq";
-import Contacts from "./components/Contacts";
+// import Contacts from "./components/Contacts";
 import Footer from "./components/Footer";
 
 // import Alab from "./components/Alab";
@@ -25,6 +26,7 @@ function App() {
   return (
     <>
       <ThemeProvider breakpoints={["lg", "md", "sm", "xs"]} minBreakpoint="xs">
+        <MyNavBar />
         <Start2 />
         <main>
           <Features />
@@ -34,7 +36,7 @@ function App() {
           <Applications />
           <Feedback />
           <Faq />
-          <Contacts />
+          {/* <Contacts /> */}
         </main>
         <Footer />
           {/* <Alist />

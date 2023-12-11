@@ -6,7 +6,7 @@ import "./TariffCard.css";
 
 import { ReactComponent as Tick } from "../assets/images/icons/Tick.svg";
 
-const TariffCard = ({ title, item, price  }) => {
+const TariffCard = ({ title, item }) => {
   const { text } = item;
   return (
     <>
@@ -31,10 +31,6 @@ const TariffCard = ({ title, item, price  }) => {
                   );
                 })}
             </div>
-            <div className="text-center" style={{marginBottom: 30}}>
-              <span className="h1">${price}</span>
-              <span className="tariff-price-tip textPrimary">/ міс</span>
-            </div>
           </div>
 
           <div className="d-grid">
@@ -49,7 +45,6 @@ const TariffCard = ({ title, item, price  }) => {
 TariffCard.propTypes = {
   title: PropTypes.string,
   item: PropTypes.object,
-  price: PropTypes.string
 };
 
 export default TariffCard;
