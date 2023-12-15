@@ -1,7 +1,7 @@
 import React from "react";
 import ThemeProvider from "react-bootstrap/ThemeProvider";
 
-import MyNavBar from "./components/MyNavBar";
+// import MyNavBar from "./components/MyNavBar";
 import Start2 from "./components/Start2";
 import Features from "./components/Features";
 import Demand from "./components/Demand";
@@ -14,7 +14,7 @@ import Faq from "./components/Faq";
 import Footer from "./components/Footer";
 
 // import Alab from "./components/Alab";
-// import Buttonsx from "./components/Buttons";
+import Buttonsx from "./components/Buttons";
 // import Alist from "./components/Alist";
 // import Box from "./components/Box";
 // import FeedbackCard from "./components/FeedbackCard";
@@ -26,9 +26,15 @@ function App() {
   return (
     <>
       <ThemeProvider breakpoints={["lg", "md", "sm", "xs"]} minBreakpoint="xs">
-        <MyNavBar />
+
+        {/* <MyNavBar /> */}
+
         <Start2 />
+        <div style={{ textAlign: 'center', fontSize: 26, color: 'red' }}>
+          <p>Сайт в режимі розробки</p>
+        </div>
         <main>
+
           <Features />
           <Demand />
           <Advantages />
@@ -39,9 +45,12 @@ function App() {
           {/* <Contacts /> */}
         </main>
         <Footer />
-          {/* <Alist />
-          <Buttonsx />
+        {/* <Alist />
           <Alab />
+          */}
+        <Buttonsx />
+
+        {/*
           <Box /> */}
       </ThemeProvider>
     </>

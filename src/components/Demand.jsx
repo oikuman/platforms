@@ -6,6 +6,7 @@ import Col from "react-bootstrap/Col";
 import Figure from "react-bootstrap/Figure";
 import imageOne from "../assets/images/jpg/01.jpg";
 import imageTwo from "../assets/images/jpg/02.jpg";
+import imageThr from "../assets/images/jpg/03.jpg";
 
 import "./Demand.css";
 
@@ -34,6 +35,7 @@ const Demand = () => {
             xs={12}
             sm={12}
             md={6}
+            lg={4}
             className="d-flex justify-content-center ps-0 pe-0"
           >
             <Figure className="d-flex flex-column align-items-center demand-figure demand-figure-one">
@@ -55,10 +57,12 @@ const Demand = () => {
               </Figure.Caption>
             </Figure>
           </Col>
+
           <Col
             xs={12}
             sm={12}
             md={6}
+            lg={4}
             className="d-flex justify-content-center ps-0 pe-0"
           >
             <Figure className="d-flex flex-column align-items-center demand-figure">
@@ -79,6 +83,33 @@ const Demand = () => {
               </Figure.Caption>
             </Figure>
           </Col>
+
+          <Col
+            xs={12}
+            sm={12}
+            md={6}
+            lg={4}
+            className="d-flex justify-content-center ps-0 pe-0"
+          >
+            <Figure className="d-flex flex-column align-items-center demand-figure">
+              <Figure.Image
+                className="demand-image"
+                alt="second image"
+                src={imageThr}
+              />
+              <Figure.Caption>
+                <p className="text-center demand-text">
+                  <span className="figure-caption textPrimary">Приватні підприємства</span>
+                </p>
+                <p className="text-center">
+                  <span className="figure-desc textPrimary">
+                    які поки не мають оцифрованих реєстрів
+                  </span>
+                </p>
+              </Figure.Caption>
+            </Figure>
+          </Col>
+
         </Row>
       </Container>
       </section>
