@@ -8,6 +8,7 @@ import Demand from "./components/Demand";
 import Advantages from "./components/Advantages";
 import Tariffs from "./components/Tariffs";
 import Applications from "./components/Applications";
+import Partners from "./components/Partners";
 import Feedback from "./components/Feedback";
 import Faq from "./components/Faq";
 // import Contacts from "./components/Contacts";
@@ -40,6 +41,7 @@ function App() {
           <Advantages />
           <Tariffs />
           <Applications />
+          <Partners />
           <Feedback />
           <Faq />
           {/* <Contacts /> */}

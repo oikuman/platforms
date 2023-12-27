@@ -3,6 +3,7 @@ import clsx from "clsx";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import MaskedInput from "react-text-mask";
 // import DatePicker from "react-bootstrap-date-picker";
 // import { Button } from 'react-bootstrap';
 import "./Buttons.css";
@@ -14,6 +15,30 @@ const Buttons = () => {
         <Row>
           <Col xs={12} sm={12} className="d-flex justify-content-center">
             <form>
+              <div>
+              <label htmlFor="exampleInputPhone" className="form-label">
+                  Phone
+                </label>
+                <MaskedInput
+                  className={clsx(["form-control"])}
+                  mask={[
+                    "(",
+                    /[1-9]/,
+                    /\d/,
+                    /\d/,
+                    ")",
+                    " ",
+                    /\d/,
+                    /\d/,
+                    /\d/,
+                    "-",
+                    /\d/,
+                    /\d/,
+                    /\d/,
+                    /\d/,
+                  ]}
+                />
+              </div>
               <div className="mb-3">
                 <label htmlFor="exampleInputEmail1" className="form-label">
                   Text
@@ -68,7 +93,7 @@ const Buttons = () => {
 
               <div style={{ margin: 20 }}>
                 <label htmlFor="select" className="form-label">
-                Вид реєстру
+                  Вид реєстру
                 </label>
                 <select
                   id="select"
@@ -76,8 +101,12 @@ const Buttons = () => {
                   aria-label="Default select example"
                   defaultValue="0"
                 >
-                  <option value="0" disabled hidden>Обрати з запропонованих</option>
-                  <option value="1" className="select-dropdown">Вид реєстру 1</option>
+                  <option value="0" disabled hidden>
+                    Обрати з запропонованих
+                  </option>
+                  <option value="1" className="select-dropdown">
+                    Вид реєстру 1
+                  </option>
                   <option value="2">Вид реєстру 2</option>
                   <option value="3">Вид реєстру 3</option>
                   <option value="3">Вид реєстру 4</option>
