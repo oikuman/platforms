@@ -6,6 +6,7 @@ import Start2 from "./components/Start2";
 import Features from "./components/Features";
 import Demand from "./components/Demand";
 import Advantages from "./components/Advantages";
+import Why from "./components/Why";
 import Tariffs from "./components/Tariffs";
 import Applications from "./components/Applications";
 import Partners from "./components/Partners";
@@ -41,6 +42,7 @@ function App() {
           <Advantages />
           <Tariffs />
           <Applications />
+          <Why />
           <Partners />
           <Feedback />
           <Faq />

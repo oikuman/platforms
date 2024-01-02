@@ -4,11 +4,24 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import MaskedInput from "react-text-mask";
+import Select from 'react-select';
+// import DatePicker from 'react-datepicker';
+// import uk from 'date-fns/locale/uk';
 // import DatePicker from "react-bootstrap-date-picker";
 // import { Button } from 'react-bootstrap';
 import "./Buttons.css";
+import 'react-datepicker/dist/react-datepicker.css';
+
+const options = [
+  { value: 'chocolate', label: 'Chocolate' },
+  { value: 'strawberry', label: 'Strawberry' },
+  { value: 'vanilla', label: 'Vanilla' }
+];
 
 const Buttons = () => {
+
+  
+
   return (
     <>
       <Container id="tariffs">
@@ -111,6 +124,13 @@ const Buttons = () => {
                   <option value="3">Вид реєстру 3</option>
                   <option value="3">Вид реєстру 4</option>
                 </select>
+              </div>
+              <div>
+              <Select options={options} />
+              </div>
+
+              <div>
+              {/* <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} /> */}
               </div>
 
               <button type="submit" className="btn btn-primary">

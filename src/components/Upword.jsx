@@ -37,7 +37,7 @@ const Upword = () => {
           >
             <span
               onClick={handleShow}
-              className="d-inline-block d-md-none"
+              // className="d-inline-block d-md-none"
               style={{ cursor: "pointer" }}
             >
               <BurgerIcon width={24} height={24} />
