@@ -6,6 +6,7 @@ import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import Upword from "./Upword";
 import BriefModal from "./BriefModal";
+import BriefCanvas from "./BriefCanvas";
 import "./Start2.css";
 
 const SpanOne = styled.span`
@@ -26,9 +27,12 @@ const CommTwo = styled.span`
 
 const Start2 = () => {
   const [show, setShow] = React.useState(false);
+  const [showBrief, setShowBrief] = React.useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  const handleCloseBrief = () => setShowBrief(false);
+  const handleShowBrief = () => setShowBrief(true);
 
   return (
     <>
@@ -48,11 +52,10 @@ const Start2 = () => {
             <Col xs={12} className="d-flex justify-content-center">
               <p className="text-center marginComment">
                 <CommOne className="normal medium">
-                  Відтепер розробляти такі реєстри стане зручніше.
+                Забудь про паперові реєстри та обмеженість Excle-таблиць!
                 </CommOne>{" "}
                 <CommTwo className="normal light newLine">
-                  Держоргани зекономлять мільйони, а українці швидше
-                  отримуватимуть якісні сервіси онлайн.
+                Наші технологічні та інноваційні рішення дозволять вам оптимізувати свої дані та впроваджувати цифрові послуги завдяки обмінам між системами. Довірте нам розробку сучасного реєстру для ефективної роботи та розвитку цифрової держави.
                 </CommTwo>
               </p>
             </Col>
@@ -63,6 +66,9 @@ const Start2 = () => {
               <div className="d-flex flex-column flex-md-row btnsMargin">
                 <Button variant="primary btn-large" className="btn1Margin" onClick={handleShow}>
                   Заповнити бриф
+                </Button>
+                <Button variant="primary btn-large" className="btn1Margin" onClick={handleShowBrief}>
+                  canvas
                 </Button>
                 {/* finish */}
                 <Button
@@ -79,6 +85,7 @@ const Start2 = () => {
         </Container>
       </header>
       <BriefModal show={show} handleClose={handleClose}/>
+      <BriefCanvas show={showBrief} handleClose={handleCloseBrief} />
     </>
   );
 };

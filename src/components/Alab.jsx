@@ -25,7 +25,7 @@ const Alab = () => {
         <p className="small medium">BodySmall Medium 14</p>
         <p className="small regular">BodySmall Regular 14</p>
         <p className="small light">BodySmall Light 14</p>
-        <label className="label light">Lable Light 12</label>
+        {/* <label className="label light">Lable Light 12</label> */}
         <div>
           <CompIcon className="iconLg" />
         </div>
