@@ -138,7 +138,7 @@ const Footer = () => {
         <div className="footer-second-part">
           <Container>
             <Row>
-              <Col xs={12}>
+              {/* <Col xs={12}>
                 <ul
                   className="footer-list second-list"
                 >
@@ -155,7 +155,7 @@ const Footer = () => {
                     <a href="#">Політика безпеки</a>
                   </li>
                 </ul>
-              </Col>
+              </Col> */}
               <Col xs={12} className="d-flex justify-content-center">
                 <a href="#" className="footer-ioc small light">
                   <span>© 2023 ДП «ІОЦ Мінсоцполітики України»</span>

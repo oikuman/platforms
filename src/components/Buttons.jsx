@@ -5,6 +5,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import MaskedInput from "react-text-mask";
 import Select from "react-select";
+// import { Button } from "react-bootstrap";
 // import DatePicker from 'react-datepicker';
 // import uk from 'date-fns/locale/uk';
 // import DatePicker from "react-bootstrap-date-picker";
@@ -150,6 +151,8 @@ const Buttons = () => {
               </button>
             </div>
           </Col> */}
+          
+          
         </Row>
       </Container>
     </>

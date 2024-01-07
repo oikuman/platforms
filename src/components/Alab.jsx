@@ -1,5 +1,5 @@
 import React from "react";
-import { ReactComponent as CompIcon } from "../assets/images/icons/Comp.svg";
+import {  as CompIcon } from "../assets/images/icons/Comp.svg";
 // import { CompIcon } from "./DarkIcons";
 import "./Alab.css";
 // const CompIconLg = () => <CompIcon height={36} width={36} />

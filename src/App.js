@@ -32,11 +32,7 @@ function App() {
         {/* <MyNavBar /> */}
 
         <Start2 />
-        <div style={{ textAlign: 'center', fontSize: 26, color: 'red' }}>
-          <p>Сайт в режимі розробки</p>
-        </div>
         <main>
-
           <Features />
           <Demand />
           <Advantages />
