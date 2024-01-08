@@ -1,5 +1,5 @@
 import React from "react";
-import Select, { components } from "react-select";
+// import Select, { components } from "react-select";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -7,33 +7,33 @@ import logo from "../assets/images/logo.jpg";
 import Menu from "./Menu";
 import HeaderCanvas from "./HeaderCanvas";
 import { BurgerIcon } from "./BlackIcons";
-import { customTheme, customStyles } from "./select";
+// import { customTheme, customStyles } from "./select";
 
-import { ReactComponent as SelIcon } from "../assets/images/icons/sel.svg";
+// import { ReactComponent as SelIcon } from "../assets/images/icons/sel.svg";
 
-const options = [
-  { value: '1', label: 'UA' },
-  { value: '2', label: 'EN' },
-];
+// const options = [
+//   { value: '1', label: 'UA' },
+//   { value: '2', label: 'EN' },
+// ];
 
-const DropdownIndicator = (props) => {
-  return (
-    <components.DropdownIndicator {...props}>
-      <SelIcon />
-    </components.DropdownIndicator>
-  );
-};
+// const DropdownIndicator = (props) => {
+//   return (
+//     <components.DropdownIndicator {...props}>
+//       <SelIcon />
+//     </components.DropdownIndicator>
+//   );
+// };
 
 const Upword = () => {
   const [show, setShow] = React.useState(false);
-  const [selected, setSelected] = React.useState();
+  // const [selected, setSelected] = React.useState();
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  const handleSelect = (option) => {
-      setSelected(option);
-  };
+  // const handleSelect = (option) => {
+  //     setSelected(option);
+  // };
 
   return (
     <div className="header">
@@ -50,12 +50,12 @@ const Upword = () => {
             </a>
           </Col>
           <Col
-            xs={6}
-            className="d-flex justify-content-center align-items-center d-none d-md-block"
+            xs={8}
+            className="d-flex justify-content-center align-items-center d-none d-md-flex"
           >
             <Menu />
           </Col>
-          <Col
+          {/* <Col
             xs={2}
             className="d-flex"
           >
@@ -68,7 +68,7 @@ const Upword = () => {
               theme={customTheme}
               components={{ DropdownIndicator }}
             />
-          </Col>
+          </Col> */}
           
           <Col
             xs={2}
@@ -76,7 +76,7 @@ const Upword = () => {
           >
             <span
               onClick={handleShow}
-              // className="d-inline-block d-md-none"
+              className="d-inline-block d-md-none"
               style={{ cursor: "pointer" }}
             >
               <BurgerIcon width={24} height={24} />

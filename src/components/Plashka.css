@@ -1,16 +1,19 @@
 .plashka-card {
     padding: 30px 16px;
-    min-width: 328px;
-    max-width: 328px;
+    min-width: 328px !important;
+    max-width: 328px !important;
     border-radius: 10px;
     border: 1px solid #ECEFF4;
     box-shadow: 0px 8px 16px 0px #0000000D;
-
-/* gap: 16px */
 }
 
 .plashka-gap {
     margin-bottom: 16px;
+    margin-right: 0;
+}
+
+.plashka-right {
+    margin-right: 0;
 }
 
 .plashka-icon {
@@ -27,18 +30,27 @@
 
 @media (min-width: 768px) {
     .plashka-card {
-        min-height: 172px;
-        max-height: 172px;
+        min-height: 172px !important;
+        max-height: 172px !important;
     }
+
     .plashka-icon {
         margin-right: 0;
         margin-bottom: 16px;
     }
 
-    .plashka-gap {
-        margin-bottom: 16px;
+    .plashka-right {
         margin-right: 16px;
     }
+
+    .plashka-bottom {
+        margin-bottom: 0 !important;
+    }
+
+    /* .plashka-gap {
+        margin-bottom: 16px;
+        margin-right: 16px;
+    } */
   
 
   

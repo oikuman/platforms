@@ -1,14 +1,37 @@
+.why-head {
+    padding-top: 70px;
+    margin-bottom: 30px;
+}
 
+.why-plashkas {
+    margin-bottom: 30px;
+}
 
-
-
+.why-image {
+    width: 328px;
+    height: 255px;
+}
 
 @media (min-width: 768px) {
-  
+    .why-image {
+        width: 584px;
+        height: 454px;
+    }
 
-  
+    .why-head {
+        padding-top: 100px;
+        margin-bottom: 50px;
+    }
+
+    .why-plashkas {
+        margin-bottom: 50px;
+    }
 }
 
 @media (min-width: 1440px) {
+    .why-plashkas {
+        margin-bottom: 0;
+        margin-right: 44px;
+    }
   
 }

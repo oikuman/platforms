@@ -12,13 +12,18 @@ const Menu = () => {
             </a>
           </li>
           <li className="menu-list-item small light textPrimary">
+            <a className="d-block" href="#why">
+              Переваги
+            </a>
+          </li>
+          <li className="menu-list-item small light textPrimary">
             <a className="d-block" href="#tariffs">
               Тарифи
             </a>
           </li>
           <li className="menu-list-item small light textPrimary">
             <a className="d-block" href="#faq">
-              Найчастіші питання
+              Питання
             </a>
           </li>
           <li className="menu-list-item small light textPrimary">

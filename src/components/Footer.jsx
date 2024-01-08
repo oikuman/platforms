@@ -107,11 +107,11 @@ const Footer = () => {
                 </div>
               </Col>
 
-              <Col xs={12} sm={12} md={4} className="d-none d-md-block">
+              <Col xs={12} sm={12} md={4} className="d-none d-md-block small normal" id="contacts">
                 <p className="text-white">Наші контакти</p>
-                <p className="text-white"><a href="tel:+380444941910" className="text-white">(044)-494-19-10</a></p>
-                <p className="text-white"><a href="mailto:office@ioc.gov.ua" className="text-white">office@ioc.gov.ua</a></p>
-                <p className="text-white"><a href="tel:callcenter@ioc.gov.ua" className="text-white">callcenter@ioc.gov.ua</a></p>
+                <p className="text-white"><a href="tel:+380444941910" className="text-white small normal">(044)-494-19-10</a></p>
+                <p className="text-white"><a href="mailto:office@ioc.gov.ua" className="text-white small normal">office@ioc.gov.ua</a></p>
+                <p className="text-white"><a href="tel:callcenter@ioc.gov.ua" className="text-white small normal">callcenter@ioc.gov.ua</a></p>
                 
               </Col>
             </Row>

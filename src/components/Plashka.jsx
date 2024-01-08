@@ -3,13 +3,14 @@ import clsx from "clsx";
 import PropTypes from "prop-types";
 import Card from "react-bootstrap/Card";
 
-
 import "./Plashka.css";
 
 const Plashka = ({ icon, text, gap }) => {
   return (
-    <Card className={clsx(["plashka-card", gap && "plashka-gap"])}>
-        <Card.Body className="d-flex justify-content-center align-items-center flex-md-column">
+    <Card 
+    className={clsx({"plashka-card": true, "plashka-gap": gap!="last", "plashka-bottom": gap==="right"})}
+    >
+        <Card.Body className="d-flex justify-content-center align-items-center flex-md-column" style={{padding: 0, border: 0, margin: 0}}>
         <span className="plashka-icon">
           {icon}
         </span>
@@ -24,7 +25,7 @@ const Plashka = ({ icon, text, gap }) => {
 Plashka.propTypes = {
     icon: PropTypes.element,
     text: PropTypes.string,
-    gap: PropTypes.bool
+    gap: PropTypes.string
   };
 
 export default Plashka;

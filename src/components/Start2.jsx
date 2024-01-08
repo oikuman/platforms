@@ -32,7 +32,7 @@ const Start2 = () => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const handleCloseBrief = () => setShowBrief(false);
-  const handleShowBrief = () => setShowBrief(true);
+  // const handleShowBrief = () => setShowBrief(true);
 
   return (
     <>
@@ -67,9 +67,9 @@ const Start2 = () => {
                 <Button variant="primary btn-large" className="btn1Margin" onClick={handleShow}>
                   Заповнити бриф
                 </Button>
-                <Button variant="primary btn-large" className="btn1Margin" onClick={handleShowBrief}>
+                {/* <Button variant="primary btn-large" className="btn1Margin" onClick={handleShowBrief}>
                   canvas
-                </Button>
+                </Button> */}
                 {/* finish */}
                 <Button
                   href="#apply"
