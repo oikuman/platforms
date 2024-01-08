@@ -1,0 +1,49 @@
+.plashka-card {
+    padding: 30px 16px;
+    min-width: 328px;
+    max-width: 328px;
+    border-radius: 10px;
+    border: 1px solid #ECEFF4;
+    box-shadow: 0px 8px 16px 0px #0000000D;
+
+/* gap: 16px */
+}
+
+.plashka-gap {
+    margin-bottom: 16px;
+}
+
+.plashka-icon {
+    margin-right: 16px;
+}
+
+.plashka-text {
+    font-family: eUkraine, "Helvetica", "Arial", sans-serif !important;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+
+@media (min-width: 768px) {
+    .plashka-card {
+        min-height: 172px;
+        max-height: 172px;
+    }
+    .plashka-icon {
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+
+    .plashka-gap {
+        margin-bottom: 16px;
+        margin-right: 16px;
+    }
+  
+
+  
+}
+
+@media (min-width: 1440px) {
+  
+}

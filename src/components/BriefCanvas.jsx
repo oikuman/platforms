@@ -4,19 +4,21 @@ import PropTypes from "prop-types";
 // import HeaderCanvasBody from "./HeaderCanvasBody";
 // import Image from "react-bootstrap/Image";
 // import logo from "../assets/images/logo_sm.png";
+import BriefForm from "./BriefForm";
+
 import "./BriefCanvas.css";
 
 const BriefCanvas = ({ show, handleClose }) => {
   return (
     <>
       <Offcanvas
-        className="offcanvas"
         backdrop={false}
         show={show}
         onHide={handleClose}
         placement="top"
         style={{ height: "100vh" }}
-        backdropClassName="canvas"
+        // className="briefcanvas"
+        backdropClassName="briefcanvas"
       >
         <Offcanvas.Header closeButton >
           <Offcanvas.Title>
@@ -29,6 +31,7 @@ const BriefCanvas = ({ show, handleClose }) => {
         </Offcanvas.Header>
         <Offcanvas.Body>
           {/* <HeaderCanvasBody /> */}
+          <BriefForm />
         </Offcanvas.Body>
       </Offcanvas>
     </>

@@ -8,6 +8,7 @@ import logo from "../assets/images/logo_sm.png";
 import "./HeaderCanvas.css";
 
 const HeaderCanvas = ({ show, handleClose }) => {
+
   return (
     <>
       <Offcanvas

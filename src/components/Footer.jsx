@@ -2,8 +2,7 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Form from "react-bootstrap/Form";
-import { Button } from "react-bootstrap";
+
 import Image from "react-bootstrap/Image";
 import logo from "../assets/images/logo_sm.png";
 
@@ -89,7 +88,7 @@ const Footer = () => {
               >
                 <div className="refs">
                   <a
-                    href="https://www.facebook.com/"
+                    href="https://www.facebook.com/ICC.MSP/"
                     target="_blank"
                     rel="noreferrer"
                     className="d-inline-block footer-icon-one"
@@ -98,7 +97,7 @@ const Footer = () => {
                   </a>
 
                   <a
-                    href="https://www.linkedin.com/"
+                    href="https://www.linkedin.com/company/ioc-gov-ua/"
                     target="_blank"
                     rel="noreferrer"
                     className="d-inline-block"
@@ -109,28 +108,11 @@ const Footer = () => {
               </Col>
 
               <Col xs={12} sm={12} md={4} className="d-none d-md-block">
-                <p className="text-white">Залишилися питання?</p>
-                <Form className="mb-3 ms-0 me-0">
-                  <Form.Group className="mb-3" controlId="formFooterEmail">
-                    <Form.Control
-                      type="email"
-                      placeholder="Ваш e-mail"
-                      className="footer-input"
-                    />
-                  </Form.Group>
-                  <Form.Group className="mb-3" controlId="formFooterPhone">
-                    <Form.Control
-                      type="number"
-                      placeholder="Ваш номер телефону"
-                      className="footer-input"
-                    />
-                  </Form.Group>
-                  <div className="d-grid">
-                    <Button variant="primary" type="submit">
-                      Зв&apos;язатися
-                    </Button>
-                  </div>
-                </Form>
+                <p className="text-white">Наші контакти</p>
+                <p className="text-white"><a href="tel:+380444941910" className="text-white">(044)-494-19-10</a></p>
+                <p className="text-white"><a href="mailto:office@ioc.gov.ua" className="text-white">office@ioc.gov.ua</a></p>
+                <p className="text-white"><a href="tel:callcenter@ioc.gov.ua" className="text-white">callcenter@ioc.gov.ua</a></p>
+                
               </Col>
             </Row>
           </Container>
@@ -157,7 +139,7 @@ const Footer = () => {
                 </ul>
               </Col> */}
               <Col xs={12} className="d-flex justify-content-center">
-                <a href="#" className="footer-ioc small light">
+                <a href="#" className="footer-ioc small text-white">
                   <span>© 2023 ДП «ІОЦ Мінсоцполітики України»</span>
                 </a>
               </Col>

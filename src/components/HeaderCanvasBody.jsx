@@ -7,13 +7,17 @@ import { Button } from "react-bootstrap";
 import { ReactComponent as Face } from "../assets/images/icons/facebook.svg";
 import { ReactComponent as In } from "../assets/images/icons/linkedin.svg";
 import BriefModal from "./BriefModal";
+import BriefCanvas from "./BriefCanvas";
 import RoundIcon from "../elements/Round";
 
 const HeaderCanvasBody = () => {
   const [show, setShow] = React.useState(false);
+  const [showBrief, setShowBrief] = React.useState(false);
+  const handleCloseBrief = () => setShowBrief(false);
+  const handleShowBrief = () => setShowBrief(true);
 
   const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  // const handleShow = () => setShow(true);
   
   return (
     <>
@@ -80,7 +84,7 @@ const HeaderCanvasBody = () => {
           >
             <div className="refs">
               <a
-                href="https://www.facebook.com/"
+                href="https://www.facebook.com/ICC.MSP/"
                 target="_blank"
                 rel="noreferrer"
                 className="d-inline-block footer-icon-one"
@@ -89,7 +93,7 @@ const HeaderCanvasBody = () => {
               </a>
 
               <a
-                href="https://www.linkedin.com/"
+                href="https://www.linkedin.com/company/ioc-gov-ua/"
                 target="_blank"
                 rel="noreferrer"
                 className="d-inline-block"
@@ -106,7 +110,7 @@ const HeaderCanvasBody = () => {
               <Button
                 variant="primary btn-large"
                 className="btn1Margin"
-                onClick={handleShow}
+                onClick={handleShowBrief}
               >
                 Заповнити бриф
               </Button>
@@ -123,6 +127,7 @@ const HeaderCanvasBody = () => {
         </Row>
       </Container>
       <BriefModal show={show} handleClose={handleClose} />
+      <BriefCanvas show={showBrief} handleClose={handleCloseBrief} />
     </>
   );
 };

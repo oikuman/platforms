@@ -5,7 +5,7 @@ import ThemeProvider from "react-bootstrap/ThemeProvider";
 import Start2 from "./components/Start2";
 import Features from "./components/Features";
 import Demand from "./components/Demand";
-import Advantages from "./components/Advantages";
+// import Advantages from "./components/Advantages";
 import Why from "./components/Why";
 import Tariffs from "./components/Tariffs";
 import Applications from "./components/Applications";
@@ -16,7 +16,7 @@ import Faq from "./components/Faq";
 import Footer from "./components/Footer";
 
 // import Alab from "./components/Alab";
-import Buttonsx from "./components/Buttons";
+// import Buttonsx from "./components/Buttons";
 // import Alist from "./components/Alist";
 // import Box from "./components/Box";
 // import FeedbackCard from "./components/FeedbackCard";
@@ -25,6 +25,7 @@ import Buttonsx from "./components/Buttons";
 import "./App.scss";
 
 function App() {
+
   return (
     <>
       <ThemeProvider breakpoints={["lg", "md", "sm", "xs"]} minBreakpoint="xs">
@@ -35,10 +36,10 @@ function App() {
         <main>
           <Features />
           <Demand />
-          <Advantages />
+          {/* <Advantages /> */}
+          <Why />
           <Tariffs />
           <Applications />
-          <Why />
           <Partners />
           <Feedback />
           <Faq />
@@ -48,7 +49,7 @@ function App() {
         {/* <Alist />
           <Alab />
           */}
-        <Buttonsx />
+        {/* <Buttonsx /> */}
 
         {/*
           <Box /> */}

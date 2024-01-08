@@ -64,6 +64,7 @@ const ApplyForm = () => {
                       <a
                         href="https://web.whatsapp.com/"
                         target="_blanc"
+                        rel="noreferrer"
                         style={{ display: "inline-block" }}
                       >
                         <Icon3 />
@@ -71,6 +72,7 @@ const ApplyForm = () => {
                       <a
                         href="https://web.telegram.org/k/"
                         target="_blanc"
+                        rel="noreferrer"
                         style={{ display: "inline-block" }}
                       >
                         <Icon2 />
@@ -78,6 +80,7 @@ const ApplyForm = () => {
                       <a
                         href="https://www.viber.com/ua/"
                         target="_blanc"
+                        rel="noreferrer"
                         style={{ display: "inline-block" }}
                       >
                         <Icon1 />

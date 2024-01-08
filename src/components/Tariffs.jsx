@@ -106,11 +106,9 @@ const Tariffs = () => {
                 className="d-flex flex-column justify-content-center ps-0"
               >
                 <h2 className="text-center">
-                  <span className="tariff-head headDark">Тарифні плани</span>
+                  <span className="tariff-head headDark">Види пропозицій</span>
                 </h2>
-                <p className="text-center tariff-head-gap">
-                  <span className="comment textPrimary">які підійдуть для кожної команди</span>
-                </p>
+                
               </Col>
 
               {(toShow || btn === 1) && (

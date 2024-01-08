@@ -8,20 +8,42 @@ import { ReactComponent as ForthIcon } from "../assets/images/icons/adv/ill_4.sv
 import { ReactComponent as FifthIcon } from "../assets/images/icons/adv/ill_5.svg";
 import { ReactComponent as SixthIcon } from "../assets/images/icons/adv/ill_6.svg";
 
+import "./Why.css";
+
 const Why = () => {
   return (
     <section className="why">
-      <h2 className="">
-        <span className="">Чому варто обрати</span>{" "}<br/>
+      <h2 className="text-center">
+        <span className="">Чому варто обрати</span> <br />
         <span className="">саме нас?</span>
       </h2>
-      <div>
-        <Plashka icon={<FirstIcon />} />
-        <Plashka icon={<SecndIcon />} />
-        <Plashka icon={<ThirdIcon />} />
-        <Plashka icon={<ForthIcon />} />
-        <Plashka icon={<FifthIcon />} />
-        <Plashka icon={<SixthIcon />} />
+      <div className="d-flex flex-column align-items-center flex-md-row">
+        <div className="d-flex flex-column align-items-center">
+          <Plashka icon={<FirstIcon />} text="Комплексний підхід" gap={true} />
+          <Plashka
+            icon={<SecndIcon />}
+            text="Інтеграція з командою"
+            gap={true}
+          />
+          <Plashka
+            icon={<ThirdIcon />}
+            text="Досвід роботи з державними органами"
+            gap={true}
+          />
+        </div>
+        <div className="d-flex flex-column align-items-center">
+          <Plashka
+            icon={<ForthIcon />}
+            text="Короткі строки реалізації проєктів"
+            gap={true}
+          />
+          <Plashka
+            icon={<FifthIcon />}
+            text="Кваліфікована команда розробників"
+            gap={true}
+          />
+          <Plashka icon={<SixthIcon />} text="Гарантії якості" gap={false} />
+        </div>
       </div>
 
       <div>
