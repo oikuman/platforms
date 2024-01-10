@@ -14,15 +14,23 @@ const array = [
     text: [
       {
         id: "11",
-        text: "Create messages",
+        text: "Технічне завдання та календарний план",
       },
       {
         id: "12",
-        text: "Manage conversations from email and chat",
+        text: "Загальний опис ПЗ (в т. ч. БД та інше)",
       },
       {
         id: "13",
-        text: "View customer profiles",
+        text: "Інструкція адміністратора",
+      },
+      {
+        id: "14",
+        text: "Інструкція користувача",
+      },
+      {
+        id: "15",
+        text: "Програма і методика приймальних випробувань",
       },
     ],
   },
@@ -32,23 +40,27 @@ const array = [
     text: [
       {
         id: "21",
-        text: "Create messages",
+        text: "Технічні вимоги",
       },
       {
         id: "22",
-        text: "Manage conversations from email and chat",
+        text: "Технічне завдання та календарний план",
       },
       {
         id: "23",
-        text: "View customer profiles",
+        text: "Загальний опис ПЗ (в т. ч. БД та інше)",
       },
       {
         id: "24",
-        text: "View customer profiles",
+        text: "Інструкція адміністратора",
       },
       {
         id: "25",
-        text: "View customer profiles",
+        text: "Інструкція користувача",
+      },
+      {
+        id: "26",
+        text: "Програма і методика приймальних випробувань",
       },
     ],
   },
@@ -58,31 +70,31 @@ const array = [
     text: [
       {
         id: "31",
-        text: "Create messages",
+        text: "Технічні вимоги",
       },
       {
         id: "32",
-        text: "Manage conversations from email and chat",
+        text: "Технічне завдання та календарний план",
       },
       {
         id: "33",
-        text: "View customer profiles",
+        text: "Загальний опис ПЗ (в т. ч. БД та інше)",
       },
       {
         id: "34",
-        text: "View customer profiles",
+        text: "Інструкція адміністратора",
       },
       {
         id: "35",
-        text: "View customer profiles",
+        text: "Інструкція користувача",
       },
       {
         id: "36",
-        text: "View customer profiles",
+        text: "Програма і методика приймальних випробувань",
       },
       {
         id: "37",
-        text: "View customer profiles",
+        text: "Інформаційна взаємодія між системами",
       },
     ],
   },

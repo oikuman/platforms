@@ -14,27 +14,27 @@ const BriefForm = () => {
           <Col xl={12} sm={12} md={6}>
             <Form.Group className="form-input" controlId="formName">
               <Form.Label className="form-label">ПІБ</Form.Label>
-              <Form.Control type="text" placeholder="Ваше ім'я" />
+              <Form.Control type="text" />
             </Form.Group>
 
             <Form.Group className="form-input" controlId="formPhone">
               <Form.Label className="form-label">Контактний телефон</Form.Label>
-              <Form.Control type="number" placeholder="+380" />
+              <Form.Control type="number" />
             </Form.Group>
 
             <Form.Group className="form-input" controlId="formEmail">
               <Form.Label className="form-label">Електронна пошта</Form.Label>
-              <Form.Control type="email" placeholder="email@mail.com" />
+              <Form.Control type="email" />
             </Form.Group>
 
             <Form.Group className="form-input" controlId="formOrg">
               <Form.Label className="form-label">Назва оргагізації</Form.Label>
-              <Form.Control type="text" placeholder="Організація" />
+              <Form.Control type="text" />
             </Form.Group>
 
             <Form.Group className="form-input-last" controlId="formLink">
               <Form.Label className="form-label">Посилання на сайт</Form.Label>
-              <Form.Control type="text" placeholder="https://" />
+              <Form.Control type="text" />
             </Form.Group>
           </Col>
           <Col xl={12} sm={12} md={6}>
@@ -42,22 +42,22 @@ const BriefForm = () => {
               <Form.Label className="form-label">
                 Напрям діяльності організації
               </Form.Label>
-              <Form.Control type="text" placeholder="Ваш напрям" />
+              <Form.Control type="text" />
             </Form.Group>
 
             <Form.Group className="form-input" controlId="formRegister">
               <Form.Label className="form-label">Вид реєстру</Form.Label>
-              <Form.Control type="text" placeholder="Обрати з запропонованих" />
+              <Form.Control type="text" />
             </Form.Group>
 
             <Form.Group className="form-input" controlId="formTerm">
               <Form.Label className="form-label">Строки виконання</Form.Label>
-              <Form.Control type="text" placeholder="Обрати дату" />
+              <Form.Control type="text" />
             </Form.Group>
 
             <Form.Group className="" controlId="formComment">
               <Form.Label className="form-label">Додаткова інформація</Form.Label>
-              <Form.Control as="textarea" rows={5} placeholder="Ваш коментар" />
+              <Form.Control as="textarea" rows={5} />
             </Form.Group>
           </Col>
         </Row>
