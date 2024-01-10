@@ -7,6 +7,17 @@ import "./TariffCard.css";
 import { ReactComponent as Tick } from "../assets/images/icons/Tick.svg";
 
 const TariffCard = ({ title, item }) => {
+  
+  const orderEmail = () => {
+    const subject = "Реєстр: Замовлення тарифу";
+    const body = `Замовлення тарифу ${title}%0D%0AРеквізити організації:%0D%0A`;
+    
+    let a = document.createElement("a");
+    a.href = `mailto:office@ioc.gov.ua?subject=${subject}&body=${body}`;
+    a.click();
+    a.remove();
+  };
+  
   const { text } = item;
   return (
     <>
@@ -34,7 +45,7 @@ const TariffCard = ({ title, item }) => {
           </div>
 
           <div className="d-grid">
-            <Button variant="primary">Замовити</Button>
+            <Button variant="primary" onClick={orderEmail}>Замовити</Button>
           </div>
         </Card.Body>
       </Card>

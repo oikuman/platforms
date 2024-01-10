@@ -13,6 +13,39 @@ import { ReactComponent as Icon3 } from "../assets/images/icons/sm/sm3.svg";
 import "./ApplyForm.css";
 
 const ApplyForm = () => {
+
+  const initialValue = {
+    name: "",
+    email: "",
+    phone: "" 
+  };
+
+  const [state, setState] = React.useState(initialValue);
+
+  const handleInput = event => {
+    event.preventDefault();
+    const {name, value} = event.target;
+    setState({...state, [name]: value});
+  }
+
+  const clearForm = () => {
+    setState({...initialValue});
+  }
+
+  const handleSubmit = event => {
+    event.preventDefault();
+    const { name, email, phone} = state;
+    const body = `${name}%0D%0A${phone}%0D%0A${email}`;
+    const subject = "Реєстр: Заявка";
+    let a = document.createElement("a");
+    a.href = `mailto:office@ioc.gov.ua?subject=${subject}&body=${body}`;
+    a.click();
+    a.remove();
+    clearForm();
+  }
+
+  const { name, email, phone} = state;
+
   return (
     <>
       <Container>
@@ -21,28 +54,28 @@ const ApplyForm = () => {
             <Card className="apply-card">
               <Card.Body className="apply-body">
                 <p className="text-center apply-title">Форма заявки</p>
-                <Form className="ms-0 me-0">
+                <Form className="ms-0 me-0" onSubmit={handleSubmit}>
                   <Form.Group className="mb-3" controlId="applyName">
                     <Form.Label className="text-center">
                       Назва організації
                     </Form.Label>
-                    <Form.Control type="text" />
+                    <Form.Control type="text" name="name" value={name} onChange={handleInput} />
                   </Form.Group>
 
                   <Form.Group className="mb-3" controlId="applyPhone">
                     <Form.Label className="text-center">Телефон</Form.Label>
-                    <Form.Control type="text" />
+                    <Form.Control type="text" name="phone" value={phone} onChange={handleInput} />
                   </Form.Group>
 
                   <Form.Group className="mb-4" controlId="applyEmail">
                     <Form.Label className="text-center">
                       Електронна пошта
                     </Form.Label>
-                    <Form.Control type="email" />
+                    <Form.Control type="email" name="email" value={email} onChange={handleInput} />
                   </Form.Group>
 
                   <div className="d-grid" style={{marginBottom: 20}}>
-                    <Button variant="primary" type="submit">
+                    <Button variant="primary" type="submit" >
                       Відправити заявку
                     </Button>
                   </div>

@@ -110,7 +110,12 @@ const Footer = () => {
               <Col xs={12} sm={12} md={4} className="d-none d-md-block small normal" id="contacts">
                 <p className="text-white">Наші контакти</p>
                 <p className="text-white"><a href="tel:+380444941910" className="text-white small normal">(044)-494-19-10</a></p>
-                <p className="text-white"><a href="mailto:office@ioc.gov.ua" className="text-white small normal">office@ioc.gov.ua</a></p>
+                
+                <p className="text-white"><a href="mailto:office@ioc.gov.ua?subject=test&body=test" className="text-white small normal">office@ioc.gov.ua</a></p>
+
+
+                {/* <a href="mailto:email@example.com?subject='Hello from Abstract!'&body='Just popped in to say hello'">Click to Send an Email</a> */}
+
                 <p className="text-white"><a href="tel:callcenter@ioc.gov.ua" className="text-white small normal">callcenter@ioc.gov.ua</a></p>
                 
               </Col>
