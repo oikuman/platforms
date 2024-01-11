@@ -14,10 +14,10 @@ const HeaderCanvasBody = () => {
   const [show, setShow] = React.useState(false);
   const [showBrief, setShowBrief] = React.useState(false);
   const handleCloseBrief = () => setShowBrief(false);
-  const handleShowBrief = () => setShowBrief(true);
+  // const handleShowBrief = () => setShowBrief(true);
 
   const handleClose = () => setShow(false);
-  // const handleShow = () => setShow(true);
+  const handleShow = () => setShow(true);
   
   return (
     <>
@@ -110,7 +110,7 @@ const HeaderCanvasBody = () => {
               <Button
                 variant="primary btn-large"
                 className="btn1Margin"
-                onClick={handleShowBrief}
+                onClick={handleShow}
               >
                 Заповнити бриф
               </Button>

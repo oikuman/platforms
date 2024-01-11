@@ -9,6 +9,7 @@ import BriefForm from "./BriefForm";
 import "./BriefCanvas.css";
 
 const BriefCanvas = ({ show, handleClose }) => {
+  
   return (
     <>
       <Offcanvas
