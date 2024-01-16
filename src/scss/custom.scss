@@ -40,6 +40,10 @@ $theme-colors: (
   // md: 1439px,
   // lg: 1999px,
 
+.navbar-nav .active{
+  color: red;
+}
+
 // inputs
 .form-control {
   border-color: #D7D9DB;

@@ -56,28 +56,13 @@ ContextAwareToggle.propTypes = {
 const array = [
   {
     id: "0",
-    head: "Що таке платформа реєстрів?",
-    text: "Відповідно до частини 1 статті 5 Закону України «Про електронні документи та електронний документообіг» від 22 травня 2003 року № 851-IV електронний документ — це    документ, інформація в якому зафіксована у вигляді електронних даних, включаючи обов’язкові реквізити документа. Частиною 1 статті 6 даного Закону встановлено, що   накладанням електронного підпису завершується створення електронного документа. Відповідно, одним з найважливіших реквізитів електронного документа, після чого він отримує статус документа, є накладений на нього електронний підпис.",
+    head: "Що таке Платформа реєстрів?",
+    text: "Платформа реєстрів — це інструмент, який спрощує процес надання послуг у цифровому форматі. Вона дозволяє ефективно створювати, вдосконалювати та впроваджувати електронні реєстри, щоб організація могла швидко та легко використувувати дані. Основна мета платформи — забезпечити надійний захист даних, швидке впровадження нових сервісів, економію витрат на утримання реєстрів і покращення обміну інформацією між різними системами та реєстрами.",
   },
   {
     id: "1",
-    head: "Як довго розробляється реєстр для установи?",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-  },
-  {
-    id: "2",
-    head: "Як проходить реєстрація у державному реєстрі?",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-  },
-  {
-    id: "3",
-    head: "Як забезпечується безпека даних?",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-  },
-  {
-    id: "4",
-    head: "Наскільки вигідно користуватися державним реєстром?",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    head: "Які переваги використання Платформи?",
+    text: "Платформа дає можливість створювати реєстри, де замовник, за необхідністю, має можливість надавати ролі користувачам з обмеженими доступами до даних. Такий децентралізований підхід гарантує, що власник реєєстру має повний контроль над тим, як його дані використовуються.",
   },
 ];
 
