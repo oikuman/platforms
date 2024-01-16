@@ -4,7 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 import Image from "react-bootstrap/Image";
-import logo from "../assets/images/logo_sm.png";
+import logo from "../assets/images/LOGO_ioc.svg";
 
 import { ReactComponent as Face } from "../assets/images/icons/facebook.svg";
 import { ReactComponent as In } from "../assets/images/icons/linkedin.svg";

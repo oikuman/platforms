@@ -37,8 +37,8 @@ const Start2 = () => {
   return (
     <>
       <header className="banner">
-        <Container>
-          <Row>
+        <Container className="ms-0 me-0">
+          <Row className="ms-0 me-0">
             <Col xs={12} className="ps-0 pe-0">
               <Upword />
             </Col>
@@ -64,7 +64,9 @@ const Start2 = () => {
               className="d-flex justify-content-center align-items-center"
             >
               <div className="d-flex flex-column flex-md-row btnsMargin">
-                <Button variant="primary btn-large" className="btn1Margin" onClick={handleShow}>
+                <Button variant="primary btn-large" className="btn1Margin" 
+                onClick={handleShow}
+                >
                   Заповнити бриф
                 </Button>
                 {/* <Button variant="primary btn-large" className="btn1Margin" onClick={handleShowBrief}>

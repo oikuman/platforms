@@ -5,16 +5,17 @@ import ThemeProvider from "react-bootstrap/ThemeProvider";
 import Start2 from "./components/Start2";
 import Features from "./components/Features";
 import Demand from "./components/Demand";
-// import Advantages from "./components/Advantages";
 import Why from "./components/Why";
 import Tariffs from "./components/Tariffs";
 import Applications from "./components/Applications";
 import Partners from "./components/Partners";
 import Feedback from "./components/Feedback";
 import Faq from "./components/Faq";
-// import Contacts from "./components/Contacts";
-import Footer from "./components/Footer";
 
+import Footer from "./components/Footer";
+// import Advantages from "./components/Advantages";
+// import Contacts from "./components/Contacts";
+// import Cont from "./components/Cont";
 // import Alab from "./components/Alab";
 // import Buttonsx from "./components/Buttons";
 // import Alist from "./components/Alist";
@@ -31,26 +32,26 @@ function App() {
       <ThemeProvider breakpoints={["lg", "md", "sm", "xs"]} minBreakpoint="xs">
 
         {/* <MyNavBar /> */}
-
         <Start2 />
         <main>
           <Features />
           <Demand />
-          {/* <Advantages /> */}
           <Why />
           <Tariffs />
           <Applications />
           <Partners />
           <Feedback />
           <Faq />
-          {/* <Contacts /> */}
+          
         </main>
         <Footer />
+        {/* <Cont /> */}
+        {/* <Advantages /> */}
+        {/* <Contacts /> */}
         {/* <Alist />
           <Alab />
           */}
         {/* <Buttonsx /> */}
-
         {/*
           <Box /> */}
       </ThemeProvider>

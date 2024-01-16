@@ -31,6 +31,15 @@ $theme-colors: (
 /* import bootstrap to set changes */
 @import "~bootstrap/scss/bootstrap";
 
+// .container {
+//   max-width: 359px !important;
+// }
+
+  // xs: 359px,
+  // sm: 767px,
+  // md: 1439px,
+  // lg: 1999px,
+
 // inputs
 .form-control {
   border-color: #D7D9DB;

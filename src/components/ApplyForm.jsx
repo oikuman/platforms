@@ -41,6 +41,7 @@ const ApplyForm = () => {
     a.href = `mailto:office@ioc.gov.ua?subject=${subject}&body=${body}`;
     a.click();
     a.remove();
+    // window.open(`mailto:office@ioc.gov.ua?subject=${subject}&body=${body}`);
     clearForm();
   }
 
