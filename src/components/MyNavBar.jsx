@@ -3,11 +3,22 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import BriefCanvas from "./BriefCanvas";
+import HeaderCanvas from "./HeaderCanvas";
 
 import logo from "../assets/images/LOGO_ioc.svg";
 
 const MyNavBar = () => {
   const [active, setActive] = React.useState();
+  const [showBrief, setShowBrief] = React.useState(false);
+  const handleCloseBrief = () => setShowBrief(false);
+  const handleShowBrief = () => setShowBrief(true);
+  const [show, setShow] = React.useState(false);
+  // const [selected, setSelected] = React.useState();
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   const handleSelect = (eventKey) => {
     setActive(eventKey);
   };
@@ -46,37 +57,36 @@ const MyNavBar = () => {
                 <Nav.Link
                   eventKey="2"
                   href="#why"
-                  // className={clsx({ "nav-link": true, active: active === "2" })}
                 >
                   Переваги
                 </Nav.Link>
                 <Nav.Link
                   eventKey="3"
                   href="#tariffs"
-                  // className={clsx({ "nav-link": true, active: active === "3" })}
                 >
                   Тарифи
                 </Nav.Link>
                 <Nav.Link
                   eventKey="4"
                   href="#faq"
-                  // className={clsx({ "nav-link": true, active: active === "4" })}
                 >
                   Питання
                 </Nav.Link>
                 <Nav.Link
                   eventKey="5"
                   href="#contacts"
-                  // className={clsx({ "nav-link": true, active: active === "5" })}
                 >
                   Контакти
                 </Nav.Link>
               </Nav>
               <div>UA | EN</div>
-              <div>hh</div>
+              <span onClick={handleShowBrief}>Заповнити бриф</span>
+              <span onClick={handleShow}>Відкрити меню</span>
             </div>
           </Container>
         </Navbar>
+        <BriefCanvas show={showBrief} handleClose={handleCloseBrief} />
+        <HeaderCanvas show={show} handleClose={handleClose} />
         {/* ))} */}
       </>
     </>

@@ -18,7 +18,8 @@ const HeaderCanvas = ({ show, handleClose }) => {
           onHide={handleClose}
           placement="top"
           style={{ height: "100vh" }}
-          backdropClassName="canvas"
+          className="header-canvas"
+          // backdropClassName="canvas"
         >
           <Offcanvas.Header closeButton closeVariant="white">
             <Offcanvas.Title>

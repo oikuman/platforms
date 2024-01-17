@@ -28,6 +28,8 @@ $theme-colors: (
   "primary": #116DD8,
 );
 
+// $offcanvas-bg-color:yellow; 
+
 /* import bootstrap to set changes */
 @import "~bootstrap/scss/bootstrap";
 
@@ -41,7 +43,10 @@ $theme-colors: (
   // lg: 1999px,
 
 .navbar-nav .active{
-  color: red;
+  color: #116DD8 !important;
+  text-decoration: none;
+  border-bottom: 1px #116DD8 solid;
+  
 }
 
 // inputs
