@@ -49,9 +49,9 @@ const BriefCanvas = ({ show, handleClose }) => {
       handleClose();
     }
   
-    // const saveDraft = () => {
-    //   handleClose();
-    // };
+    const saveDraft = () => {
+      handleClose();
+    };
   
   return (
     <>
@@ -67,15 +67,12 @@ const BriefCanvas = ({ show, handleClose }) => {
         <Offcanvas.Header closeButton >
           <Offcanvas.Title>
             <div className="d-flex flex-column justify-content-center align-items-center">
-              {/* <a href="#" className="footer-logo-ref"> */}
-              {/* <Image src={logo} className="footer-logo" alt="logo" /> */}
-              {/* </a> */}
+              {/*  */}
             </div>
           </Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          {/* <HeaderCanvasBody /> */}
-          <BriefForm state={state} handleInput={handleInput} handleSubmit={handleSubmit}/>
+          <BriefForm state={state} handleInput={handleInput} handleSubmit={handleSubmit} saveDraft={saveDraft}/>
         </Offcanvas.Body>
       </Offcanvas>
     </>

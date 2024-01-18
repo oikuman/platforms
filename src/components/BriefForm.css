@@ -18,9 +18,28 @@
   margin-bottom: 8px;
 }
 
+.last-form-input {
+  margin-bottom: 30px;
+}
+
+.brief-btn-one {
+  margin-bottom: 16px !important;
+}
+
 @media (min-width: 768px) {
   .form-input-last {
     margin-bottom: 0;
+  }
+
+  .brief-btn-one {
+    margin-bottom: 0;
+  }
+
+  .brief-btn {
+    /* min-width: 222px !important; */
+
+    padding: 13px, 48px, 13px, 48px;
+    border-radius: 4px;
   }
 }
 

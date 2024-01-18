@@ -5,12 +5,12 @@
 
 .banner {
   min-width: 320px;
-  background: url("../assets/images/png/image 3.png");
-  background-position: center;
+  background: url("../assets/images/png/banner1.png");
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
-  padding-bottom: 70px;
+  padding: 0 16px 70px;
 }
 
 .marginTitle {
@@ -25,6 +25,10 @@
   display: unset;
 }
 
+.btns-width {
+  min-width: 100%;
+}
+
 .btnsMargin {
   margin-top: 48px;
 }
@@ -35,6 +39,10 @@
 
 .btn2Margin {
   margin-top: 16px;
+}
+
+.commone-gap {
+  margin-bottom: 10px !important;
 }
 
 @media (min-width: 360px) {
@@ -72,6 +80,10 @@
 
   .btn1Margin {
     margin-right: 16px;
+  }
+
+  .btns-width {
+    min-width: 0;
   }
 
   .btn2Margin {

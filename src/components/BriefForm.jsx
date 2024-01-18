@@ -3,16 +3,17 @@ import PropTypes from "prop-types";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { Button } from "react-bootstrap";
 
 import "./BriefForm.css";
 
-const BriefForm = ({ handleInput, handleSubmit, state }) => {
+const BriefForm = ({ handleInput, handleSubmit, state, saveDraft }) => {
   const { pib, phone, email, name, site, branch, kind, term, comment } = state;
 
   return (
     <>
       <p className="text-center form-title">Бриф</p>
-      <Form id='brief-form' className="" onSubmit={handleSubmit}>
+      <Form id="brief-form" className="" onSubmit={handleSubmit}>
         <Row>
           <Col xl={12} sm={12} md={6}>
             <Form.Group className="form-input" controlId="formName">
@@ -105,7 +106,7 @@ const BriefForm = ({ handleInput, handleSubmit, state }) => {
               />
             </Form.Group>
 
-            <Form.Group className="" controlId="formComment">
+            <Form.Group className="last-form-input" controlId="formComment">
               <Form.Label className="form-label">
                 Додаткова інформація
               </Form.Label>
@@ -118,6 +119,23 @@ const BriefForm = ({ handleInput, handleSubmit, state }) => {
                 onChange={handleInput}
               />
             </Form.Group>
+
+            {/* <div className="d-flex justify-content-center border-0"> */}
+
+            {/* </div> */}
+          </Col>
+          <Col xl={12} sm={12} className="d-md-flex justify-content-md-center">
+            <div className="d-grid d-md-inline-block brief-btn-one">
+              <Button form="brief-form" className="brief-btn" variant="primary" type="submit">
+                Відправити заявку
+              </Button>
+            </div>
+
+            <div className="d-grid d-md-inline-block">
+              <Button variant="outline-primary" className="brief-btn" onClick={saveDraft}>
+                Зберегти чернетку
+              </Button>
+            </div>
           </Col>
         </Row>
       </Form>
@@ -129,6 +147,7 @@ BriefForm.propTypes = {
   state: PropTypes.object,
   handleInput: PropTypes.func,
   handleSubmit: PropTypes.func,
+  saveDraft: PropTypes.func,
 };
 
 export default BriefForm;

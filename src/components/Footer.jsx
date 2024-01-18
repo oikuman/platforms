@@ -180,7 +180,7 @@ const Footer = () => {
               </Col> */}
               <Col xs={12} className="d-flex justify-content-center">
                 <a href="#" className="footer-ioc small text-white">
-                  <span>© 2023 ДП «ІОЦ Мінсоцполітики України»</span>
+                  <span>© 2024 ДП «ІОЦ Мінсоцполітики України»</span>
                 </a>
               </Col>
             </Row>
