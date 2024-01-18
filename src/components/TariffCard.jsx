@@ -22,7 +22,6 @@ const TariffCard = ({ title, item }) => {
   return (
     <>
       <Card className="tariff">
-        {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
         <Card.Body className="tariff-card-body">
           <p className="text-center tariff-title">{title}</p>
           <div

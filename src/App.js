@@ -1,18 +1,18 @@
 import React from "react";
 import ThemeProvider from "react-bootstrap/ThemeProvider";
 
-import MyNavBar from "./components/MyNavBar";
-import Start2 from "./components/Start2";
-import Features from "./components/Features";
-import Demand from "./components/Demand";
-import Why from "./components/Why";
+// import MyNavBar from "./components/MyNavBar";
+// import Start2 from "./components/Start2";
+// import Features from "./components/Features";
+// import Demand from "./components/Demand";
+// import Why from "./components/Why";
 import Tariffs from "./components/Tariffs";
-import Applications from "./components/Applications";
-import Partners from "./components/Partners";
-import Feedback from "./components/Feedback";
-import Faq from "./components/Faq";
+// import Applications from "./components/Applications";
+// import Partners from "./components/Partners";
+// import Feedback from "./components/Feedback";
+// import Faq from "./components/Faq";
 
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 // import Advantages from "./components/Advantages";
 // import Contacts from "./components/Contacts";
 // import Cont from "./components/Cont";
@@ -31,20 +31,20 @@ function App() {
     <>
       <ThemeProvider breakpoints={["lg", "md", "sm", "xs"]} minBreakpoint="xs">
 
-        <MyNavBar />
-        <Start2 />
+        {/* <MyNavBar /> */}
+        {/* <Start2 /> */}
         <main>
-          <Features />
+          {/* <Features />
           <Demand />
-          <Why />
+          <Why /> */}
           <Tariffs />
-          <Applications />
+          {/* <Applications />
           <Partners />
           <Feedback />
-          <Faq />
+          <Faq /> */}
           
         </main>
-        <Footer />
+        {/* <Footer /> */}
         {/* <Cont /> */}
         {/* <Advantages /> */}
         {/* <Contacts /> */}

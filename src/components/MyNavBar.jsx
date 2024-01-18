@@ -3,10 +3,14 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import { Button } from "react-bootstrap";
 import BriefCanvas from "./BriefCanvas";
 import HeaderCanvas from "./HeaderCanvas";
+import { ReactComponent as Burger } from "../assets/images/icons/20.svg";
+import RoundIcon from "../elements/Round";
 
 import logo from "../assets/images/LOGO_ioc.svg";
+import Lang from "./Lang";
 
 const MyNavBar = () => {
   const [active, setActive] = React.useState();
@@ -54,34 +58,31 @@ const MyNavBar = () => {
                 >
                   Для кого
                 </Nav.Link>
-                <Nav.Link
-                  eventKey="2"
-                  href="#why"
-                >
+                <Nav.Link eventKey="2" href="#why">
                   Переваги
                 </Nav.Link>
-                <Nav.Link
-                  eventKey="3"
-                  href="#tariffs"
-                >
+                <Nav.Link eventKey="3" href="#tariffs">
                   Тарифи
                 </Nav.Link>
-                <Nav.Link
-                  eventKey="4"
-                  href="#faq"
-                >
+                <Nav.Link eventKey="4" href="#faq">
                   Питання
                 </Nav.Link>
-                <Nav.Link
-                  eventKey="5"
-                  href="#contacts"
-                >
+                <Nav.Link eventKey="5" href="#contacts">
                   Контакти
                 </Nav.Link>
               </Nav>
-              <div>UA | EN</div>
-              <span onClick={handleShowBrief}>Заповнити бриф</span>
-              <span onClick={handleShow}>Відкрити меню</span>
+              <Lang color="dark" />
+              <span>Заповнити бриф</span>
+              <Button variant="primary" className="" onClick={handleShowBrief}>
+                Заповнити бриф
+              </Button>
+              <span>Відкрити меню</span>
+              <span style={{ cursor: "pointer" }} onClick={handleShow}>
+                <RoundIcon
+                  icon={<Burger width={20} height={20} />}
+                  radius={10}
+                />
+              </span>
             </div>
           </Container>
         </Navbar>

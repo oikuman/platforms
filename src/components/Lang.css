@@ -1,0 +1,44 @@
+.lang {
+  cursor: pointer;
+  font-family: "eUkraine", Helvetica, Arial, sans-serif !important;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.lang-dark {
+  color: #00000080;
+}
+
+.lang-light {
+  color: #FFFFFF80;
+  ;
+}
+
+.lang-active-dark {
+  color: #000000;
+}
+
+.lang-active-light {
+  color: white;
+}
+
+.divide {
+  font-family: "eUkraine", Helvetica, Arial, sans-serif !important;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding: 0 8px;
+}
+
+.divide-light {
+    color: white;
+}
+
+.divide-dark {
+    color: #000000;
+}

@@ -7,20 +7,23 @@ import FeedbackCard from "./FeedbackCard";
 
 import user1 from "../assets/images/photos/user1.png";
 import user2 from "../assets/images/photos/user2.png";
-import user3 from "../assets/images/photos/user3.png";
 
 import useWindowDimensions from "../elements/useWindowDimensions";
 
+const card1 = {text: "Хочу висловити подяку команді за високий професіоналізм. Розробка реєстрів — це не просто послуга, це цілий комплекс робіт, в якому кожен з команди проявив себе справжнім експертом. Підхід ІОЦ Мінсоцполітики до створення реєстрів, як комплекс послуг з розробки та адміністрування, вражає своїм ставленням, якістю, кваліфікацією та термінами виконання. Вдячний за співпрацю колегам, з якими все це рухаємо! Попереду ще багато задач та позитивних змін!", title: "Кошеленко Костянтин", subtitle: "Заступник Міністра соціальної політики України з питань цифрового розвитку, цифрових трансформацій і цифровізації"};
+
+const card2 = {text: "Хочу подякувати команді розробників за якісну роботу, яку вони виконали у рамках нашого проекту, а також за відкритість новому та технічну кмітливість! Усі зауваження та коригування, які з’являлись під час виконання завдань були виправлені у визначені терміни. Зичу відмінних результатів у майбутніх проектах!", title: "Карчевич Марія", subtitle: "Заступниця Міністра охорони здоров’я України з питань цифрового розвитку, цифрових трансформацій і цифровізації"};
+
 const array = [];
-array.push(<FeedbackCard photoSrc={user1} />);
-array.push(<FeedbackCard photoSrc={user2} />);
-array.push(<FeedbackCard photoSrc={user3} />);
+array.push(<FeedbackCard photoSrc={user1} {...card1} />);
+array.push(<FeedbackCard photoSrc={user2} {...card2} />);
 
 const Feedback = () => {
   const [activeSlide, setActiveSlide] = React.useState(0);
   const { width } = useWindowDimensions();
 
   const toShow = width < 768 ? 1 : width < 1440 ? 2 : 3;
+
   return (
     <>
       <section className="section">
@@ -94,7 +97,7 @@ const Feedback = () => {
               },
             }}
             itemsToShow={toShow}
-            //   itemsToScroll={2}
+            itemsToScroll={2}
             speed={400}
             //   centerMode
           >

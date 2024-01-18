@@ -1,10 +1,11 @@
 import React from "react";
-import clsx from "clsx";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+// import clsx from "clsx";
+import Carousel from "react-simply-carousel";
+// import Container from "react-bootstrap/Container";
+// import Row from "react-bootstrap/Row";
+// import Col from "react-bootstrap/Col";
 import TariffCard from "./TariffCard";
-import useWindowDimensions from "../elements/useWindowDimensions";
+// import useWindowDimensions from "../elements/useWindowDimensions";
 import "./Tariff.css";
 
 const array = [
@@ -100,14 +101,20 @@ const array = [
   },
 ];
 
+const cards = [];
+cards.push(<TariffCard title="Starter" item={array[0]} />);
+cards.push(<TariffCard title="Standard" item={array[1]} />);
+cards.push(<TariffCard title="Pro" item={array[2]} />);
+
 const Tariffs = () => {
-  const [btn, setBtn] = React.useState(1);
-  const { width } = useWindowDimensions();
-  const toShow = (width >= 768 && width < 1440) ? false : true;
+  // const [btn, setBtn] = React.useState(1);
+  const [activeSlide, setActiveSlide] = React.useState(0);
+  // const { width } = useWindowDimensions();
+  // const toShow = width >= 768 && width < 1440 ? false : true;
 
   return (
     <>
-      <section  className="section section-tariff">
+      {/* <section  className="section section-tariff">
         <div>
           <Container className="p-0">
             <Row className="m-0 ps-3 pe-3 ps-lg-7 pe-lg-7">
@@ -135,7 +142,6 @@ const Tariffs = () => {
                     <TariffCard
                       title="Starter"
                       item={array[0]}
-                      price="390"
                     />
                   }
                 </Col>
@@ -152,7 +158,6 @@ const Tariffs = () => {
                     <TariffCard
                       title="Standard"
                       item={array[1]}
-                      price="490"
                     />
                   }
                 </Col>
@@ -169,7 +174,6 @@ const Tariffs = () => {
                     <TariffCard
                       title="Pro"
                       item={array[2]}
-                      price="590"
                     />
                   }
                 </Col>
@@ -192,7 +196,75 @@ const Tariffs = () => {
             onClick={() => setBtn(2)}
           />
         </div>}
-      </section>
+      </section> */}
+      <>
+        {/* <div style={{ marginTop: 40 }}> */}
+        <Carousel
+          containerProps={{
+            style: {
+              width: "100%",
+              justifyContent: "space-around",
+              userSelect: "none",
+            },
+          }}
+          preventScrollOnSwipe
+          swipeTreshold={60}
+          activeSlideIndex={activeSlide}
+          activeSlideProps={{
+            style: {
+              //   background: "blue",
+            },
+          }}
+          onRequestChange={setActiveSlide}
+          forwardBtnProps={{
+            children: ">",
+            style: {
+              display: "none",
+            },
+          }}
+          backwardBtnProps={{
+            children: "<",
+            style: {
+              display: "none",
+            },
+          }}
+          dotsNav={{
+            show: true,
+            itemBtnProps: {
+              style: {
+                height: 12,
+                width: 12,
+                border: "2px solid #116DD8",
+                borderRadius: "50%",
+                background: "#fff",
+                padding: 0,
+                margin: "40px 10px 0",
+              },
+            },
+            activeItemBtnProps: {
+              style: {
+                height: 12,
+                width: 12,
+                borderRadius: "50%",
+                border: 0,
+                background: "#116DD8",
+                margin: "40px 10px 0",
+              },
+            },
+          }}
+          itemsToShow={2}
+          // itemsToScroll={1}
+          speed={400}
+          centerMode
+        >
+          {cards.map((item, index) => (
+            <div style={{ margin: "10 !important" }} key={index}>
+              {item}
+            </div>
+          ))}
+        </Carousel>
+        {/* </div> */}
+      </>
     </>
   );
 };

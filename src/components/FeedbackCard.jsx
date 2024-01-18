@@ -5,7 +5,7 @@ import Image from "react-bootstrap/Image";
 
 // import user1 from "../assets/images/photos/user1.png";
 
-const FeedbackCard = ({ photoSrc }) => {
+const FeedbackCard = ({ photoSrc, text, title, subtitle }) => {
   return (
     <>
       <Card
@@ -20,10 +20,7 @@ const FeedbackCard = ({ photoSrc }) => {
         }}
       >
         <p className="small light">
-          Відповідно, одним з найважливіших реквізитів електронного документа,
-          після чого він отримує статус документа, є накладений на нього
-          електронний підпис. З докладною інформацією щодо юридичного статусу та
-          застосування електронних документів.
+          {text}
         </p>
         <div style={{ marginTop: 40 }} className="d-flex justify-content-start">
           <div>
@@ -33,8 +30,8 @@ const FeedbackCard = ({ photoSrc }) => {
             style={{ marginLeft: 10 }}
             className="d-flex flex-column justify-content-around"
           >
-            <p className="normal medium textPrimary">Стас Коротков</p>
-            <p className="small light text-secondary">СЕО в Forpeople</p>
+            <p className="normal medium textPrimary">{title}</p>
+            <p className="small light text-secondary">{subtitle}</p>
           </div>
         </div>
       </Card>
@@ -44,6 +41,9 @@ const FeedbackCard = ({ photoSrc }) => {
 
 FeedbackCard.propTypes = {
   photoSrc: PropTypes.string,
+  text: PropTypes.string,
+  title: PropTypes.string,
+  subtitle: PropTypes.string,
 };
 
 export default FeedbackCard;
