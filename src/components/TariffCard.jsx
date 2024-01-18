@@ -6,7 +6,7 @@ import "./TariffCard.css";
 
 import { ReactComponent as Tick } from "../assets/images/icons/Tick.svg";
 
-const TariffCard = ({ title, item }) => {
+const TariffCard = ({ item }) => {
   
   const orderEmail = () => {
     const subject = "Реєстр: Замовлення тарифу";
@@ -18,7 +18,7 @@ const TariffCard = ({ title, item }) => {
     a.remove();
   };
   
-  const { text } = item;
+  const { text, title } = item;
   return (
     <>
       <Card className="tariff">
@@ -36,7 +36,7 @@ const TariffCard = ({ title, item }) => {
                       <span className="tick">
                         <Tick />
                       </span>
-                      <span className="small light textPrimary">{text}</span>
+                      <span className="small light textPrimary tariff-card-text">{text}</span>
                     </div>
                   );
                 })}

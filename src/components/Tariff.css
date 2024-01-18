@@ -1,5 +1,10 @@
 .section-tariff {
     margin-bottom: 70px;
+    
+}
+
+.tarif-card-gap {
+    margin-bottom: 16px;
 }
 
 .tariff-head {
@@ -7,11 +12,11 @@
     font-weight: 500;
     font-size: 32px;
     line-height: 38.4px;
-    margin-bottom: 8px;
+    margin-bottom: 30px !important;
 }
 
 .tariff-head-gap {
-    margin-bottom: 40px !important;
+    margin-bottom: 30px !important;
 }
 
 .btn-tariff {
@@ -24,7 +29,11 @@
 }
 
 .btn-tariff-one {
-    margin-right: 10px;
+    margin-right: 16px;
+}
+
+.btn-tariff-two {
+    margin-right: 16px;
 }
 
 .btn-tariff:active {

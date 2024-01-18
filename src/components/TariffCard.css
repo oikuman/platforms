@@ -1,5 +1,6 @@
 .tariff {
     box-shadow: 0px 8px 16px 0px #0000000D !important;
+    
 }
 
 .tariff-card-body {
@@ -14,6 +15,10 @@
     font-size: 24px;
     line-height: 33.6px;
     text-transform: uppercase;
+}
+
+.tariff-card-text {
+    /* min-width: 300px; */
 }
 
 .tick-line {

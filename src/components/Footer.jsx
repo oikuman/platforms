@@ -4,10 +4,14 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 import Image from "react-bootstrap/Image";
-import logo from "../assets/images/LOGO_ioc.svg";
+import logo from "../assets/images/LOGO_white.svg";
 
 import { ReactComponent as Face } from "../assets/images/icons/facebook.svg";
 import { ReactComponent as In } from "../assets/images/icons/linkedin.svg";
+
+import { ReactComponent as Contact1 } from "../assets/images/icons/Contact1.svg";
+import { ReactComponent as Contact2 } from "../assets/images/icons/Contact2.svg";
+import { ReactComponent as Contact3 } from "../assets/images/icons/Contact3.svg";
 
 import RoundIcon from "../elements/Round";
 
@@ -24,7 +28,7 @@ const Footer = () => {
                 xs={12}
                 sm={12}
                 md={2}
-                className="d-flex justify-content-center flex-md-column justify-content-md-start"
+                className="d-flex justify-content-start flex-md-column justify-content-md-start"
               >
                 <a href="#" className="d-inline-block footer-logo-ref">
                   <Image src={logo} className="footer-logo" alt="logo" />
@@ -84,7 +88,7 @@ const Footer = () => {
                 xs={12}
                 sm={12}
                 md={4}
-                className="d-flex justify-content-center d-md-none"
+                className="d-flex justify-content-start d-md-none"
               >
                 <div className="refs">
                   <a
@@ -107,17 +111,63 @@ const Footer = () => {
                 </div>
               </Col>
 
-              <Col xs={12} sm={12} md={4} className="d-none d-md-block small normal" id="contacts">
-                <p className="text-white">Наші контакти</p>
-                <p className="text-white"><a href="tel:+380444941910" className="text-white small normal">(044)-494-19-10</a></p>
-                
-                <p className="text-white"><a href="mailto:office@ioc.gov.ua?subject=test&body=test" className="text-white small normal">office@ioc.gov.ua</a></p>
-
-
-                {/* <a href="mailto:email@example.com?subject='Hello from Abstract!'&body='Just popped in to say hello'">Click to Send an Email</a> */}
-
-                <p className="text-white"><a href="tel:callcenter@ioc.gov.ua" className="text-white small normal">callcenter@ioc.gov.ua</a></p>
-                
+              <Col
+                xs={12}
+                sm={12}
+                md={4}
+                className="small normal"
+                id="contacts"
+              >
+                <ul className="footer-list second-list">
+                  <li className="footer-list-item small light">
+                    <p className="text-white">Наші контакти</p>
+                  </li>
+                  <li className="footer-list-item small light">
+                    <span className="tick-line d-flex align-items-center">
+                      <span className="tick">
+                        <Contact1 />
+                      </span>
+                      <span>
+                        <a
+                          href="tel:+380444941910"
+                          className="text-white small normal"
+                        >
+                          (044)-494-19-10
+                        </a>
+                      </span>
+                    </span>
+                  </li>
+                  <li className="footer-list-item small light">
+                    <span className="tick-line d-flex align-items-center">
+                      <span className="tick">
+                        <Contact2 />
+                      </span>
+                      <span>
+                        <a
+                          href="mailto:office@ioc.gov.ua"
+                          className="text-white small normal"
+                        >
+                          office@ioc.gov.ua
+                        </a>
+                      </span>
+                    </span>
+                  </li>
+                  <li className="footer-list-item small light">
+                    <span className="tick-line d-flex align-items-center">
+                      <span className="tick">
+                        <Contact3 />
+                      </span>
+                      <span>
+                        <a
+                          href="tel:callcenter@ioc.gov.ua"
+                          className="text-white small normal"
+                        >
+                          callcenter@ioc.gov.ua
+                        </a>
+                      </span>
+                    </span>
+                  </li>
+                </ul>
               </Col>
             </Row>
           </Container>
@@ -126,22 +176,7 @@ const Footer = () => {
           <Container>
             <Row>
               {/* <Col xs={12}>
-                <ul
-                  className="footer-list second-list"
-                >
-                  <li className="footer-list-item small light">
-                    <a href="#">Публічна оферта</a>
-                  </li>
-                  <li className="footer-list-item small light">
-                    <a href="#">Політика конфіденційності</a>
-                  </li>
-                  <li className="footer-list-item small light">
-                    <a href="#">Політика Cookie</a>
-                  </li>
-                  <li className="footer-list-item small light">
-                    <a href="#">Політика безпеки</a>
-                  </li>
-                </ul>
+                
               </Col> */}
               <Col xs={12} className="d-flex justify-content-center">
                 <a href="#" className="footer-ioc small text-white">

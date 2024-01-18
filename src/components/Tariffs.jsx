@@ -1,17 +1,16 @@
 import React from "react";
 // import clsx from "clsx";
-import Carousel from "react-simply-carousel";
-// import Container from "react-bootstrap/Container";
-// import Row from "react-bootstrap/Row";
-// import Col from "react-bootstrap/Col";
+// import Carousel from "react-simply-carousel";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import TariffCard from "./TariffCard";
-// import useWindowDimensions from "../elements/useWindowDimensions";
+import useWindowDimensions from "../elements/useWindowDimensions";
 import "./Tariff.css";
 
 const array = [
   {
     title: "Starter",
-    price: "390",
     text: [
       {
         id: "11",
@@ -37,7 +36,6 @@ const array = [
   },
   {
     title: "Standard",
-    price: "490",
     text: [
       {
         id: "21",
@@ -67,7 +65,6 @@ const array = [
   },
   {
     title: "Pro",
-    price: "590",
     text: [
       {
         id: "31",
@@ -102,169 +99,65 @@ const array = [
 ];
 
 const cards = [];
-cards.push(<TariffCard title="Starter" item={array[0]} />);
-cards.push(<TariffCard title="Standard" item={array[1]} />);
-cards.push(<TariffCard title="Pro" item={array[2]} />);
+cards.push(<TariffCard item={array[0]} />);
+cards.push(<TariffCard item={array[1]} />);
+cards.push(<TariffCard item={array[2]} />);
 
 const Tariffs = () => {
   // const [btn, setBtn] = React.useState(1);
-  const [activeSlide, setActiveSlide] = React.useState(0);
-  // const { width } = useWindowDimensions();
+  // const [activeSlide, setActiveSlide] = React.useState(0);
+  const { width } = useWindowDimensions();
+  console.log(width);
   // const toShow = width >= 768 && width < 1440 ? false : true;
+  // const lengthMinus = Math.round((width-1240)/2) - 40;
+
+  const card1 = <TariffCard title="Standard" item={array[0]} />;
+  const card2 = <TariffCard title="Standard" item={array[0]} />;
+  const card3 = <TariffCard title="Standard" item={array[0]} />;
 
   return (
     <>
-      {/* <section  className="section section-tariff">
+      <section className="section section-tariff">
         <div>
           <Container className="p-0">
             <Row className="m-0 ps-3 pe-3 ps-lg-7 pe-lg-7">
               <Col
                 id="tariffs"
                 xs={12}
-                sm={12}
                 className="d-flex flex-column justify-content-center ps-0"
               >
-                <h2 className="text-center">
-                  <span className="tariff-head headDark">Види пропозицій</span>
+                <h2 className="text-center tariff-head">
+                  <span className=" headDark">Види пропозицій</span>
                 </h2>
-                
+              </Col>
+              <Col
+                xs={12}
+                className="d-flex flex-column justify-content-center ps-0 pe-0 tarif-card-gap"
+              >
+                {card1}
+              </Col>
+              <Col
+                xs={12}
+                className="d-flex flex-column justify-content-center ps-0 pe-0 tarif-card-gap"
+              >
+                {card2}
+              </Col>
+              <Col
+                xs={12}
+                className="d-flex flex-column justify-content-center ps-0 pe-0"
+              >
+                {card3}
               </Col>
 
-              {(toShow || btn === 1) && (
-                <Col
-                  xs={12}
-                  sm={12}
-                  md={6}
-                  lg={4}
-                  className="mt-3 d-flex justify-content-center align-items-center"
-                >
-                  {
-                    <TariffCard
-                      title="Starter"
-                      item={array[0]}
-                    />
-                  }
-                </Col>
-              )}
-              {(toShow || (btn === 1 || btn === 2)) && (
-                <Col
-                  xs={12}
-                  sm={12}
-                  md={6}
-                  lg={4}
-                  className="mt-3 d-flex justify-content-center align-items-center ps-0 pe-0"
-                >
-                  {
-                    <TariffCard
-                      title="Standard"
-                      item={array[1]}
-                    />
-                  }
-                </Col>
-              )}
-              {(toShow || btn === 2) && (
-                <Col
-                  xs={12}
-                  sm={12}
-                  md={6}
-                  lg={4}
-                  className="mt-3 d-flex justify-content-center align-items-center pe-0"
-                >
-                  {
-                    <TariffCard
-                      title="Pro"
-                      item={array[2]}
-                    />
-                  }
-                </Col>
-              )}
+
+              
+              
             </Row>
           </Container>
         </div>
-        {!toShow && <div
-          className="d-flex justify-content-center"
-          style={{ marginTop: 40 }}
-        >
-          <button
-            type="button"
-            className={clsx(["btn-tariff", "btn-tariff-one", btn === 1 && "btn-tariff-active"])}
-            onClick={() => setBtn(1)}
-          />
-          <button
-            type="button"
-            className={clsx(["btn-tariff", btn === 2 && "btn-tariff-active"])}
-            onClick={() => setBtn(2)}
-          />
-        </div>}
-      </section> */}
-      <>
-        {/* <div style={{ marginTop: 40 }}> */}
-        <Carousel
-          containerProps={{
-            style: {
-              width: "100%",
-              justifyContent: "space-around",
-              userSelect: "none",
-            },
-          }}
-          preventScrollOnSwipe
-          swipeTreshold={60}
-          activeSlideIndex={activeSlide}
-          activeSlideProps={{
-            style: {
-              //   background: "blue",
-            },
-          }}
-          onRequestChange={setActiveSlide}
-          forwardBtnProps={{
-            children: ">",
-            style: {
-              display: "none",
-            },
-          }}
-          backwardBtnProps={{
-            children: "<",
-            style: {
-              display: "none",
-            },
-          }}
-          dotsNav={{
-            show: true,
-            itemBtnProps: {
-              style: {
-                height: 12,
-                width: 12,
-                border: "2px solid #116DD8",
-                borderRadius: "50%",
-                background: "#fff",
-                padding: 0,
-                margin: "40px 10px 0",
-              },
-            },
-            activeItemBtnProps: {
-              style: {
-                height: 12,
-                width: 12,
-                borderRadius: "50%",
-                border: 0,
-                background: "#116DD8",
-                margin: "40px 10px 0",
-              },
-            },
-          }}
-          itemsToShow={2}
-          // itemsToScroll={1}
-          speed={400}
-          centerMode
-        >
-          {cards.map((item, index) => (
-            <div style={{ margin: "10 !important" }} key={index}>
-              {item}
-            </div>
-          ))}
-        </Carousel>
-        {/* </div> */}
-      </>
+        
+      </section>
+      <></>
     </>
   );
 };
