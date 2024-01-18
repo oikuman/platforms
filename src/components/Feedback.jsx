@@ -2,13 +2,15 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Carousel from "react-simply-carousel";
+// import Carousel from "react-simply-carousel";
 import FeedbackCard from "./FeedbackCard";
+
+import "./Feedback.css";
 
 import user1 from "../assets/images/photos/user1.png";
 import user2 from "../assets/images/photos/user2.png";
 
-import useWindowDimensions from "../elements/useWindowDimensions";
+// import useWindowDimensions from "../elements/useWindowDimensions";
 
 const card1 = {text: "Хочу висловити подяку команді за високий професіоналізм. Розробка реєстрів — це не просто послуга, це цілий комплекс робіт, в якому кожен з команди проявив себе справжнім експертом. Підхід ІОЦ Мінсоцполітики до створення реєстрів, як комплекс послуг з розробки та адміністрування, вражає своїм ставленням, якістю, кваліфікацією та термінами виконання. Вдячний за співпрацю колегам, з якими все це рухаємо! Попереду ще багато задач та позитивних змін!", title: "Кошеленко Костянтин", subtitle: "Заступник Міністра соціальної політики України з питань цифрового розвитку, цифрових трансформацій і цифровізації"};
 
@@ -19,10 +21,9 @@ array.push(<FeedbackCard photoSrc={user1} {...card1} />);
 array.push(<FeedbackCard photoSrc={user2} {...card2} />);
 
 const Feedback = () => {
-  const [activeSlide, setActiveSlide] = React.useState(0);
-  const { width } = useWindowDimensions();
-
-  const toShow = width < 768 ? 1 : width < 1440 ? 2 : 3;
+  // const [activeSlide, setActiveSlide] = React.useState(0);
+  // const { width } = useWindowDimensions();
+  // const toShow = width < 768 ? 1 : width < 1440 ? 2 : 3;
 
   return (
     <>
@@ -34,80 +35,27 @@ const Feedback = () => {
                 xs={12}
                 className="d-flex align-items-center justify-content-center"
               >
-                <h2 className="text-center headMedium">
+                <h2 className="text-center headMedium fedback-head">
                   <span className="headBlue">Відгуки</span>{" "}
                   <span className="headDark">про роботу платформи</span>
                 </h2>
               </Col>
+              <Col
+                xs={12}
+                className="d-flex align-items-center justify-content-center feedback-card-gap"
+              >
+               <FeedbackCard photoSrc={user1} {...card1} /> 
+              </Col>
+              <Col
+                xs={12}
+                className="d-flex align-items-center justify-content-center"
+              >
+               <FeedbackCard photoSrc={user2} {...card2} /> 
+              </Col>
             </Row>
           </Container>
         </div>
-        <div style={{ marginTop: 40 }}>
-          <Carousel
-            containerProps={{
-              style: {
-                width: "100%",
-                justifyContent: "space-around",
-                userSelect: "none",
-              },
-            }}
-            preventScrollOnSwipe
-            swipeTreshold={60}
-            activeSlideIndex={activeSlide}
-            activeSlideProps={{
-              style: {
-                //   background: "blue",
-              },
-            }}
-            onRequestChange={setActiveSlide}
-            forwardBtnProps={{
-              children: ">",
-              style: {
-                display: "none",
-              },
-            }}
-            backwardBtnProps={{
-              children: "<",
-              style: {
-                display: "none",
-              },
-            }}
-            dotsNav={{
-              show: true,
-              itemBtnProps: {
-                style: {
-                  height: 12,
-                  width: 12,
-                  border: "2px solid #116DD8",
-                  borderRadius: "50%",
-                  background: "#fff",
-                  padding: 0,
-                  margin: "40px 10px 0",
-                },
-              },
-              activeItemBtnProps: {
-                style: {
-                  height: 12,
-                  width: 12,
-                  borderRadius: "50%",
-                  border: 0,
-                  background: "#116DD8",
-                  margin: "40px 10px 0",
-                },
-              },
-            }}
-            itemsToShow={toShow}
-            itemsToScroll={2}
-            speed={400}
-            //   centerMode
-          >
-            {array.map((item, index) => (
-              <div style={{ margin: "10 !important" }} key={index}>
-                {item}
-              </div>
-            ))}
-          </Carousel>
-        </div>
+        
       </section>
     </>
   );

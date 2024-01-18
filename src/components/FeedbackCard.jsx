@@ -2,40 +2,27 @@ import React from "react";
 import PropTypes from "prop-types";
 import Card from "react-bootstrap/Card";
 import Image from "react-bootstrap/Image";
-
-// import user1 from "../assets/images/photos/user1.png";
+import "./FeedbackCard.css";
 
 const FeedbackCard = ({ photoSrc, text, title, subtitle }) => {
   return (
-    <>
-      <Card
-        body
-        style={{
-          maxWidth: 328,
-          minWidth: 328,
-          border: "1px solid #D7D9DB",
-          borderRadius: 20,
-          padding: 16,
-          margin: 10
-        }}
-      >
-        <p className="small light">
-          {text}
-        </p>
+    <Card className="feedback-card">
+      <Card.Body className="feedback-body">
+        <p className="feedcard-text textPrimary">{text}</p>
         <div style={{ marginTop: 40 }} className="d-flex justify-content-start">
-          <div>
-            <Image src={photoSrc} roundedCircle />
+          <div className="d-flex flex-column justify-content-center">
+            <Image src={photoSrc} roundedCircle className="" width={56} height={56} />
           </div>
           <div
-            style={{ marginLeft: 10 }}
+            style={{ marginLeft: 16 }}
             className="d-flex flex-column justify-content-around"
           >
-            <p className="normal medium textPrimary">{title}</p>
-            <p className="small light text-secondary">{subtitle}</p>
+            <p className="normal medium textPrimary feedcard-title">{title}</p>
+            <p className="small label textSecondary feedcard-subtitle">{subtitle}</p>
           </div>
         </div>
-      </Card>
-    </>
+      </Card.Body>
+    </Card>
   );
 };
 

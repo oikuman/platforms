@@ -12,6 +12,8 @@ import RoundIcon from "../elements/Round";
 import logo from "../assets/images/LOGO_ioc.svg";
 import Lang from "./Lang";
 
+import "./MyNavBar.css";
+
 const MyNavBar = () => {
   const [active, setActive] = React.useState();
   const [showBrief, setShowBrief] = React.useState(false);
@@ -29,7 +31,7 @@ const MyNavBar = () => {
 
   return (
     <>
-      <>
+      <Container>
         {/* {[false, "sm", "md", "lg", "xl", "xxl"].map((expand) => ( */}
         <Navbar
           bg="white"
@@ -37,8 +39,9 @@ const MyNavBar = () => {
           // key={expand}
           // expand={expand}
           fixed="top"
+          className="navbar-style"
         >
-          <Container>
+          <Container className="ps-0 pe-0">
             <div
               style={{
                 width: "100%",
@@ -50,7 +53,7 @@ const MyNavBar = () => {
               <Navbar.Brand href="#">
                 <img src={logo} alt="logo" width={100} height={48} />
               </Navbar.Brand>
-              <Nav activeKey={active} onSelect={handleSelect} className="">
+              <Nav activeKey={active} onSelect={handleSelect} className="d-none">
                 <Nav.Link
                   eventKey="1"
                   href="#demand"
@@ -71,12 +74,13 @@ const MyNavBar = () => {
                   Контакти
                 </Nav.Link>
               </Nav>
-              <Lang color="dark" />
-              <span>Заповнити бриф</span>
-              <Button variant="primary" className="" onClick={handleShowBrief}>
+              <div className="d-none"><Lang color="dark" /></div>
+              
+              {/* <span>Заповнити бриф</span> */}
+              <Button variant="primary" className="d-none" onClick={handleShowBrief}>
                 Заповнити бриф
               </Button>
-              <span>Відкрити меню</span>
+              {/* <span>Відкрити меню</span> */}
               <span style={{ cursor: "pointer" }} onClick={handleShow}>
                 <RoundIcon
                   icon={<Burger width={20} height={20} />}
@@ -89,7 +93,7 @@ const MyNavBar = () => {
         <BriefCanvas show={showBrief} handleClose={handleCloseBrief} />
         <HeaderCanvas show={show} handleClose={handleClose} />
         {/* ))} */}
-      </>
+      </Container>
     </>
   );
 };

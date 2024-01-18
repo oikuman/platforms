@@ -4,7 +4,7 @@ import { Offcanvas } from "react-bootstrap";
 import PropTypes from "prop-types";
 import HeaderCanvasBody from "./HeaderCanvasBody";
 import Image from "react-bootstrap/Image";
-import logo from "../assets/images/logo_sm.png";
+import logo from "../assets/images/LOGO_white.svg";
 
 import "./HeaderCanvas.css";
 
@@ -24,9 +24,7 @@ const HeaderCanvas = ({ show, handleClose }) => {
           <Offcanvas.Header closeButton closeVariant="white">
             <Offcanvas.Title>
               <div className="d-flex flex-column justify-content-center align-items-center">
-                {/* <a href="#" className="footer-logo-ref"> */}
-                <Image src={logo} className="footer-logo" alt="logo" />
-                {/* </a> */}
+                <Image src={logo} className="header-canvas-logo" alt="logo" />
               </div>
             </Offcanvas.Title>
           </Offcanvas.Header>

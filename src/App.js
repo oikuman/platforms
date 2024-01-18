@@ -1,7 +1,7 @@
 import React from "react";
 import ThemeProvider from "react-bootstrap/ThemeProvider";
 
-// import MyNavBar from "./components/MyNavBar";
+import MyNavBar from "./components/MyNavBar";
 import Start2 from "./components/Start2";
 import Features from "./components/Features";
 import Demand from "./components/Demand";
@@ -31,7 +31,7 @@ function App() {
     <>
       <ThemeProvider breakpoints={["lg", "md", "sm", "xs"]} minBreakpoint="xs">
 
-        {/* <MyNavBar /> */}
+        <MyNavBar />
         <Start2 />
         <main>
           <Features />

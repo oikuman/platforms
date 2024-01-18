@@ -10,7 +10,7 @@ const Plashka = ({ icon, text, gap }) => {
     <Card 
     className={clsx({"plashka-card": true, "plashka-gap": gap!="last", "plashka-bottom": gap==="right"})}
     >
-        <Card.Body className="d-flex justify-content-center align-items-center flex-md-column" style={{padding: 0, border: 0, margin: 0}}>
+        <Card.Body className="d-flex justify-content-start align-items-center flex-md-column" style={{padding: 0, border: 0, margin: 0}}>
         <span className="plashka-icon">
           {icon}
         </span>

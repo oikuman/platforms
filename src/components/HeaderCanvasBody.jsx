@@ -10,6 +10,8 @@ import BriefModal from "./BriefModal";
 import BriefCanvas from "./BriefCanvas";
 import RoundIcon from "../elements/Round";
 
+import Lang from "./Lang";
+
 const HeaderCanvasBody = () => {
   const [show, setShow] = React.useState(false);
   const [showBrief, setShowBrief] = React.useState(false);
@@ -21,15 +23,15 @@ const HeaderCanvasBody = () => {
   
   return (
     <>
-      <Container>
-        <Row>
+      <Container className="ps-0 pe-0">
+        <Row className="ps-0 pe-0">
           <Col
             xs={12}
             sm={12}
             md={2}
-            className="d-flex justify-content-center flex-md-column"
+            className="d-flex justify-content-center flex-md-column ps-0 pe-0"
           >
-            <div className="d-none d-md-flex">
+            {/* <div className="d-none d-md-flex">
               <a
                 href="https://www.facebook.com/"
                 target="_blank"
@@ -47,34 +49,35 @@ const HeaderCanvasBody = () => {
               >
                 <RoundIcon icon={<In />} radius={11} />
               </a>
-            </div>
+            </div> */}
           </Col>
 
-          <Col xs={12} sm={12} md={6}>
-            <ul className="footer-list first-list" style={{ minHeight: 128 }}>
-              <li className="footer-list-item small normal">
+          <Col xs={12} sm={12} md={6} className="ps-0 pe-0">
+            <ul className="header-canvas-list header-canvas-first-list" style={{ minHeight: 128 }}>
+              <li className="header-canvas-list-item small normal">
                 <a href="#demand">
                   <span className="text-white">Для кого сервіс</span>
                 </a>
               </li>
               {/* check */}
-              <li className="footer-list-item small normal">
+              <li className="header-canvas-list-item small normal">
                 <a href="#tariffs">
                   <span className="text-white">Тарифи</span>
                 </a>
               </li>
-              <li className="footer-list-item small normal">
+              <li className="header-canvas-list-item small normal">
                 <a href="#faq">
                   <span className="text-white">Найчастіші питання</span>
                 </a>
               </li>
-              <li className="footer-list-item small normal">
+              <li className="header-canvas-list-item small normal">
                 <a href="#contacts">
                   <span className="text-white">Контакти</span>
                 </a>
               </li>
             </ul>
           </Col>
+          <Lang color="light"/>
 
           <Col
             xs={12}
@@ -82,7 +85,7 @@ const HeaderCanvasBody = () => {
             md={4}
             className="d-flex justify-content-center d-md-none"
           >
-            <div className="refs">
+            <div className="header-canvas-refs">
               <a
                 href="https://www.facebook.com/ICC.MSP/"
                 target="_blank"
@@ -104,12 +107,12 @@ const HeaderCanvasBody = () => {
           </Col>
           <Col
             xs={12}
-            className="d-flex justify-content-center align-items-center"
+            className="d-flex justify-content-center align-items-center ps-0 pe-0"
           >
-            <div className="d-flex flex-column flex-md-row btnsMargin">
+            <div className="d-flex flex-column flex-md-row btnsMargin ps-0 pe-0">
               <Button
                 variant="primary btn-large"
-                className="btn1Margin"
+                className="btn1Margin d-grid"
                 onClick={handleShow}
               >
                 Заповнити бриф

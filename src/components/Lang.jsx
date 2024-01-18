@@ -8,7 +8,7 @@ const Lang = ({ color }) => {
   const [active, setActive] = React.useState("1");
   return (
     <>
-      <div>
+      <span className="">
         <span
           className={clsx(
             [
@@ -42,7 +42,7 @@ const Lang = ({ color }) => {
         >
           EN
         </span>
-      </div>
+      </span>
     </>
   );
 };
