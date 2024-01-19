@@ -10,6 +10,8 @@ import BriefModal from "./BriefModal";
 import BriefCanvas from "./BriefCanvas";
 import RoundIcon from "../elements/Round";
 
+import "./HeaderCanvasBody.css";
+
 import Lang from "./Lang";
 
 const HeaderCanvasBody = () => {
@@ -53,10 +55,20 @@ const HeaderCanvasBody = () => {
           </Col>
 
           <Col xs={12} sm={12} md={6} className="ps-0 pe-0">
+            <ul className="">
+              <li className="">
+                <a href="" className="">
+                  <span className="">hello</span>
+                </a>
+              </li>
+            </ul>
+            
+            
+            
             <ul className="header-canvas-list header-canvas-first-list" style={{ minHeight: 128 }}>
               <li className="header-canvas-list-item small normal">
                 <a href="#demand">
-                  <span className="text-white">Для кого сервіс</span>
+                  <span className="text-white">Для кого сервіс hhh</span>
                 </a>
               </li>
               {/* check */}
