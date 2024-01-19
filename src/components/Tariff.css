@@ -1,6 +1,6 @@
 .section-tariff {
     margin-bottom: 70px;
-    
+    padding: 0 16px !important;
 }
 
 .tarif-card-gap {
@@ -82,6 +82,11 @@
 @media (min-width: 1440px) {
     .section-tafiff {
         margin-bottom: 120px;
+    }
+
+    .tarif-card-gap {
+        margin-bottom: 0;
+        margin-right: 16px;
     }
 
 }

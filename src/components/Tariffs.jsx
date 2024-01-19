@@ -112,8 +112,8 @@ const Tariffs = () => {
   // const lengthMinus = Math.round((width-1240)/2) - 40;
 
   const card1 = <TariffCard title="Standard" item={array[0]} />;
-  const card2 = <TariffCard title="Standard" item={array[0]} />;
-  const card3 = <TariffCard title="Standard" item={array[0]} />;
+  const card2 = <TariffCard title="Standard" item={array[1]} />;
+  const card3 = <TariffCard title="Standard" item={array[2]} />;
 
   return (
     <>
@@ -130,32 +130,34 @@ const Tariffs = () => {
                   <span className=" headDark">Види пропозицій</span>
                 </h2>
               </Col>
-              <Col
-                xs={12}
-                className="d-flex flex-column justify-content-center ps-0 pe-0 tarif-card-gap"
-              >
-                {card1}
-              </Col>
-              <Col
-                xs={12}
-                className="d-flex flex-column justify-content-center ps-0 pe-0 tarif-card-gap"
-              >
-                {card2}
-              </Col>
-              <Col
-                xs={12}
-                className="d-flex flex-column justify-content-center ps-0 pe-0"
-              >
-                {card3}
+
+              <Col xs={12} sm={12} className="">
+                <Row className=""></Row>
               </Col>
 
-
-              
-              
+              <Col xs={12} sm={12} className="ps-0 pe-0">
+                  <Col
+                    xs={12} sm={12} md={4} lg={4} 
+                    className="d-flex justify-content-center ps-0 pe-0 tarif-card-gap"
+                  >
+                    {card1}
+                  </Col>
+                  <Col
+                    xs={12} sm={12} md={4} lg={4}
+                    className="d-flex flex-column justify-content-center ps-0 pe-0 tarif-card-gap"
+                  >
+                    {card2}
+                  </Col>
+                  <Col
+                    xs={12} sm={12} md={4} lg={4}
+                    className="d-flex flex-column justify-content-center ps-0 pe-0"
+                  >
+                    {card3}
+                  </Col>
+              </Col>
             </Row>
           </Container>
         </div>
-        
       </section>
       <></>
     </>

@@ -53,7 +53,7 @@ const MyNavBar = () => {
               <Navbar.Brand href="#">
                 <img src={logo} alt="logo" width={100} height={48} />
               </Navbar.Brand>
-              <Nav activeKey={active} onSelect={handleSelect} className="d-none">
+              <Nav activeKey={active} onSelect={handleSelect} className="d-none d-md-flex">
                 <Nav.Link
                   eventKey="1"
                   href="#demand"
@@ -74,7 +74,7 @@ const MyNavBar = () => {
                   Контакти
                 </Nav.Link>
               </Nav>
-              <div className="d-none"><Lang color="dark" /></div>
+              <div className="d-none d-md-block"><Lang color="dark" /></div>
               
               {/* <span>Заповнити бриф</span> */}
               <Button variant="primary" className="d-none" onClick={handleShowBrief}>

@@ -32,7 +32,7 @@ const Feedback = () => {
           <Container>
             <Row>
               <Col
-                xs={12}
+                xs={12} 
                 className="d-flex align-items-center justify-content-center"
               >
                 <h2 className="text-center headMedium fedback-head">
@@ -41,13 +41,13 @@ const Feedback = () => {
                 </h2>
               </Col>
               <Col
-                xs={12}
+                xs={12} sm={12} md={12} lg={6}
                 className="d-flex align-items-center justify-content-center feedback-card-gap"
               >
                <FeedbackCard photoSrc={user1} {...card1} /> 
               </Col>
               <Col
-                xs={12}
+                xs={12} sm={12} md={12} lg={6}
                 className="d-flex align-items-center justify-content-center"
               >
                <FeedbackCard photoSrc={user2} {...card2} /> 
