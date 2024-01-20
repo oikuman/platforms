@@ -31,20 +31,21 @@ function App() {
     <>
       <ThemeProvider breakpoints={["lg", "md", "sm", "xs"]} minBreakpoint="xs">
 
-        <MyNavBar />
-        <Start2 />
+        {/* <MyNavBar />
+        <Start2 /> */}
+        <p>platforms</p>
         <main>
-          <Features />
+          {/* <Features />
           <Demand />
           <Why />
           <Tariffs />
           <Applications />
           <Partners />
           <Feedback />
-          <Faq />
+          <Faq /> */}
           
         </main>
-        <Footer />
+        {/* <Footer /> */}
         {/* <Cont /> */}
         {/* <Advantages /> */}
         {/* <Contacts /> */}
