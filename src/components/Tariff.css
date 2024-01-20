@@ -36,6 +36,22 @@
     margin-right: 16px;
 }
 
+.btn-tariff-thr {
+    margin-right: 0;
+}
+
+.tarrif-arrow {
+    cursor: pointer;
+}
+
+.arrow-left {
+    margin-right: 24px;
+}
+
+.arrow-right {
+    margin-left: 24px;
+}
+
 .btn-tariff:active {
     height: 12px;
     width: 12px;
@@ -64,6 +80,10 @@
 }
 
 @media (min-width: 768px) {
+    .tarif-card-gap {
+        margin-bottom: 0;
+    }
+
     .section-tafiff {
         margin-bottom: 100px;
     }
@@ -82,11 +102,6 @@
 @media (min-width: 1440px) {
     .section-tafiff {
         margin-bottom: 120px;
-    }
-
-    .tarif-card-gap {
-        margin-bottom: 0;
-        margin-right: 16px;
     }
 
 }

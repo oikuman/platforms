@@ -6,7 +6,7 @@ import ThemeProvider from "react-bootstrap/ThemeProvider";
 // import Features from "./components/Features";
 // import Demand from "./components/Demand";
 // import Why from "./components/Why";
-// import Tariffs from "./components/Tariffs";
+import Tariffs from "./components/Tariffs";
 // import Applications from "./components/Applications";
 // import Partners from "./components/Partners";
 // import Feedback from "./components/Feedback";
@@ -31,15 +31,14 @@ function App() {
     <>
       <ThemeProvider breakpoints={["lg", "md", "sm", "xs"]} minBreakpoint="xs">
 
-        {/* <MyNavBar />
-        <Start2 /> */}
-        <p>platforms</p>
+        {/* <MyNavBar /> */}
+        {/* <Start2 /> */}
         <main>
-          {/* <Features />
-          <Demand />
-          <Why />
+          {/* <Features /> */}
+          {/* <Demand /> */}
+          {/* <Why /> */}
           <Tariffs />
-          <Applications />
+          {/* <Applications />
           <Partners />
           <Feedback />
           <Faq /> */}
