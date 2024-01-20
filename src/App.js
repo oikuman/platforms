@@ -1,17 +1,17 @@
 import React from "react";
 import ThemeProvider from "react-bootstrap/ThemeProvider";
 
-import MyNavBar from "./components/MyNavBar";
-import Start2 from "./components/Start2";
-import Features from "./components/Features";
-import Demand from "./components/Demand";
-import Why from "./components/Why";
-import Tariffs from "./components/Tariffs";
-import Applications from "./components/Applications";
-import Partners from "./components/Partners";
-import Feedback from "./components/Feedback";
-import Faq from "./components/Faq";
-import Footer from "./components/Footer";
+// import MyNavBar from "./components/MyNavBar";
+// import Start2 from "./components/Start2";
+// import Features from "./components/Features";
+// import Demand from "./components/Demand";
+// import Why from "./components/Why";
+// import Tariffs from "./components/Tariffs";
+// import Applications from "./components/Applications";
+// import Partners from "./components/Partners";
+// import Feedback from "./components/Feedback";
+// import Faq from "./components/Faq";
+// import Footer from "./components/Footer";
 
 // import Advantages from "./components/Advantages";
 // import Contacts from "./components/Contacts";
