@@ -1,5 +1,5 @@
 import React from "react";
-// import clsx from "clsx";
+import clsx from "clsx";
 import PropTypes from "prop-types";
 import { ReactComponent as Left } from "../assets/images/icons/ArrowLeft.svg";
 import { ReactComponent as Right } from "../assets/images/icons/ArrowRight.svg";
@@ -24,14 +24,28 @@ const TariffBtn = ({ active, setActive }) => {
       </span>
       <span className="">
         <button
-          className="btn-tariff btn-tariff-one"
+          className={clsx({
+            "btn-tariff": true,
+            "btn-tariff-one": true,
+            "btn-tariff-active": active === 1,
+          })}
           onClick={() => setActive(1)}
         />
         <button
-          className="btn-tariff btn-tariff-two"
+          className={clsx({
+            "btn-tariff": true,
+            "btn-tariff-one": true,
+            "btn-tariff-active": active === 2,
+          })}
           onClick={() => setActive(2)}
         />
-        <button className="btn-tariff" onClick={() => setActive(3)} />
+        <button
+          className={clsx({
+            "btn-tariff": true,
+            "btn-tariff-active": active === 3,
+          })}
+          onClick={() => setActive(3)}
+        />
       </span>
       <span className="tarrif-arrow arrow-right" onClick={() => handleRight()}>
         <Right />
